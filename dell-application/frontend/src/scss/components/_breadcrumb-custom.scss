@@ -1,0 +1,28 @@
+@media (min-width: 994px) {
+  .breadcrumb-desktop{
+    position: absolute;
+    top:27%;
+    left:2%;
+  }
+}
+@media (max-width: 994px) {
+  .breadcrumb-desktop{
+      top: 20%;
+    position: absolute;
+    left: 1%;
+  }
+}
+@media (max-width: 499px) {
+  .breadcrumb-desktop{
+    width: 79%;
+  }
+}
+@media (max-width: 499px) {
+  .breadcrumb-mobile{
+    /*position: absolute;
+    top: 11%;
+    width: 50% !important;*/
+    position: absolute;
+    top: 45%
+  }
+}

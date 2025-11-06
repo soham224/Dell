@@ -1,0 +1,18 @@
+.short-label-name-length{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tooltip-font{
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+.input-range__track--active{
+ background: #147b82
+}
+.input-range__slider{
+  background: #FFFFFF;
+  border: 1px solid #111111;
+}

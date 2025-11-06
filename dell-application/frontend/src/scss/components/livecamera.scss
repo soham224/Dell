@@ -1,0 +1,93 @@
+.livecamera {
+  position: absolute;
+  top: 43%;
+  left: 50%
+}
+
+.licameraSVG {
+  text-align: center;
+  margin-top: 100px;
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+}
+
+$bg: rgba(0, 0, 0, 0.2);
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container1 {
+  width: 81vw;
+}
+
+
+.bg,
+.overlay {
+  text-align: center;
+}
+
+img,
+.overlay {
+  transition: .3s all;
+  border-radius: 3px;
+}
+
+.bg {
+  position: relative;
+  margin: .5%;
+
+  img {
+    width: 100%;
+    margin-bottom: -4px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+
+    h2 {
+      padding-top: 20%;
+      font-family: 'Droid Serif', serif;
+    }
+
+    p {
+      font-family: 'Julius Sans One', sans-serif;
+    }
+
+    &:hover {
+      .overlay {
+        opacity: 1;
+      }
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+
+    .bg_blur_image {
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+    }
+  }
+}
+
+.bg_blur_image {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}

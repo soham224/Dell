@@ -1,0 +1,17 @@
+diff --git a/node_modules/image-bounding-box-custom/dist/react-bounding-box.js b/node_modules/image-bounding-box-custom/dist/react-bounding-box.js
+index b4d89f1..30df217 100644
+--- a/node_modules/image-bounding-box-custom/dist/react-bounding-box.js
++++ b/node_modules/image-bounding-box-custom/dist/react-bounding-box.js
+@@ -595,8 +595,10 @@ Boundingbox.defaultProps = {
+ 
+     // ctx.font = '60px Arial';
+     ctx.font = '20px Times New Roman';
+-    ctx.fillStyle = 'hsla(0, 100%, 70%, 0.3)'; //rgba(225,0,0,1)
+-    ctx.fillText(box.label, x + 8, y + 22);
++    ctx.fillStyle = '#000'; //rgba(225,0,0,1)
++    ctx.fillRect(x, y - 22, ctx.measureText(box.label).width + 3, 22);
++    ctx.fillStyle = '#F00'; //rgba(225,0,0,1)
++    ctx.fillText(box.label, x, y - 7);
+   },
+ 
+   options: {

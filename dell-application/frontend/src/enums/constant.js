@@ -1,0 +1,5 @@
+export const ADMIN_URL = "/admin"
+export const ADMIN_ROLE = "admin"
+export const SUPER_ADMIN_ROLE = "superadmin"
+export const SUPERVISOR_ROLE = "supervisor"
+export const RESULT_MANAGER_ROLE = "resultmanager"

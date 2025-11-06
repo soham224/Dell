@@ -1,0 +1,849 @@
+// 3rd-party Plugins
+@import "~highlight.js/styles/googlecode.css";
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+
+@import "./_metronic/_assets/sass/style.react.scss";
+
+
+@import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+@import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+@import "./_metronic/_assets/sass/themes/layout/brand/light.scss";
+@import "./_metronic/_assets/sass/themes/layout/aside/light.scss";
+
+//@import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+//@import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+
+.brand-dark {
+  @import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+}
+
+//@import "./_metronic/_assets/sass/themes/layout/aside/light.scss";
+
+//reports
+@import "scss/components/reports";
+// carousel
+@import "./scss/components/carousel";
+@import "./scss/components/result";
+@import "scss/components/header-btn";
+//widget
+@import "scss/components/my-widget";
+//user-profile
+@import "scss/components/user-profile-line";
+//breadcrumbs-custom
+@import "scss/components/breadcrumb-custom";
+//notification-counter
+@import "scss/components/notifications";
+//filter-category
+@import "scss/components/filer-categories";
+//floating effect
+@import "scss/components/floating";
+//live-camera feature all css
+@import "scss/components/livecamera";
+//added violation card css
+@import "scss/components/dynamic-scrollbar-css";
+//disable Image
+@import "scss/components/disableImage";
+//dateRangepicker
+@import "scss/components/dateRangePicker";
+//infinite-scrollbar
+@import "scss/components/infinite-scroll";
+//short-label-name-css
+@import "scss/components/violation-labels-name";
+//marketplace images frames
+@import "scss/components/marketplace_my_img_frame";
+//marketplace upload and subscription button
+@import "scss/components/marketplace_subscription_upload_btn";
+.example-highlight > pre {
+  background: none transparent !important;
+  margin: 0 !important;
+  padding-top: 0.5rem;
+
+  code {
+    overflow-y: auto;
+    display: block;
+
+    span {
+      background: none transparent !important;
+    }
+  }
+}
+
+.json > pre {
+  background: none #fff !important;
+}
+
+.example-code > .json {
+  background: none #fff !important;
+}
+
+.symbol.symbol-45 > svg {
+  width: 100%;
+  max-width: 45px;
+  height: 45px;
+}
+
+.react-bootstrap-table {
+  overflow-x: auto;
+
+  table {
+    table-layout: auto !important;
+  }
+
+  th {
+    outline: none;
+
+    &.sortable {
+      .svg-icon-sort {
+        opacity: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .svg-icon-sort {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .table.table-head-custom thead tr {
+    .sortable-active {
+      color: $primary !important;
+    }
+  }
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.modal .modal-header .close span {
+  display: block !important;
+}
+.MuiRating-label {
+  font-size: 3rem !important;
+  color: #fdcc0d !important;
+}
+.detection-image-full-view {
+  width: 62vw;
+  height: 62vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  margin-top: -31vw;
+  margin-left: -31vw;
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.3);
+  transform: none;
+  z-index: 10051;
+}
+.bounding-box-full__main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.4;
+  z-index: 10052;
+}
+.bounding-box-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  //display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+
+  .bounding-box-full__sub {
+    height: 100%;
+    display: flex;
+
+    .react-transform-component {
+      height: 100%;
+      vertical-align: middle;
+      display: contents;
+    }
+
+    .bounding-box-full__menu {
+      background: white;
+    }
+  }
+}
+.resultDate:focus {
+  border-color: #147b82;
+  border-top-color: #147b82;
+  border-width: 2px;
+  outline: white;
+}
+.resultDate {
+  border: 1.4px solid lightgrey;
+  width: 100%;
+  padding: 8px;
+  color: currentColor;
+  border-radius: 4px;
+}
+.resultDate::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #333333;
+  opacity: 1; /* Firefox */
+}
+
+.employeeTable {
+  min-width: 500px;
+}
+.main-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 11%;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1575px !important;
+  }
+}
+body {
+  overflow-y: auto !important;
+}
+.input-group-prepend-override {
+  margin-right : -8px !important;
+}
+
+
+
+.box-customer-grid{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+
+.box-customer-widget{
+  flex-basis: 13.99% !important;
+  flex-grow : 1;
+}
+
+
+
+@media screen and (max-width:1366px) {
+  .box-customer-widget{
+    flex-basis: 29.99% !important;
+    flex-grow : 1;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .box-customer-widget{
+    flex-basis: 29.99% !important;
+    flex-grow : 1;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width:540px) {
+  .box-customer-widget{
+    flex-basis: 100% !important;
+    flex-grow : 1;
+    margin-bottom: 10px;
+  }
+}
+
+.applyButton {
+  border-color: #147b82 !important;
+  border: 1px solid #147b82 !important;
+  background-color: #147b82 !important;
+}
+
+.form-control-customer .form-control{
+  background-color: #fff !important;
+}
+.header-style{
+  height: 18px !important;
+}
+
+.wizard-overFlowView{
+  white-space: nowrap;
+  width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media screen and (max-width:960px) {
+  .loadcss {
+    margin-top: 9.5px !important;
+  }
+}
+@media screen and (max-width:1199px) {
+  .loadcss {
+    margin-top: 10px !important;
+  }
+}
+@media screen and (max-width:2000px) {
+  .dashboard {
+    margin-top: 6px !important;
+  }
+}
+@media screen and (max-width:960px) {
+  .dashboard {
+    margin-top: 17px !important;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .Small {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 2500px) {
+  .space-left {
+   margin-left: -72px !important;
+  }
+}
+@media screen and (max-width:330px) {
+  .space-left {
+   margin-left: -23px !important;
+  }
+}
+
+//425
+@media screen and (max-width:575px) {
+  .displays1 {
+    display: none !important;
+  }
+}
+//425
+@media screen and (max-width:575px) {
+  .content {
+    justify-content:  center!important;
+  }
+}
+
+//425
+@media screen and (min-width:575px) {
+  .delete_large {
+    display: none !important;
+  }
+}
+
+//@media screen and (max-width:3000px) {
+//  .word {
+//    word-break: keep-all !important;
+//  }
+//}
+//.space{
+//  margin-left: 18px !important;
+//}
+//@media screen and (max-width:450px) {
+//  .space {
+//    margin-left: 0px !important;
+//  }
+//}
+//@media screen and (max-width:545px) {
+//  .space {
+//    margin-left: 0px !important;
+//  }
+//}
+
+.block-ui-overlay {
+  opacity: 1;
+}
+
+.videoTop{
+  margin-top:  45px;
+}
+
+.example.MuiCard-root{
+  overflow: unset !important;
+}
+
+.modalNewSize {
+  max-width: calc(100% - 380px) !important;
+}
+
+.css-26l3qy-menu{
+  z-index: 99999 !important;
+}
+
+.svg-icon.svg-icon-primary:hover svg g [fill] {
+  fill: #075256 !important;
+}
+
+.mainCard {
+  background: white;
+  box-shadow: 0 0 6px #00000029;
+  border-radius: 5px;
+  cursor: pointer;
+  //height: 290px !important;
+  //max-height: 290px !important;
+}
+
+.borderStyle{
+  border: 1px solid #e2e2e2
+}
+.popper-width {
+  width: 505px!important;
+  max-width: 505px !important;
+}
+
+.filter-menu{
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+
+  .svg-icon svg g [fill] {
+    fill: #147b82 !important;
+  }
+}
+
+
+.filter-menu:hover{
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background:  #147b82;
+  color: #fff;
+
+  .svg-icon svg g [fill] {
+    fill: #fff !important;
+  }
+}
+
+.filter-menu-onclick{
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background:  #147b82;
+  color: #fff;
+
+  .svg-icon svg g [fill] {
+    fill: #fff !important;
+  }
+}
+
+
+.filter-search-scroll{
+  overflow-x: hidden !important;
+  height: 150px !important;
+  overflow-y: auto !important;
+}
+
+.filter-search-scroll::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+
+.filter-search-scroll::-webkit-scrollbar-track{
+  background-color: #e2e2e2;
+  border-radius: 25px;
+  margin: 15px;
+  //margin-top: 72px;
+}
+
+.filter-search-scroll::-webkit-scrollbar-thumb{
+  background-color: #147b82;
+  border-radius: 25px;
+  width:20px;
+}
+
+.filter-radio {
+  .MuiTypography-body1 {
+    font-size : 14px!important;
+    font-weight: 500!important;
+  }
+}
+
+
+.checkbox-new {
+  z-index: 2;
+  left: 2.25rem;
+  top: 1.25rem;
+  position: absolute;
+}
+
+@media screen and (max-width:768px) {
+  .checkbox-new {
+    z-index: 2;
+    left: 4.0rem;
+    top: 1.25rem;
+    position: absolute;
+  }
+}
+
+.card-header-custom{
+  font-size: 1.5rem;
+  font-family: Poppins, serif;
+  font-weight: 400;
+  line-height: 1.334;
+}
+
+.block-ui-container {  z-index: 90;}
+
+/* Add this in your CSS file (e.g., styles.css or TopspinPieChart.css) */
+.card-fixed-height {
+  height: 500px; /* Fixed height for the cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+}
+
+.chart-label {
+  font-size: 14px;        /* Consistent font size */
+  //color: #333333;         /* Default font color (dark gray) */
+  font-family: Helvetica, Arial, sans-serif; /* Font family */
+  font-weight: normal;    /* Normal font weight */
+  text-decoration: none;  /* No underline */
+}
+
+.chart-title {
+  font-size: 18px;        /* Larger size for titles */
+  //color: #147b82;         /* Consistent primary color */
+  font-weight: normal;      /* Bold for emphasis */
+}
+
+.chart-chip {
+  font-size: 14px;        /* Consistent size for chips */
+  background: #147b82;    /* Background color */
+  color: #fff;            /* Text color */
+  border-radius: 6px;     /* Rounded corners */
+  padding: 6px 12px;      /* Padding for spacing */
+}
+
+//datePicker override
+.modal-window {
+  position: fixed;
+  background-color: hsla(0, 0%, 100%, .25) !important ;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all .3s;
+}
+
+.modal-window>#daterangepicker {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 4px;
+  /* max-width: 680px; */
+  z-index: 3001;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-clip: padding-box;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.daterangepicker:after {
+  display: none !important;
+}
+
+.daterangepicker:before {
+  display: none !important;
+}
+
+.css-pg79js{
+  height: 50vh !important;
+  max-height: 50vh !important;
+}
+.css-l35efj{
+  height: 21vh !important;
+  max-height: 21vh !important;
+}
+.css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 9.5px 0px !important;
+}
+
+//bootstrap-table-pagination
+ul.pagination.react-bootstrap-table-page-btns-ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+//vfs
+.card-custom-hiro {
+  box-shadow: 2px 2px 5px lightgrey;
+  transition: box-shadow 0.3s, border 0.3s;
+  cursor: pointer;
+}
+
+.card-custom-hiro:hover {
+  box-shadow: none;
+  border: 1px solid lightgrey;
+}
+
+
+.card-custom-fs {
+  box-shadow: 2px 2px 5px lightgrey;
+  transition: box-shadow 0.3s, border 0.3s;
+  cursor: pointer;
+}
+
+.card-custom-fs:hover {
+  box-shadow: none;
+  border: 1px solid lightgrey;
+}
+
+.card-body-fs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-annotationsize-change{
+  .css-jrtlug {
+    height: 70vh !important;
+  }
+  .css-jrtlug .fullscreen {
+    height: 70vh !important;
+  }
+}
+.tusk_pagination-selection fieldset {
+  border: 0px !important;
+}
+.table-hight-custom{
+  min-height: calc(100vh - 415px) !important;
+}
+//marketplace
+
+@media(max-width: 1199px){
+  .my-image{
+    height: 75px !important;
+    width: 75px !important;
+    margin-right : 10px !important;
+    margin-top:30px !important;
+    border: 5px solid #147b82;
+  }
+  .my-images{
+    height: 75px !important;
+    width: 75px !important;
+    margin-right : 10px !important;
+    margin-top:30px !important;
+  }
+  .main-card{
+    justify-content: space-evenly;
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+
+  .my-image{
+    height: 75px !important;
+    width: 75px !important;
+    margin-right : 10px !important;
+    margin-top:30px !important;
+    border: 5px solid #147b82;
+  }
+  .my-images{
+    height: 75px !important;
+    width: 75px !important;
+    margin-right : 10px !important;
+    margin-top:30px !important;
+  }
+  .main-card{
+    justify-content: space-evenly;
+    margin-top: 30%;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1549px) {
+
+  .my-image{
+    height: 90px !important;
+    width: 90px !important;
+    margin-right :  10px !important;
+    margin-top:43px !important;
+    border: 5px solid #147b82;
+  }
+  .my-images{
+    height: 90px !important;
+    width: 90px !important;
+    margin-right : 10px !important;
+    margin-top:43px !important;
+  }
+  .main-card{
+    margin-top: 20%;
+    justify-content: space-evenly;
+  }
+}
+
+@media(min-width: 1550px) {
+
+  .my-image {
+    height: 90px !important;
+    width: 90px !important;
+    margin-right: 10px !important;
+    margin-top: 20px !important;
+    border: 5px solid #147b82;
+  }
+  .my-images {
+    height: 90px !important;
+    width: 90px !important;
+    margin-right: 10px !important;
+    margin-top: 20px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical {
+    border-right: 1px solid #c7c9c9;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical2 {
+    border-right: 1px solid #c7c9c9;
+    height: 100px;
+    width: auto;
+    margin-left: 15px;
+
+    .orclass {
+      position: absolute;
+      right: -2px;
+      top: 126px;
+      background: white;
+    }
+  }
+}
+@media (min-width : 1200px) and (max-width: 1280px) {
+  .upload-btn {
+    float:left !important;
+    margin-top: -7px !important;
+    margin-left: 71px !important;
+    position: absolute;
+  }
+}
+@media (min-width: 1281px) {
+  .upload-btn {
+    float:left !important;
+    top: 46% !important;
+    left: 35% !important;
+    position: absolute;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .subscribe-btn {
+    float:left !important;
+    margin-left: 54px !important;
+    margin-top: 31px !important;
+    position: absolute;
+  }
+}
+@media (min-width: 1281px) {
+  .subscribe-btn {
+    float:left !important;
+    top: 46% !important;
+    left: 35% !important;
+    position: absolute;
+  }
+}
+@media (min-width : 1200px) and (max-width : 1280px) {
+  .orclass {
+    position: absolute;
+    right: -2px;
+    top: 126px;
+  }
+}
+@media (min-width: 1281px) {
+  .orclass {
+    position: absolute;
+    right: -2px;
+    top: 132px;
+  }
+}
+@media (max-width: 1200px) {
+  .orclass {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .note {
+    font-size : 8px
+  }
+}
+@media (min-width: 1281px) {
+  .note{
+    font-size : 8px
+  }
+}
+@media (max-width: 1200px) {
+  .add-camera {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .add-camera {
+    text-align: right;
+  }
+}
+
+
+.custom-usecase-modal .modal-dialog {
+  min-width: 90%;
+}
+
+.modal {
+  z-index: 1050; /* Default Bootstrap modal z-index */
+}
+
+.modal-backdrop {
+  z-index: 1040; /* Keep backdrop below the modal */
+}
+
+.modal.lower-z-index {
+  z-index: 1000 !important; /* Lower the first modal when sub-modal is open */
+}
+
+.sub-modal {
+  z-index: 1100 !important; /* Ensure the second modal is above */
+}
+
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.control-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+
+.left-controls button,
+.right-controls button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+.image-container {
+  display: inline-block;
+  padding: 10px;
+  overflow: hidden;
+}

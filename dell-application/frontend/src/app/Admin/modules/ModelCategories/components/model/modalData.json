@@ -1,0 +1,136 @@
+ [
+    {
+      "model_name": "Person Loitering Detection",
+      "model_description": "Person loitering detection identifies individuals lingering in an area for an extended period, potentially indicating suspicious behavior.",
+      "id": 1,
+      "model_result_img": [
+        {
+          "image_name": "person-loitering-detection",
+          "image_url": "/media/usecase/person_loitering_detection/person_loitering_detection_1.jpg",
+          "image_description": "This model will detect a red hat from given input images.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "person-loitering-detection",
+          "image_url": "/media/usecase/person_loitering_detection/person_loitering_detection_2.jpg",
+          "image_description": "This model will detect a red hat from given input images.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "person-loitering-detection",
+          "image_url": "/media/usecase/person_loitering_detection/person_loitering_detection_3.jpg",
+          "image_description": "This model will detect a red hat from given input images.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        }
+      ]
+    },
+    {
+      "model_name": "Intrusion Detection",
+      "model_description": "This model is designed to detect unauthorized intrusion into restricted areas, enhancing safety and security.",
+      "id": 2,
+      "model_result_img": [
+        {
+          "image_name": "Intrusion-Detection-1",
+          "image_url": "/media/usecase/Intrusion_detection/Intrusion_detection_1.png",
+          "image_description": "This image shows the model detecting an unauthorized person near a restricted area.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "Intrusion-Detection-2",
+          "image_url": "/media/usecase/Intrusion_detection/Intrusion_detection_2.png",
+          "image_description": "This image shows the model detecting an unauthorized person near a restricted area.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "Intrusion-Detection-3",
+          "image_url": "/media/usecase/Intrusion_detection/Intrusion_detection_3.png",
+          "image_description": "This image shows the model detecting an unauthorized person near a restricted area.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "Intrusion-Detection-4",
+          "image_url": "/media/usecase/Intrusion_detection/Intrusion_detection_4.png",
+          "image_description": "This image shows the model detecting an unauthorized person near a restricted area.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        }
+      ]
+    },
+    {
+     "model_name": "Throwing Event Detection",
+     "model_description": "This model detects throwing events involving objects entering or exiting a designated area to enhance safety monitoring.",
+      "id": 3,
+      "model_result_img": [
+        {
+          "image_name": "Throwing-Event-Detection-1",
+          "image_url": "/media/usecase/throwing_event_detection/Throwing_event_detection_1.png",
+          "image_description": "Model detects an object being thrown over a fence.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "Throwing-Event-Detection-2",
+          "image_url": "/media/usecase/throwing_event_detection/Throwing_event_detection_2.png",
+          "image_description": "Illustrates detection of a thrown item exiting a restricted area.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "Object-Throw-Detection-3",
+          "image_url": "/media/usecase/throwing_event_detection/Throwing_event_detection_3.png",
+          "image_description": "Captured instance of object-throw-in action flagged by the model.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        }
+      ]
+
+    },
+    {
+      "model_name": "Perimeter Control",
+      "model_description": "This model monitors and controls the boundary of a secured area to prevent unauthorized access.",
+      "id": 4,
+      "model_result_img": [
+        {
+          "image_name": "Perimeter-Control-1",
+          "image_url": "/media/usecase/perimeter_control/perimeter_control_1.png",
+          "image_description": "Detection of intrusion attempt along a secured perimeter.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "Perimeter-Control-2",
+          "image_url": "/media/usecase/perimeter_control/perimeter_control_2.png",
+          "image_description": "Illustration of boundary breach detection using surveillance data.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        },
+        {
+          "image_name": "Perimeter-Control-3",
+          "image_url": "/media/usecase/perimeter_control/perimeter_control_3.png",
+          "image_description": "Model highlighting detected motion near a restricted area.",
+          "status": true,
+          "created_date": "2021-01-25T11:02:25",
+          "updated_date": "2021-01-25T11:02:25"
+        }
+      ]
+    }
+  ]
+

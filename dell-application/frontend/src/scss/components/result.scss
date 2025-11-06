@@ -1,0 +1,60 @@
+.dropdown-custom{
+  transform: translate(102px, 0px) !important;
+}
+.dropdown-y-custom{
+  transform: translate(0px, -76px) !important;
+}
+.saveImageEvent-button{
+  margin: 0px auto;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  right: auto;
+  left: 50%;
+  width: 100%;
+  transform: translate(-48%,-50%);
+  bottom: 0;
+}
+.modal-image-scroll{
+  overflow-x: hidden !important;
+  height: 540px !important;
+  overflow-y: auto !important;
+}
+
+.modal-image-scroll::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+}
+
+.modal-image-scroll::-webkit-scrollbar-track{
+  background-color: #e2e2e2;
+  border-radius: 25px;
+  margin: 15px;
+  margin-top: 72px;
+}
+
+.modal-image-scroll::-webkit-scrollbar-thumb{
+  background-color: #147b82;
+  border-radius: 25px;
+  width:20px;
+}
+
+.dropdownWithCheckbox .select-react-dropdown{
+  z-index: 2;
+}
+
+
+.customeColor .css-1pahdxg-control:hover{
+  border-color : #147b82 !important;
+}
+.customeColor .css-1pahdxg-control{
+  border-color : #0BB7AF !important;
+  box-shadow:0 0 0 1px #147b82 !important;
+}
+
+.customeColor .css-1n7v3ny-option{
+  background-color:#5DBFC4 ;
+}
+.customeColor .css-9gakcf-option{
+  background-color: #147b82;
+}

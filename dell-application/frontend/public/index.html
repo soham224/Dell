@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Loading...</title> <!-- Initial title to avoid having an empty title -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Fonts -->
+    <link
+            href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto:300,400,500,600,700"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+    />
+
+    <!-- SPLASH SCREEN -->
+    <link
+            rel="stylesheet"
+            id="layout-styles-anchor"
+            href="%PUBLIC_URL%/css/splash-screen.css"
+    />
+
+    <!-- Remove external polyfill and rely on built-in ones -->
+    <script>
+        // Wait until the page content is loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            try {
+                const link = document.createElement('link');
+                link.rel = 'icon';
+                link.type = 'image/x-icon';
+                // link.href = "%PUBLIC_URL%/media/favicon_io/HiRO_Logo_White.svg";
+                // link.href = "%PUBLIC_URL%/media/favicon_io/android-chrome-192x192-modified.png";
+                link.href = "%PUBLIC_URL%/media/favicon_io/android-chrome-192x192-modified.png";
+                document.title = "Tusker AI"; // Update page title
+                document.head.appendChild(link); // Append favicon to the document head
+            } catch (error) {
+                console.error("Error setting favicon or title:", error);
+                document.title = "Default Title"; // Fallback title
+            }
+        });
+    </script>
+</head>
+
+<body id="kt_body">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div id="splash-screen" class="kt-splash-screen">
+    <svg class="splash-spinner" viewBox="0 0 50 50">
+        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+    </svg>
+</div>
+<div id="layout-portal"></div>
+</body>
+</html>

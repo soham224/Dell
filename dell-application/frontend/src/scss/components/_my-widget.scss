@@ -1,0 +1,48 @@
+.my-widget:hover{
+  box-shadow:  6px 8px 10px -5px rgba(0, 0, 0, 0.9);
+  background-color: white;
+  border-radius: 4px; /* Round corners */
+
+  border-left: 1px solid #82d1de; /* Blue left border */
+  background-image: linear-gradient(154deg, #147b82 , #5DBFC4)
+}
+
+.my-widget2{
+  object-fit: cover
+
+}
+
+.my-widget8{
+  margin-top: 12px !important;
+}
+.my-widget5{
+ width:100% !important;
+}
+
+.my-widget6{
+  width:50% !important;
+}
+
+.disable-scrolling {
+overflow: auto !important;
+  height: 100vh;
+}
+
+
+@media (max-width: 480px) {
+  my-widget3{
+    display: block;
+  }
+}
+
+
+@media (min-width: 480px) {
+  .my-widget2{
+    flex-wrap: inherit;
+  }
+}
+
+//this css is for subscription select camera to get dropdown left side
+.align-left{
+  text-align: left;
+}

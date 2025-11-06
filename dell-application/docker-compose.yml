@@ -1,0 +1,109 @@
+version: '3.3'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql_container
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_database:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      MYSQL_PASSWORD: Rootmysql@123
+      MYSQL_ROOT_PASSWORD: Rootmysql@123
+      MYSQL_DB_NAME: dell_auto_serving
+    restart: always
+    command: [
+      "--default-authentication-plugin=mysql_native_password",
+      "--bind-address=0.0.0.0"
+    ]
+
+  mongodb:
+    image: mongo:4.4
+    container_name: mongodb_container
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_database:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: Rootmongo@123
+    restart: always
+
+  dell-auto-serving-api:
+    image: dell_auto_serving_api_build:1.0.0
+    ports:
+      - 8000:80
+    build: ./backend
+    volumes:
+      - backend-application-logs:/logs
+    environment:
+      MYSQL_HOSTNAME: mysql
+      MYSQL_PORT: 3306
+      MYSQL_DB_NAME: dell_auto_serving
+      MYSQL_USERNAME: root
+      MYSQL_PASS: Rootmysql@123
+      MONGO_HOST: mongodb
+      MONGO_PORT: 27017
+      MONGO_DB_NAME: dell_auto_serving
+      MONGO_USER: root
+      MONGO_PASS: Rootmongo@123
+      MONGO_AUTH_DB_NAME: ""  
+      MONGO_COLL_NAME: results
+      ROI_API_ENDPOINT: demo
+      PROJECT_ENV: Production
+      MYSQL_POOL_SIZE: 20
+      MYSQL_MAX_OVERFLOW: 30
+      MYSQL_POOL_TIMEOUT: 60
+      MYSQL_POOL_PRE_PING: "True"
+      MYSQL_POOL_RECYCLE: 28800
+      AI_UPDATE_CAMERA_DETAILS_URL: http://localhost:8000/update_camera_config
+      AI_UPDATE_CAMERA_DETAILS_API_KEY: HPv5yTIxNivgORcNkBYhztuhGTXMehPk
+      ACTIVITY_LOGS_TYPE: '["CAMERA_STATUS","SYSTEM_STATUS","SYSTEM_HEALTH_CHECK","TELEGRAM_API_STATUS","TELEGRAM_NOTIFICATION","FRAME_DROPS","USER_LOGIN"]'
+      SYSTEM_CHECK_SCHEDULE_TIME: 15
+      UPDATE_CAMERA_USECASE_CHECK_SCHEDULE_TIME: 15
+    depends_on:
+      - mysql
+      - mongodb
+    restart: always
+    
+  dell-auto-serving-ui:
+    image: dell_auto_serving_ui_build:1.0.0
+    ports:
+      - 8080:80
+    build: ./frontend
+    environment:
+      REACT_APP_ENV: ${FRONTEND_APP_ENVIRONMENT}
+      REACT_APP_IP: ${AUTO_SERVING_API_IP}
+      REACT_APP_API_HOST: ${AUTO_SERVING_API_HOST}
+    restart: always
+    depends_on:
+      - dell-auto-serving-api
+
+  # frontend:
+  #   image: dell_ui_nginx:1.0.0
+  #   build: ./
+  #   restart: unless-stopped
+  #   ports:
+  #     - 8088:80
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      # - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      # - ./nginx/sites:/etc/nginx/conf.d:ro
+      # - /etc/letsencrypt:/etc/letsencrypt:ro
+
+ 
+
+volumes:
+  backend-application-logs:
+  mysql_database:
+  mongodb_database:
+
+
+
+

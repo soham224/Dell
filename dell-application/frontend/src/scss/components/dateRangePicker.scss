@@ -1,0 +1,30 @@
+.rmdp-input{
+  margin: 1px 0;
+  border: 1px #c0c4d6 solid;
+  padding: 2px 5px;
+  height: 39px;
+  border-radius: 0px;
+  width: -webkit-fill-available;
+}
+.rmdp-container {
+  display: inline-block;
+  height: max-content;
+  width:  -webkit-fill-available;
+}
+.rmdp-calendar {
+    padding: 4px;
+    height: max-content;
+}
+.rmdp-border-right {
+    border-right: 1px solid #cfd8e2;
+}
+.rmdp-panel-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    list-style: none;
+    padding: 0px 5px;
+    margin: 0;
+    text-align: center;
+    overflow: auto;
+}
