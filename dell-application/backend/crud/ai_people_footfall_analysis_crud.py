@@ -3,6 +3,7 @@ CRUD layer for ai_people_footfall_analysis.
 
 Provides a simple create operation via the generic CRUDBase.
 """
+
 from __future__ import annotations
 
 from typing import Type
@@ -15,7 +16,9 @@ from schemas.ai_people_footfall_analysis import (
 )
 
 
-class _AiPeopleFootfallCRUD(CRUDBase[AiPeopleFootfallAnalysis, AiPeopleFootfallCreate, AiPeopleFootfallRead]):
+class _AiPeopleFootfallCRUD(
+    CRUDBase[AiPeopleFootfallAnalysis, AiPeopleFootfallCreate, AiPeopleFootfallRead]
+):
     """CRUD operations for AiPeopleFootfallAnalysis model.
 
     Inherits default create/get/update/remove methods.

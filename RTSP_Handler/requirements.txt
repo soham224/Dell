@@ -1,0 +1,8 @@
+boto3
+PyMySQL
+persist-queue[extra]
+pyinotify
+ffmpeg-python
+sentry_sdk
+pydantic==1.10.7
+

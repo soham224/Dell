@@ -38,19 +38,19 @@ def check_system_health():
         # description = f"CPU: {cpu}%, RAM: {ram}%, Temp: {temp}°C"
         description = (
             f"CPU: {cpu}%, RAM: {ram}%, Temp: {temp:.1f}°F"
-            if temp
+            if temp is not None
             else f"CPU: {cpu}%, RAM: {ram}%"
         )
 
         logging.info(f"{title} :: {description}")
 
-        # Activity logging disabled
-        # crud.activity_crud_obj.insert_activity_data(
-        #     db=db,
-        #     activity_type="SYSTEM_HEALTH_CHECK",
-        #     title=title,
-        #     description=description,
-        # )
+        # Insert activity log for system health
+        crud.activity_crud_obj.insert_activity_data(
+            db=db,
+            activity_type="SYSTEM_HEALTH_CHECK",
+            title=title,
+            description=description,
+        )
     except Exception as e:
         logging.error(f"Exception : check_system_health {e}")
     finally:

@@ -12,8 +12,7 @@ import models
 import schemas
 from api import deps
 from core import security
-
-# from core.activity_utils import insert_login_success_log, insert_login_failed_log
+from core.activity_utils import insert_login_success_log, insert_login_failed_log
 from core.config import settings
 from core.security import get_password_hash
 from enums.error_enum import CommonErrorEnum
@@ -37,15 +36,15 @@ def login_access_token(
     )
     if not user:
         logging.info("Incorrect email or password")
-        # insert_login_failed_log(form_data.username, db)
+        insert_login_failed_log(form_data.username, db)
         raise HTTPException(status_code=400, detail="Incorrect email or password")
     elif not crud.user.is_active(user):
         logging.info(CommonErrorEnum.INACTIVE_USER.value)
-        # insert_login_failed_log(form_data.username, db)
+        insert_login_failed_log(form_data.username, db)
         raise HTTPException(status_code=400, detail=CommonErrorEnum.INACTIVE_USER.value)
     access_token_expires = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
     logging.info("login success : {}".format(form_data.username))
-    # insert_login_success_log(user, db)
+    insert_login_success_log(user, db)
     return {
         "access_token": security.create_access_token(
             user.id, expires_delta=access_token_expires

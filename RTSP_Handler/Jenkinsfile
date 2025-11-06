@@ -1,0 +1,72 @@
+pipeline {
+  agent any
+  environment {
+	REPO_PATH = '437476783934.dkr.ecr.ap-south-1.amazonaws.com'
+	ECR_REGION = 'ap-south-1'
+    PROD_REPO = 'tusker-rtsp-handler'
+  }
+  stages {
+    stage('authentication') {
+		steps {
+    		sh 'docker login -u AWS -p $(aws ecr get-login-password --region ${ECR_REGION}) ${REPO_PATH}'
+		  }
+	    post {
+			success{
+				echo "authentication successful"
+			}
+			failure{
+				echo "authentication failed"
+			}
+		}
+	}
+    stage('build') {
+		steps {
+    		echo 'starting build'
+    		bitbucketStatusNotify(buildState: 'INPROGRESS')
+    		sh 'docker build -t tusker-rtsp-handler:${GIT_COMMIT} .'
+    		echo 'end build'
+		  }
+	    post {
+			success{
+				echo "build successful"
+			}
+			failure{
+				echo "build failed"
+			}
+		}
+	}
+    stage('deploy to production') {
+      when {
+		branch 'master'
+	  }
+      steps {
+        echo 'start production deployment'
+        sh 'docker tag tusker-rtsp-handler:${GIT_COMMIT} $REPO_PATH/$PROD_REPO:${GIT_COMMIT}'
+        sh 'docker push $REPO_PATH/$PROD_REPO:${GIT_COMMIT}'
+        sh 'docker tag tusker-rtsp-handler:${GIT_COMMIT} $REPO_PATH/$PROD_REPO:latest'
+        sh 'docker push $REPO_PATH/$PROD_REPO:latest'
+//         sh 'aws lambda update-function-code --function-name $FUNCTION_NAME --image-uri $REPO_PATH/$PROD_REPO:latest'
+        echo 'end production deployment'
+      }
+      post {
+			success{
+				echo "deploy successful to production"
+			}
+			failure{
+				echo "deploy failed in production"
+			}
+		}
+    }
+  }
+  post {
+	success{
+		echo "pipeline execution successful"
+		bitbucketStatusNotify(buildState: 'SUCCESSFUL')
+	}
+	failure{
+		echo "pipeline execution failed"
+		bitbucketStatusNotify(buildState: 'FAILED')
+	}
+  }
+}
+

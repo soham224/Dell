@@ -5,4 +5,4 @@ from .camera_manager import *
 from .camera_usecase_mapping import *
 from .usecase import *
 
-# from .activity import *  # Disabled: activity_logs table and model are commented out
+from .activity import *

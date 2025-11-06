@@ -1,0 +1,11 @@
+export DB_TYPE=mysql
+export DB_HOST=192.168.11.88
+export DB_USERNAME=admin
+export DB_PASS=Admin@123
+export DB_NAME=auto-serving-dell
+export DB_PORT=3306
+export QUEUE_NAME=frames_storage
+export FRAMES_ROOT_DIR=/home/dev1079/frames/dell
+export USER_ID=2
+export LOG_BASE_DIRECTORY=./
+export CAMERA_RTSP_TABLE=camera_manager

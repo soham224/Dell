@@ -15,7 +15,7 @@ from api.api_v1.endpoints import (
     filter_api,
     rtsp_down_odit_api,
     ai_people_footfall_api,
-    # activity_api,
+    activity_api,
 )
 
 
@@ -40,5 +40,4 @@ api_router.include_router(widgets_api.router, tags=["Widgets"])
 api_router.include_router(filter_api.router, tags=["Filter"])
 api_router.include_router(rtsp_down_odit_api.router, tags=["RTSP Down Odit API"])
 api_router.include_router(ai_people_footfall_api.router, tags=["AI Footfall"])
-# api_router.include_router(activity_api.router, tags=["Activity API"])
-
+api_router.include_router(activity_api.router, tags=["Activity API"])
