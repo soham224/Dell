@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  tusker-dell-intrusion:
+    build: .
+    image : tusker-dell-intrusion
+    container_name: tusker-dell-intrusion
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - .env
+    volumes:
+      - /home/mihir/logs:/logs

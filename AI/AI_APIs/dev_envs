@@ -1,0 +1,9 @@
+export MYSQL_HOST=192.168.11.88
+export MYSQL_PORT=3306
+export MYSQL_USER=admin
+export MYSQL_PASS=Admin@123
+export MYSQL_DB_NAME=auto-serving-dell
+export ROOT_URL=http://192.168.11.97
+export IMAGE_SIZE=640
+export NGINX_PATH=/home/dev1079
+export LOG_BASE_DIRECTORY=./

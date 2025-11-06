@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  ai_apis:
+    build: .
+    image: ai-apis
+    container_name: ai-apis
+    env_file:
+      - .env
+    volumes:
+      - /home/dev1079/Shruti_Workspace/VFS/AI/Final/ai_apis_vfs:/ai_apis_vfs   #logs
+      - /home/dev1079:/home/dev1079 # Data
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    restart: always

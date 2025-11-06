@@ -1,0 +1,48 @@
+export MYSQL_HOSTNAME=192.168.11.88
+export MYSQL_USERNAME=admin
+export MYSQL_PASS=Admin@123
+export MYSQL_PORT=3306
+export MYSQL_DB_NAME=auto-serving-dell
+
+export MONGO_HOST=localhost
+export MONGO_PORT=27017
+export MONGO_USER=
+export MONGO_PASS=
+export MONGO_AUTH_DB_NAME=
+export MONGO_DB_NAME=auto-serving-dell
+export MONGO_COLL_NAME=results
+
+# export S3_BUCKET_NAME=tusker-baps-video-bucket
+
+export PROJECT_ENV=development
+
+# export ROI_API_ENDPOINT=https://dev.asapi.tusker.ai/api/v1/get_camera_roi_by_user_id
+
+export USER_ID_CV2='[1]'
+
+# export NOTIFICATION_USER_CONFIG='{"9":{"Email":"dhairya.softvan@gmail.com,soham.softvan@gmail.com"}}'
+
+export MYSQL_POOL_SIZE=20
+export MYSQL_MAX_OVERFLOW=30
+export MYSQL_POOL_TIMEOUT=60
+export MYSQL_POOL_PRE_PING=True
+export MYSQL_POOL_RECYCLE=28800
+
+export RTSP_ODIT_COMPANY_ID='["1"]'
+
+export NOTIFICATION_COMPANY_ID='[]'
+
+export MESSAGE_COMPANY_ID='[]'
+
+export ALLOWED_ORIGINS='["https://asapi.tusker.ai","https://beta.tusker.ai","https://tusker.ai","https://avf.tusker.ai","https://vision.newra.ai","https://demo.urhiro.com","https://www.beta.tusker.ai","https://www.avf.tusker.ai","https://www.tusker.ai"]'
+export ALLOWED_ORIGINS='["http://localhost:3001","http://localhost:8000"]'
+export ALLOWED_METHODS='["GET", "POST"]'
+export ALLOWED_HEARDERS='["Authorization", "Content-Type"]'
+
+# export AI_UPDATE_CAMERA_DETAILS_URL=http://192.168.11.27:8002/update_camera_config
+# export AI_UPDATE_CAMERA_DETAILS_API_KEY=HPv5yTIxNivgORcNkBYhztuhGTXMehPk
+
+export SYSTEM_CHECK_SCHEDULE_TIME=15
+export UPDATE_CAMERA_USECASE_CHECK_SCHEDULE_TIME=1
+
+# export ACTIVITY_LOGS_TYPE='["CAMERA_STATUS","SYSTEM_STATUS","SYSTEM_HEALTH_CHECK","TELEGRAM_API_STATUS","TELEGRAM_NOTIFICATION","FRAME_DROPS","USER_LOGIN"]'

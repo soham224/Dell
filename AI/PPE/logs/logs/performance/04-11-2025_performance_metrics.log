@@ -1,0 +1,1693 @@
+2025-11-04 15:42:32.%f - [PERF] - Performance logger initialized
+2025-11-04 15:42:34.%f - [PERF] - get_frame latency_ms=10.30 camera_id=1
+2025-11-04 15:42:34.%f - [PERF] - load_image latency_ms=1.10 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251079_frame.jpg
+2025-11-04 15:42:34.%f - [PERF] - get_frame latency_ms=7.81 camera_id=2
+2025-11-04 15:42:34.%f - [PERF] - load_image latency_ms=0.45 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251080_frame.jpg
+2025-11-04 15:42:34.%f - [PERF] - iteration_total_ms=110.14
+2025-11-04 15:43:04.%f - [PERF] - get_frame latency_ms=9.53 camera_id=1
+2025-11-04 15:43:04.%f - [PERF] - load_image latency_ms=1.29 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251080_frame.jpg
+2025-11-04 15:43:04.%f - [PERF] - get_frame latency_ms=8.00 camera_id=2
+2025-11-04 15:43:04.%f - [PERF] - load_image latency_ms=0.46 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251081_frame.jpg
+2025-11-04 15:43:04.%f - [PERF] - iteration_total_ms=110.96
+2025-11-04 15:43:34.%f - [PERF] - get_frame latency_ms=23.01 camera_id=1
+2025-11-04 15:43:34.%f - [PERF] - load_image latency_ms=0.89 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251080_frame.jpg
+2025-11-04 15:43:34.%f - [PERF] - get_frame latency_ms=18.39 camera_id=2
+2025-11-04 15:43:34.%f - [PERF] - load_image latency_ms=0.64 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251081_frame.jpg
+2025-11-04 15:43:35.%f - [PERF] - iteration_total_ms=216.50
+2025-11-04 15:44:05.%f - [PERF] - get_frame latency_ms=10.72 camera_id=1
+2025-11-04 15:44:05.%f - [PERF] - load_image latency_ms=11.41 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251081_frame.jpg
+2025-11-04 15:44:10.%f - [PERF] - inference latency_ms=5112.97 camera_id=1 detections=7
+2025-11-04 15:44:10.%f - [PERF] - copy_image latency_ms=9.25 camera_id=1 status=409
+2025-11-04 15:44:10.%f - [PERF] - delete_image latency_ms=2.56 camera_id=1 status=404
+2025-11-04 15:44:10.%f - [PERF] - camera_cycle_total_ms=5249.44 camera_id=1
+2025-11-04 15:44:10.%f - [PERF] - get_frame latency_ms=10.38 camera_id=2
+2025-11-04 15:44:10.%f - [PERF] - load_image latency_ms=2.67 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251082_frame.jpg
+2025-11-04 15:44:12.%f - [PERF] - inference latency_ms=2051.32 camera_id=2 detections=7
+2025-11-04 15:44:12.%f - [PERF] - copy_image latency_ms=8.01 camera_id=2 status=409
+2025-11-04 15:44:12.%f - [PERF] - delete_image latency_ms=2.70 camera_id=2 status=404
+2025-11-04 15:44:12.%f - [PERF] - camera_cycle_total_ms=2136.44 camera_id=2
+2025-11-04 15:44:12.%f - [PERF] - iteration_total_ms=7400.74
+2025-11-04 15:44:24.%f - [PERF] - Performance logger initialized
+2025-11-04 15:44:25.%f - [PERF] - get_frame latency_ms=10.83 camera_id=1
+2025-11-04 15:44:25.%f - [PERF] - load_image latency_ms=1.29 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251081_frame.jpg
+2025-11-04 15:44:25.%f - [PERF] - get_frame latency_ms=8.61 camera_id=2
+2025-11-04 15:44:25.%f - [PERF] - load_image latency_ms=0.47 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251082_frame.jpg
+2025-11-04 15:44:25.%f - [PERF] - iteration_total_ms=117.68
+2025-11-04 15:44:56.%f - [PERF] - get_frame latency_ms=9.16 camera_id=1
+2025-11-04 15:44:56.%f - [PERF] - load_image latency_ms=0.47 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251081_frame.jpg
+2025-11-04 15:44:56.%f - [PERF] - get_frame latency_ms=7.29 camera_id=2
+2025-11-04 15:44:56.%f - [PERF] - load_image latency_ms=0.64 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251082_frame.jpg
+2025-11-04 15:44:56.%f - [PERF] - iteration_total_ms=103.67
+2025-11-04 15:45:26.%f - [PERF] - get_frame latency_ms=9.29 camera_id=1
+2025-11-04 15:45:26.%f - [PERF] - load_image latency_ms=0.47 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251082_frame.jpg
+2025-11-04 15:45:26.%f - [PERF] - get_frame latency_ms=7.36 camera_id=2
+2025-11-04 15:45:26.%f - [PERF] - load_image latency_ms=0.45 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251083_frame.jpg
+2025-11-04 15:45:26.%f - [PERF] - iteration_total_ms=104.03
+2025-11-04 15:45:56.%f - [PERF] - get_frame latency_ms=10.74 camera_id=1
+2025-11-04 15:45:56.%f - [PERF] - load_image latency_ms=0.66 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251082_frame.jpg
+2025-11-04 15:45:56.%f - [PERF] - get_frame latency_ms=10.04 camera_id=2
+2025-11-04 15:45:56.%f - [PERF] - load_image latency_ms=0.59 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251083_frame.jpg
+2025-11-04 15:45:56.%f - [PERF] - iteration_total_ms=111.70
+2025-11-04 15:46:56.%f - [PERF] - Performance logger initialized
+2025-11-04 15:46:57.%f - [PERF] - get_frame latency_ms=11.77 camera_id=1
+2025-11-04 15:46:57.%f - [PERF] - load_image latency_ms=5.40 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251083_frame.jpg
+2025-11-04 15:46:57.%f - [PERF] - inference latency_ms=188.70 camera_id=1 detections=2
+2025-11-04 15:46:57.%f - [PERF] - copy_image latency_ms=12.87 camera_id=1 status=200
+2025-11-04 15:46:57.%f - [PERF] - add_result latency_ms=6.24 camera_id=1 status=200
+2025-11-04 15:46:58.%f - [PERF] - camera_cycle_total_ms=287.49 camera_id=1
+2025-11-04 15:46:58.%f - [PERF] - get_frame latency_ms=9.70 camera_id=2
+2025-11-04 15:46:58.%f - [PERF] - load_image latency_ms=3.17 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251084_frame.jpg
+2025-11-04 15:46:58.%f - [PERF] - inference latency_ms=170.47 camera_id=2 detections=4
+2025-11-04 15:46:58.%f - [PERF] - copy_image latency_ms=13.66 camera_id=2 status=200
+2025-11-04 15:46:58.%f - [PERF] - add_result latency_ms=6.09 camera_id=2 status=200
+2025-11-04 15:46:58.%f - [PERF] - camera_cycle_total_ms=259.46 camera_id=2
+2025-11-04 15:46:58.%f - [PERF] - iteration_total_ms=550.06
+2025-11-04 15:47:58.%f - [PERF] - get_frame latency_ms=9.30 camera_id=1
+2025-11-04 15:47:58.%f - [PERF] - load_image latency_ms=0.51 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251084_frame.jpg
+2025-11-04 15:47:58.%f - [PERF] - get_frame latency_ms=8.36 camera_id=2
+2025-11-04 15:47:58.%f - [PERF] - load_image latency_ms=0.51 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251085_frame.jpg
+2025-11-04 15:47:58.%f - [PERF] - iteration_total_ms=113.02
+2025-11-04 15:48:40.%f - [PERF] - Performance logger initialized
+2025-11-04 15:48:42.%f - [PERF] - get_frame latency_ms=13.95 camera_id=1
+2025-11-04 15:48:42.%f - [PERF] - load_image latency_ms=6.03 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251085_frame.jpg
+2025-11-04 15:48:42.%f - [PERF] - inference latency_ms=188.80 camera_id=1 detections=3
+2025-11-04 15:48:42.%f - [PERF] - copy_image latency_ms=5.08 camera_id=1 status=409
+2025-11-04 15:48:42.%f - [PERF] - camera_cycle_total_ms=270.29 camera_id=1
+2025-11-04 15:48:42.%f - [PERF] - get_frame latency_ms=9.22 camera_id=2
+2025-11-04 15:48:42.%f - [PERF] - load_image latency_ms=3.00 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251086_frame.jpg
+2025-11-04 15:48:42.%f - [PERF] - inference latency_ms=116.21 camera_id=2 detections=4
+2025-11-04 15:48:42.%f - [PERF] - copy_image latency_ms=8.80 camera_id=2 status=200
+2025-11-04 15:48:42.%f - [PERF] - add_result latency_ms=4.54 camera_id=2 status=200
+2025-11-04 15:48:42.%f - [PERF] - camera_cycle_total_ms=189.90 camera_id=2
+2025-11-04 15:48:42.%f - [PERF] - iteration_total_ms=463.52
+2025-11-04 15:49:42.%f - [PERF] - get_frame latency_ms=8.93 camera_id=1
+2025-11-04 15:49:42.%f - [PERF] - load_image latency_ms=3.87 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251086_frame.jpg
+2025-11-04 15:49:42.%f - [PERF] - inference latency_ms=123.66 camera_id=1 detections=3
+2025-11-04 15:49:42.%f - [PERF] - copy_image latency_ms=12.35 camera_id=1 status=200
+2025-11-04 15:49:42.%f - [PERF] - add_result latency_ms=5.29 camera_id=1 status=200
+2025-11-04 15:49:42.%f - [PERF] - camera_cycle_total_ms=203.17 camera_id=1
+2025-11-04 15:49:42.%f - [PERF] - get_frame latency_ms=10.05 camera_id=2
+2025-11-04 15:49:42.%f - [PERF] - load_image latency_ms=2.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251087_frame.jpg
+2025-11-04 15:49:43.%f - [PERF] - inference latency_ms=102.72 camera_id=2 detections=4
+2025-11-04 15:49:43.%f - [PERF] - copy_image latency_ms=4.12 camera_id=2 status=409
+2025-11-04 15:49:43.%f - [PERF] - camera_cycle_total_ms=167.82 camera_id=2
+2025-11-04 15:49:43.%f - [PERF] - iteration_total_ms=373.63
+2025-11-04 15:50:43.%f - [PERF] - get_frame latency_ms=8.97 camera_id=1
+2025-11-04 15:50:43.%f - [PERF] - load_image latency_ms=2.59 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251087_frame.jpg
+2025-11-04 15:50:43.%f - [PERF] - inference latency_ms=108.01 camera_id=1 detections=3
+2025-11-04 15:50:43.%f - [PERF] - copy_image latency_ms=5.25 camera_id=1 status=409
+2025-11-04 15:50:43.%f - [PERF] - camera_cycle_total_ms=170.48 camera_id=1
+2025-11-04 15:50:43.%f - [PERF] - get_frame latency_ms=7.84 camera_id=2
+2025-11-04 15:50:43.%f - [PERF] - load_image latency_ms=2.60 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251088_frame.jpg
+2025-11-04 15:50:43.%f - [PERF] - inference latency_ms=94.90 camera_id=2 detections=5
+2025-11-04 15:50:43.%f - [PERF] - copy_image latency_ms=6.16 camera_id=2 status=409
+2025-11-04 15:50:43.%f - [PERF] - camera_cycle_total_ms=155.44 camera_id=2
+2025-11-04 15:50:43.%f - [PERF] - iteration_total_ms=328.36
+2025-11-04 15:51:43.%f - [PERF] - get_frame latency_ms=8.24 camera_id=1
+2025-11-04 15:51:43.%f - [PERF] - load_image latency_ms=2.86 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251088_frame.jpg
+2025-11-04 15:51:43.%f - [PERF] - inference latency_ms=117.57 camera_id=1 detections=4
+2025-11-04 15:51:43.%f - [PERF] - copy_image latency_ms=15.88 camera_id=1 status=200
+2025-11-04 15:51:43.%f - [PERF] - add_result latency_ms=4.79 camera_id=1 status=200
+2025-11-04 15:51:43.%f - [PERF] - camera_cycle_total_ms=192.49 camera_id=1
+2025-11-04 15:51:43.%f - [PERF] - get_frame latency_ms=8.47 camera_id=2
+2025-11-04 15:51:43.%f - [PERF] - load_image latency_ms=2.82 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251089_frame.jpg
+2025-11-04 15:51:43.%f - [PERF] - inference latency_ms=159.33 camera_id=2 detections=2
+2025-11-04 15:51:43.%f - [PERF] - copy_image latency_ms=8.98 camera_id=2 status=409
+2025-11-04 15:51:43.%f - [PERF] - camera_cycle_total_ms=232.08 camera_id=2
+2025-11-04 15:51:43.%f - [PERF] - iteration_total_ms=426.79
+2025-11-04 15:52:44.%f - [PERF] - get_frame latency_ms=11.23 camera_id=1
+2025-11-04 15:52:44.%f - [PERF] - load_image latency_ms=3.48 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251089_frame.jpg
+2025-11-04 15:52:44.%f - [PERF] - inference latency_ms=150.51 camera_id=1 detections=2
+2025-11-04 15:52:44.%f - [PERF] - copy_image latency_ms=17.45 camera_id=1 status=200
+2025-11-04 15:52:44.%f - [PERF] - add_result latency_ms=5.68 camera_id=1 status=200
+2025-11-04 15:52:44.%f - [PERF] - camera_cycle_total_ms=248.07 camera_id=1
+2025-11-04 15:52:44.%f - [PERF] - get_frame latency_ms=9.03 camera_id=2
+2025-11-04 15:52:44.%f - [PERF] - load_image latency_ms=2.84 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251090_frame.jpg
+2025-11-04 15:52:44.%f - [PERF] - inference latency_ms=158.69 camera_id=2 detections=6
+2025-11-04 15:52:44.%f - [PERF] - copy_image latency_ms=3.56 camera_id=2 status=409
+2025-11-04 15:52:44.%f - [PERF] - camera_cycle_total_ms=226.62 camera_id=2
+2025-11-04 15:52:44.%f - [PERF] - iteration_total_ms=477.87
+2025-11-04 15:53:44.%f - [PERF] - get_frame latency_ms=9.72 camera_id=1
+2025-11-04 15:53:44.%f - [PERF] - load_image latency_ms=3.03 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251090_frame.jpg
+2025-11-04 15:53:44.%f - [PERF] - inference latency_ms=153.08 camera_id=1 detections=2
+2025-11-04 15:53:44.%f - [PERF] - copy_image latency_ms=16.11 camera_id=1 status=200
+2025-11-04 15:53:44.%f - [PERF] - add_result latency_ms=5.66 camera_id=1 status=200
+2025-11-04 15:53:44.%f - [PERF] - camera_cycle_total_ms=245.47 camera_id=1
+2025-11-04 15:53:44.%f - [PERF] - get_frame latency_ms=9.91 camera_id=2
+2025-11-04 15:53:44.%f - [PERF] - load_image latency_ms=3.65 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251091_frame.jpg
+2025-11-04 15:53:45.%f - [PERF] - inference latency_ms=174.41 camera_id=2 detections=3
+2025-11-04 15:53:45.%f - [PERF] - copy_image latency_ms=4.12 camera_id=2 status=409
+2025-11-04 15:53:45.%f - [PERF] - camera_cycle_total_ms=253.32 camera_id=2
+2025-11-04 15:53:45.%f - [PERF] - iteration_total_ms=501.62
+2025-11-04 15:54:45.%f - [PERF] - get_frame latency_ms=10.05 camera_id=1
+2025-11-04 15:54:45.%f - [PERF] - load_image latency_ms=2.92 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251091_frame.jpg
+2025-11-04 15:54:45.%f - [PERF] - inference latency_ms=140.23 camera_id=1 detections=3
+2025-11-04 15:54:45.%f - [PERF] - copy_image latency_ms=10.37 camera_id=1 status=200
+2025-11-04 15:54:45.%f - [PERF] - add_result latency_ms=6.27 camera_id=1 status=200
+2025-11-04 15:54:45.%f - [PERF] - camera_cycle_total_ms=233.73 camera_id=1
+2025-11-04 15:54:45.%f - [PERF] - get_frame latency_ms=10.43 camera_id=2
+2025-11-04 15:54:45.%f - [PERF] - load_image latency_ms=3.92 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251092_frame.jpg
+2025-11-04 15:54:45.%f - [PERF] - inference latency_ms=150.30 camera_id=2 detections=3
+2025-11-04 15:54:45.%f - [PERF] - copy_image latency_ms=8.21 camera_id=2 status=200
+2025-11-04 15:54:45.%f - [PERF] - add_result latency_ms=9.58 camera_id=2 status=200
+2025-11-04 15:54:45.%f - [PERF] - camera_cycle_total_ms=237.49 camera_id=2
+2025-11-04 15:54:45.%f - [PERF] - iteration_total_ms=474.30
+2025-11-04 15:55:45.%f - [PERF] - get_frame latency_ms=8.78 camera_id=1
+2025-11-04 15:55:45.%f - [PERF] - load_image latency_ms=3.05 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251092_frame.jpg
+2025-11-04 15:55:45.%f - [PERF] - inference latency_ms=150.52 camera_id=1 detections=3
+2025-11-04 15:55:45.%f - [PERF] - copy_image latency_ms=9.40 camera_id=1 status=200
+2025-11-04 15:55:45.%f - [PERF] - add_result latency_ms=4.93 camera_id=1 status=200
+2025-11-04 15:55:45.%f - [PERF] - camera_cycle_total_ms=225.53 camera_id=1
+2025-11-04 15:55:45.%f - [PERF] - get_frame latency_ms=8.39 camera_id=2
+2025-11-04 15:55:45.%f - [PERF] - load_image latency_ms=2.90 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251093_frame.jpg
+2025-11-04 15:55:46.%f - [PERF] - inference latency_ms=150.72 camera_id=2 detections=4
+2025-11-04 15:55:46.%f - [PERF] - copy_image latency_ms=4.70 camera_id=2 status=409
+2025-11-04 15:55:46.%f - [PERF] - camera_cycle_total_ms=210.55 camera_id=2
+2025-11-04 15:55:46.%f - [PERF] - iteration_total_ms=438.88
+2025-11-04 15:56:46.%f - [PERF] - get_frame latency_ms=7.40 camera_id=1
+2025-11-04 15:56:46.%f - [PERF] - load_image latency_ms=2.72 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251093_frame.jpg
+2025-11-04 15:56:46.%f - [PERF] - inference latency_ms=133.28 camera_id=1 detections=3
+2025-11-04 15:56:46.%f - [PERF] - copy_image latency_ms=9.64 camera_id=1 status=200
+2025-11-04 15:56:46.%f - [PERF] - add_result latency_ms=5.17 camera_id=1 status=200
+2025-11-04 15:56:46.%f - [PERF] - camera_cycle_total_ms=205.22 camera_id=1
+2025-11-04 15:56:46.%f - [PERF] - get_frame latency_ms=8.03 camera_id=2
+2025-11-04 15:56:46.%f - [PERF] - load_image latency_ms=2.57 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251094_frame.jpg
+2025-11-04 15:56:46.%f - [PERF] - inference latency_ms=133.74 camera_id=2 detections=5
+2025-11-04 15:56:46.%f - [PERF] - copy_image latency_ms=5.58 camera_id=2 status=409
+2025-11-04 15:56:46.%f - [PERF] - camera_cycle_total_ms=199.28 camera_id=2
+2025-11-04 15:56:46.%f - [PERF] - iteration_total_ms=407.07
+2025-11-04 15:57:46.%f - [PERF] - get_frame latency_ms=8.81 camera_id=1
+2025-11-04 15:57:46.%f - [PERF] - load_image latency_ms=2.73 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251094_frame.jpg
+2025-11-04 15:57:46.%f - [PERF] - inference latency_ms=153.01 camera_id=1 detections=3
+2025-11-04 15:57:46.%f - [PERF] - copy_image latency_ms=6.14 camera_id=1 status=409
+2025-11-04 15:57:46.%f - [PERF] - camera_cycle_total_ms=219.71 camera_id=1
+2025-11-04 15:57:46.%f - [PERF] - get_frame latency_ms=9.28 camera_id=2
+2025-11-04 15:57:46.%f - [PERF] - load_image latency_ms=3.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251095_frame.jpg
+2025-11-04 15:57:46.%f - [PERF] - inference latency_ms=117.76 camera_id=2 detections=5
+2025-11-04 15:57:46.%f - [PERF] - copy_image latency_ms=3.72 camera_id=2 status=409
+2025-11-04 15:57:46.%f - [PERF] - camera_cycle_total_ms=182.95 camera_id=2
+2025-11-04 15:57:46.%f - [PERF] - iteration_total_ms=405.60
+2025-11-04 15:58:47.%f - [PERF] - get_frame latency_ms=8.93 camera_id=1
+2025-11-04 15:58:47.%f - [PERF] - load_image latency_ms=2.66 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251095_frame.jpg
+2025-11-04 15:58:47.%f - [PERF] - inference latency_ms=129.54 camera_id=1 detections=2
+2025-11-04 15:58:47.%f - [PERF] - copy_image latency_ms=3.19 camera_id=1 status=409
+2025-11-04 15:58:47.%f - [PERF] - camera_cycle_total_ms=192.84 camera_id=1
+2025-11-04 15:58:47.%f - [PERF] - get_frame latency_ms=8.57 camera_id=2
+2025-11-04 15:58:47.%f - [PERF] - load_image latency_ms=3.17 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251096_frame.jpg
+2025-11-04 15:58:47.%f - [PERF] - inference latency_ms=160.52 camera_id=2 detections=8
+2025-11-04 15:58:47.%f - [PERF] - copy_image latency_ms=7.80 camera_id=2 status=409
+2025-11-04 15:58:47.%f - [PERF] - camera_cycle_total_ms=224.04 camera_id=2
+2025-11-04 15:58:47.%f - [PERF] - iteration_total_ms=419.66
+2025-11-04 15:59:47.%f - [PERF] - get_frame latency_ms=8.49 camera_id=1
+2025-11-04 15:59:47.%f - [PERF] - load_image latency_ms=3.67 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251096_frame.jpg
+2025-11-04 15:59:47.%f - [PERF] - inference latency_ms=140.51 camera_id=1 detections=2
+2025-11-04 15:59:47.%f - [PERF] - copy_image latency_ms=14.03 camera_id=1 status=200
+2025-11-04 15:59:47.%f - [PERF] - add_result latency_ms=4.09 camera_id=1 status=200
+2025-11-04 15:59:47.%f - [PERF] - camera_cycle_total_ms=218.71 camera_id=1
+2025-11-04 15:59:47.%f - [PERF] - get_frame latency_ms=10.05 camera_id=2
+2025-11-04 15:59:47.%f - [PERF] - load_image latency_ms=2.61 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251097_frame.jpg
+2025-11-04 15:59:47.%f - [PERF] - inference latency_ms=122.93 camera_id=2 detections=7
+2025-11-04 15:59:47.%f - [PERF] - copy_image latency_ms=3.89 camera_id=2 status=409
+2025-11-04 15:59:47.%f - [PERF] - camera_cycle_total_ms=186.48 camera_id=2
+2025-11-04 15:59:47.%f - [PERF] - iteration_total_ms=407.76
+2025-11-04 16:00:48.%f - [PERF] - get_frame latency_ms=9.18 camera_id=1
+2025-11-04 16:00:48.%f - [PERF] - load_image latency_ms=3.28 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251097_frame.jpg
+2025-11-04 16:00:48.%f - [PERF] - inference latency_ms=169.41 camera_id=1 detections=2
+2025-11-04 16:00:48.%f - [PERF] - copy_image latency_ms=9.29 camera_id=1 status=200
+2025-11-04 16:00:48.%f - [PERF] - add_result latency_ms=7.99 camera_id=1 status=200
+2025-11-04 16:00:48.%f - [PERF] - camera_cycle_total_ms=245.58 camera_id=1
+2025-11-04 16:00:48.%f - [PERF] - get_frame latency_ms=9.71 camera_id=2
+2025-11-04 16:00:48.%f - [PERF] - load_image latency_ms=3.99 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251098_frame.jpg
+2025-11-04 16:00:48.%f - [PERF] - inference latency_ms=180.30 camera_id=2 detections=5
+2025-11-04 16:00:48.%f - [PERF] - copy_image latency_ms=9.49 camera_id=2 status=409
+2025-11-04 16:00:48.%f - [PERF] - camera_cycle_total_ms=254.54 camera_id=2
+2025-11-04 16:00:48.%f - [PERF] - iteration_total_ms=502.27
+2025-11-04 16:01:48.%f - [PERF] - get_frame latency_ms=8.29 camera_id=1
+2025-11-04 16:01:48.%f - [PERF] - load_image latency_ms=2.69 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251098_frame.jpg
+2025-11-04 16:01:48.%f - [PERF] - inference latency_ms=141.64 camera_id=1 detections=2
+2025-11-04 16:01:48.%f - [PERF] - copy_image latency_ms=13.00 camera_id=1 status=200
+2025-11-04 16:01:48.%f - [PERF] - add_result latency_ms=4.73 camera_id=1 status=200
+2025-11-04 16:01:48.%f - [PERF] - camera_cycle_total_ms=222.36 camera_id=1
+2025-11-04 16:01:48.%f - [PERF] - get_frame latency_ms=9.89 camera_id=2
+2025-11-04 16:01:48.%f - [PERF] - load_image latency_ms=3.24 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251099_frame.jpg
+2025-11-04 16:01:49.%f - [PERF] - inference latency_ms=174.73 camera_id=2 detections=6
+2025-11-04 16:01:49.%f - [PERF] - copy_image latency_ms=7.59 camera_id=2 status=409
+2025-11-04 16:01:49.%f - [PERF] - camera_cycle_total_ms=242.14 camera_id=2
+2025-11-04 16:01:49.%f - [PERF] - iteration_total_ms=467.15
+2025-11-04 16:02:49.%f - [PERF] - get_frame latency_ms=8.60 camera_id=1
+2025-11-04 16:02:49.%f - [PERF] - load_image latency_ms=2.72 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251099_frame.jpg
+2025-11-04 16:02:49.%f - [PERF] - inference latency_ms=143.56 camera_id=1 detections=2
+2025-11-04 16:02:49.%f - [PERF] - copy_image latency_ms=8.26 camera_id=1 status=200
+2025-11-04 16:02:49.%f - [PERF] - add_result latency_ms=7.04 camera_id=1 status=200
+2025-11-04 16:02:49.%f - [PERF] - camera_cycle_total_ms=218.45 camera_id=1
+2025-11-04 16:02:49.%f - [PERF] - get_frame latency_ms=10.40 camera_id=2
+2025-11-04 16:02:49.%f - [PERF] - load_image latency_ms=3.62 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251100_frame.jpg
+2025-11-04 16:02:49.%f - [PERF] - inference latency_ms=158.01 camera_id=2 detections=7
+2025-11-04 16:02:49.%f - [PERF] - copy_image latency_ms=3.57 camera_id=2 status=409
+2025-11-04 16:02:49.%f - [PERF] - camera_cycle_total_ms=230.27 camera_id=2
+2025-11-04 16:02:49.%f - [PERF] - iteration_total_ms=451.46
+2025-11-04 16:03:49.%f - [PERF] - get_frame latency_ms=10.90 camera_id=1
+2025-11-04 16:03:49.%f - [PERF] - load_image latency_ms=3.63 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251100_frame.jpg
+2025-11-04 16:03:49.%f - [PERF] - inference latency_ms=214.22 camera_id=1 detections=2
+2025-11-04 16:03:49.%f - [PERF] - copy_image latency_ms=18.83 camera_id=1 status=200
+2025-11-04 16:03:49.%f - [PERF] - add_result latency_ms=8.20 camera_id=1 status=200
+2025-11-04 16:03:49.%f - [PERF] - camera_cycle_total_ms=323.31 camera_id=1
+2025-11-04 16:03:49.%f - [PERF] - get_frame latency_ms=10.16 camera_id=2
+2025-11-04 16:03:49.%f - [PERF] - load_image latency_ms=2.95 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251101_frame.jpg
+2025-11-04 16:03:50.%f - [PERF] - inference latency_ms=307.16 camera_id=2 detections=3
+2025-11-04 16:03:50.%f - [PERF] - copy_image latency_ms=4.41 camera_id=2 status=409
+2025-11-04 16:03:50.%f - [PERF] - camera_cycle_total_ms=383.68 camera_id=2
+2025-11-04 16:03:50.%f - [PERF] - iteration_total_ms=709.74
+2025-11-04 16:04:50.%f - [PERF] - get_frame latency_ms=10.46 camera_id=1
+2025-11-04 16:04:50.%f - [PERF] - load_image latency_ms=3.27 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251101_frame.jpg
+2025-11-04 16:04:50.%f - [PERF] - inference latency_ms=309.89 camera_id=1 detections=1
+2025-11-04 16:04:50.%f - [PERF] - copy_image latency_ms=12.75 camera_id=1 status=200
+2025-11-04 16:04:50.%f - [PERF] - add_result latency_ms=6.93 camera_id=1 status=200
+2025-11-04 16:04:50.%f - [PERF] - camera_cycle_total_ms=401.86 camera_id=1
+2025-11-04 16:04:50.%f - [PERF] - get_frame latency_ms=9.42 camera_id=2
+2025-11-04 16:04:50.%f - [PERF] - load_image latency_ms=3.29 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251102_frame.jpg
+2025-11-04 16:04:51.%f - [PERF] - inference latency_ms=286.12 camera_id=2 detections=3
+2025-11-04 16:04:51.%f - [PERF] - copy_image latency_ms=5.46 camera_id=2 status=409
+2025-11-04 16:04:51.%f - [PERF] - camera_cycle_total_ms=366.75 camera_id=2
+2025-11-04 16:04:51.%f - [PERF] - iteration_total_ms=771.33
+2025-11-04 16:05:51.%f - [PERF] - get_frame latency_ms=10.15 camera_id=1
+2025-11-04 16:05:51.%f - [PERF] - load_image latency_ms=3.82 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251102_frame.jpg
+2025-11-04 16:05:51.%f - [PERF] - inference latency_ms=140.01 camera_id=1 detections=6
+2025-11-04 16:05:51.%f - [PERF] - copy_image latency_ms=4.99 camera_id=1 status=409
+2025-11-04 16:05:51.%f - [PERF] - camera_cycle_total_ms=203.16 camera_id=1
+2025-11-04 16:05:51.%f - [PERF] - get_frame latency_ms=9.43 camera_id=2
+2025-11-04 16:05:51.%f - [PERF] - load_image latency_ms=2.59 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251103_frame.jpg
+2025-11-04 16:05:51.%f - [PERF] - inference latency_ms=137.77 camera_id=2 detections=5
+2025-11-04 16:05:51.%f - [PERF] - copy_image latency_ms=4.49 camera_id=2 status=409
+2025-11-04 16:05:51.%f - [PERF] - camera_cycle_total_ms=204.61 camera_id=2
+2025-11-04 16:05:51.%f - [PERF] - iteration_total_ms=410.39
+2025-11-04 16:06:51.%f - [PERF] - get_frame latency_ms=8.77 camera_id=1
+2025-11-04 16:06:51.%f - [PERF] - load_image latency_ms=2.64 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251103_frame.jpg
+2025-11-04 16:06:51.%f - [PERF] - inference latency_ms=133.39 camera_id=1 detections=3
+2025-11-04 16:06:51.%f - [PERF] - copy_image latency_ms=13.26 camera_id=1 status=200
+2025-11-04 16:06:51.%f - [PERF] - add_result latency_ms=5.02 camera_id=1 status=200
+2025-11-04 16:06:51.%f - [PERF] - camera_cycle_total_ms=215.13 camera_id=1
+2025-11-04 16:06:51.%f - [PERF] - get_frame latency_ms=8.83 camera_id=2
+2025-11-04 16:06:51.%f - [PERF] - load_image latency_ms=2.83 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251104_frame.jpg
+2025-11-04 16:06:52.%f - [PERF] - inference latency_ms=143.37 camera_id=2 detections=3
+2025-11-04 16:06:52.%f - [PERF] - copy_image latency_ms=4.87 camera_id=2 status=409
+2025-11-04 16:06:52.%f - [PERF] - camera_cycle_total_ms=215.75 camera_id=2
+2025-11-04 16:06:52.%f - [PERF] - iteration_total_ms=433.55
+2025-11-04 16:07:52.%f - [PERF] - get_frame latency_ms=7.88 camera_id=1
+2025-11-04 16:07:52.%f - [PERF] - load_image latency_ms=3.56 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251104_frame.jpg
+2025-11-04 16:07:52.%f - [PERF] - inference latency_ms=120.58 camera_id=1 detections=2
+2025-11-04 16:07:52.%f - [PERF] - copy_image latency_ms=8.67 camera_id=1 status=200
+2025-11-04 16:07:52.%f - [PERF] - add_result latency_ms=4.81 camera_id=1 status=200
+2025-11-04 16:07:52.%f - [PERF] - camera_cycle_total_ms=195.24 camera_id=1
+2025-11-04 16:07:52.%f - [PERF] - get_frame latency_ms=9.69 camera_id=2
+2025-11-04 16:07:52.%f - [PERF] - load_image latency_ms=3.21 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251105_frame.jpg
+2025-11-04 16:07:52.%f - [PERF] - inference latency_ms=156.53 camera_id=2 detections=3
+2025-11-04 16:07:52.%f - [PERF] - copy_image latency_ms=2.94 camera_id=2 status=409
+2025-11-04 16:07:52.%f - [PERF] - camera_cycle_total_ms=223.93 camera_id=2
+2025-11-04 16:07:52.%f - [PERF] - iteration_total_ms=421.73
+2025-11-04 16:08:52.%f - [PERF] - get_frame latency_ms=8.88 camera_id=1
+2025-11-04 16:08:52.%f - [PERF] - load_image latency_ms=3.47 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251105_frame.jpg
+2025-11-04 16:08:52.%f - [PERF] - inference latency_ms=151.84 camera_id=1 detections=4
+2025-11-04 16:08:52.%f - [PERF] - copy_image latency_ms=12.55 camera_id=1 status=200
+2025-11-04 16:08:52.%f - [PERF] - add_result latency_ms=6.14 camera_id=1 status=200
+2025-11-04 16:08:52.%f - [PERF] - camera_cycle_total_ms=231.69 camera_id=1
+2025-11-04 16:08:52.%f - [PERF] - get_frame latency_ms=8.08 camera_id=2
+2025-11-04 16:08:52.%f - [PERF] - load_image latency_ms=4.28 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251106_frame.jpg
+2025-11-04 16:08:53.%f - [PERF] - inference latency_ms=146.73 camera_id=2 detections=3
+2025-11-04 16:08:53.%f - [PERF] - copy_image latency_ms=11.65 camera_id=2 status=200
+2025-11-04 16:08:53.%f - [PERF] - add_result latency_ms=6.39 camera_id=2 status=200
+2025-11-04 16:08:53.%f - [PERF] - camera_cycle_total_ms=230.56 camera_id=2
+2025-11-04 16:08:53.%f - [PERF] - iteration_total_ms=465.07
+2025-11-04 16:09:53.%f - [PERF] - get_frame latency_ms=9.22 camera_id=1
+2025-11-04 16:09:53.%f - [PERF] - load_image latency_ms=2.84 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251106_frame.jpg
+2025-11-04 16:09:53.%f - [PERF] - inference latency_ms=117.97 camera_id=1 detections=5
+2025-11-04 16:09:53.%f - [PERF] - copy_image latency_ms=3.02 camera_id=1 status=409
+2025-11-04 16:09:53.%f - [PERF] - camera_cycle_total_ms=183.78 camera_id=1
+2025-11-04 16:09:53.%f - [PERF] - get_frame latency_ms=9.27 camera_id=2
+2025-11-04 16:09:53.%f - [PERF] - load_image latency_ms=3.03 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251107_frame.jpg
+2025-11-04 16:09:53.%f - [PERF] - inference latency_ms=185.17 camera_id=2 detections=5
+2025-11-04 16:09:53.%f - [PERF] - copy_image latency_ms=5.44 camera_id=2 status=409
+2025-11-04 16:09:53.%f - [PERF] - camera_cycle_total_ms=254.82 camera_id=2
+2025-11-04 16:09:53.%f - [PERF] - iteration_total_ms=440.85
+2025-11-04 16:10:53.%f - [PERF] - get_frame latency_ms=9.27 camera_id=1
+2025-11-04 16:10:53.%f - [PERF] - load_image latency_ms=2.73 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251107_frame.jpg
+2025-11-04 16:10:53.%f - [PERF] - inference latency_ms=119.43 camera_id=1 detections=3
+2025-11-04 16:10:53.%f - [PERF] - copy_image latency_ms=5.27 camera_id=1 status=409
+2025-11-04 16:10:53.%f - [PERF] - camera_cycle_total_ms=185.67 camera_id=1
+2025-11-04 16:10:53.%f - [PERF] - get_frame latency_ms=9.31 camera_id=2
+2025-11-04 16:10:53.%f - [PERF] - load_image latency_ms=3.03 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251108_frame.jpg
+2025-11-04 16:10:54.%f - [PERF] - inference latency_ms=156.19 camera_id=2 detections=5
+2025-11-04 16:10:54.%f - [PERF] - copy_image latency_ms=4.01 camera_id=2 status=409
+2025-11-04 16:10:54.%f - [PERF] - camera_cycle_total_ms=219.07 camera_id=2
+2025-11-04 16:10:54.%f - [PERF] - iteration_total_ms=407.83
+2025-11-04 16:11:54.%f - [PERF] - get_frame latency_ms=8.06 camera_id=1
+2025-11-04 16:11:54.%f - [PERF] - load_image latency_ms=3.42 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251108_frame.jpg
+2025-11-04 16:11:54.%f - [PERF] - inference latency_ms=124.92 camera_id=1 detections=3
+2025-11-04 16:11:54.%f - [PERF] - copy_image latency_ms=10.80 camera_id=1 status=200
+2025-11-04 16:11:54.%f - [PERF] - add_result latency_ms=4.18 camera_id=1 status=200
+2025-11-04 16:11:54.%f - [PERF] - camera_cycle_total_ms=195.34 camera_id=1
+2025-11-04 16:11:54.%f - [PERF] - get_frame latency_ms=8.48 camera_id=2
+2025-11-04 16:11:54.%f - [PERF] - load_image latency_ms=3.05 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251109_frame.jpg
+2025-11-04 16:11:54.%f - [PERF] - inference latency_ms=142.80 camera_id=2 detections=4
+2025-11-04 16:11:54.%f - [PERF] - copy_image latency_ms=4.89 camera_id=2 status=409
+2025-11-04 16:11:54.%f - [PERF] - camera_cycle_total_ms=207.57 camera_id=2
+2025-11-04 16:11:54.%f - [PERF] - iteration_total_ms=405.10
+2025-11-04 16:12:54.%f - [PERF] - get_frame latency_ms=9.80 camera_id=1
+2025-11-04 16:12:54.%f - [PERF] - load_image latency_ms=2.57 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251109_frame.jpg
+2025-11-04 16:12:54.%f - [PERF] - inference latency_ms=118.82 camera_id=1 detections=3
+2025-11-04 16:12:54.%f - [PERF] - copy_image latency_ms=13.54 camera_id=1 status=200
+2025-11-04 16:12:54.%f - [PERF] - add_result latency_ms=4.46 camera_id=1 status=200
+2025-11-04 16:12:54.%f - [PERF] - camera_cycle_total_ms=197.71 camera_id=1
+2025-11-04 16:12:54.%f - [PERF] - get_frame latency_ms=9.83 camera_id=2
+2025-11-04 16:12:54.%f - [PERF] - load_image latency_ms=3.61 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251110_frame.jpg
+2025-11-04 16:12:54.%f - [PERF] - inference latency_ms=129.36 camera_id=2 detections=4
+2025-11-04 16:12:54.%f - [PERF] - copy_image latency_ms=3.99 camera_id=2 status=409
+2025-11-04 16:12:54.%f - [PERF] - camera_cycle_total_ms=193.34 camera_id=2
+2025-11-04 16:12:54.%f - [PERF] - iteration_total_ms=393.67
+2025-11-04 16:13:55.%f - [PERF] - get_frame latency_ms=8.86 camera_id=1
+2025-11-04 16:13:55.%f - [PERF] - load_image latency_ms=2.69 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251110_frame.jpg
+2025-11-04 16:13:55.%f - [PERF] - inference latency_ms=113.49 camera_id=1 detections=3
+2025-11-04 16:13:55.%f - [PERF] - copy_image latency_ms=8.44 camera_id=1 status=200
+2025-11-04 16:13:55.%f - [PERF] - add_result latency_ms=5.60 camera_id=1 status=200
+2025-11-04 16:13:55.%f - [PERF] - camera_cycle_total_ms=184.40 camera_id=1
+2025-11-04 16:13:55.%f - [PERF] - get_frame latency_ms=8.02 camera_id=2
+2025-11-04 16:13:55.%f - [PERF] - load_image latency_ms=2.64 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251111_frame.jpg
+2025-11-04 16:13:55.%f - [PERF] - inference latency_ms=122.28 camera_id=2 detections=4
+2025-11-04 16:13:55.%f - [PERF] - copy_image latency_ms=8.60 camera_id=2 status=409
+2025-11-04 16:13:55.%f - [PERF] - camera_cycle_total_ms=186.59 camera_id=2
+2025-11-04 16:13:55.%f - [PERF] - iteration_total_ms=373.44
+2025-11-04 16:14:55.%f - [PERF] - get_frame latency_ms=8.20 camera_id=1
+2025-11-04 16:14:55.%f - [PERF] - load_image latency_ms=3.07 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251111_frame.jpg
+2025-11-04 16:14:55.%f - [PERF] - inference latency_ms=141.09 camera_id=1 detections=4
+2025-11-04 16:14:55.%f - [PERF] - copy_image latency_ms=10.35 camera_id=1 status=200
+2025-11-04 16:14:55.%f - [PERF] - add_result latency_ms=5.11 camera_id=1 status=200
+2025-11-04 16:14:55.%f - [PERF] - camera_cycle_total_ms=213.36 camera_id=1
+2025-11-04 16:14:55.%f - [PERF] - get_frame latency_ms=10.54 camera_id=2
+2025-11-04 16:14:55.%f - [PERF] - load_image latency_ms=2.60 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251112_frame.jpg
+2025-11-04 16:14:55.%f - [PERF] - inference latency_ms=119.79 camera_id=2 detections=6
+2025-11-04 16:14:55.%f - [PERF] - copy_image latency_ms=4.00 camera_id=2 status=409
+2025-11-04 16:14:55.%f - [PERF] - camera_cycle_total_ms=185.51 camera_id=2
+2025-11-04 16:14:55.%f - [PERF] - iteration_total_ms=401.47
+2025-11-04 16:15:55.%f - [PERF] - get_frame latency_ms=8.93 camera_id=1
+2025-11-04 16:15:56.%f - [PERF] - load_image latency_ms=3.26 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251112_frame.jpg
+2025-11-04 16:15:56.%f - [PERF] - inference latency_ms=122.56 camera_id=1 detections=2
+2025-11-04 16:15:56.%f - [PERF] - copy_image latency_ms=12.16 camera_id=1 status=200
+2025-11-04 16:15:56.%f - [PERF] - add_result latency_ms=5.65 camera_id=1 status=200
+2025-11-04 16:15:56.%f - [PERF] - camera_cycle_total_ms=204.56 camera_id=1
+2025-11-04 16:15:56.%f - [PERF] - get_frame latency_ms=9.62 camera_id=2
+2025-11-04 16:15:56.%f - [PERF] - load_image latency_ms=3.32 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251113_frame.jpg
+2025-11-04 16:15:56.%f - [PERF] - inference latency_ms=126.79 camera_id=2 detections=5
+2025-11-04 16:15:56.%f - [PERF] - copy_image latency_ms=6.58 camera_id=2 status=409
+2025-11-04 16:15:56.%f - [PERF] - camera_cycle_total_ms=190.92 camera_id=2
+2025-11-04 16:15:56.%f - [PERF] - iteration_total_ms=408.63
+2025-11-04 16:16:56.%f - [PERF] - get_frame latency_ms=9.60 camera_id=1
+2025-11-04 16:16:56.%f - [PERF] - load_image latency_ms=2.81 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251113_frame.jpg
+2025-11-04 16:16:56.%f - [PERF] - inference latency_ms=131.61 camera_id=1 detections=2
+2025-11-04 16:16:56.%f - [PERF] - copy_image latency_ms=17.20 camera_id=1 status=200
+2025-11-04 16:16:56.%f - [PERF] - add_result latency_ms=3.77 camera_id=1 status=200
+2025-11-04 16:16:56.%f - [PERF] - camera_cycle_total_ms=212.24 camera_id=1
+2025-11-04 16:16:56.%f - [PERF] - get_frame latency_ms=8.92 camera_id=2
+2025-11-04 16:16:56.%f - [PERF] - load_image latency_ms=2.62 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251114_frame.jpg
+2025-11-04 16:16:56.%f - [PERF] - inference latency_ms=142.15 camera_id=2 detections=5
+2025-11-04 16:16:56.%f - [PERF] - copy_image latency_ms=3.05 camera_id=2 status=409
+2025-11-04 16:16:56.%f - [PERF] - camera_cycle_total_ms=201.97 camera_id=2
+2025-11-04 16:16:56.%f - [PERF] - iteration_total_ms=416.82
+2025-11-04 16:17:56.%f - [PERF] - get_frame latency_ms=8.70 camera_id=1
+2025-11-04 16:17:56.%f - [PERF] - load_image latency_ms=3.40 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251114_frame.jpg
+2025-11-04 16:17:57.%f - [PERF] - inference latency_ms=170.88 camera_id=1 detections=3
+2025-11-04 16:17:57.%f - [PERF] - copy_image latency_ms=9.21 camera_id=1 status=200
+2025-11-04 16:17:57.%f - [PERF] - add_result latency_ms=4.83 camera_id=1 status=200
+2025-11-04 16:17:57.%f - [PERF] - camera_cycle_total_ms=247.18 camera_id=1
+2025-11-04 16:17:57.%f - [PERF] - get_frame latency_ms=6.73 camera_id=2
+2025-11-04 16:17:57.%f - [PERF] - load_image latency_ms=3.42 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251115_frame.jpg
+2025-11-04 16:17:57.%f - [PERF] - inference latency_ms=121.95 camera_id=2 detections=4
+2025-11-04 16:17:57.%f - [PERF] - copy_image latency_ms=10.65 camera_id=2 status=200
+2025-11-04 16:17:57.%f - [PERF] - add_result latency_ms=4.45 camera_id=2 status=200
+2025-11-04 16:17:57.%f - [PERF] - camera_cycle_total_ms=190.70 camera_id=2
+2025-11-04 16:17:57.%f - [PERF] - iteration_total_ms=440.28
+2025-11-04 16:18:57.%f - [PERF] - get_frame latency_ms=9.79 camera_id=1
+2025-11-04 16:18:57.%f - [PERF] - load_image latency_ms=2.79 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251115_frame.jpg
+2025-11-04 16:18:57.%f - [PERF] - inference latency_ms=142.36 camera_id=1 detections=0
+2025-11-04 16:18:57.%f - [PERF] - camera_cycle_total_ms=203.26 camera_id=1
+2025-11-04 16:18:57.%f - [PERF] - get_frame latency_ms=9.65 camera_id=2
+2025-11-04 16:18:57.%f - [PERF] - load_image latency_ms=2.82 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251116_frame.jpg
+2025-11-04 16:18:57.%f - [PERF] - inference latency_ms=117.55 camera_id=2 detections=6
+2025-11-04 16:18:57.%f - [PERF] - copy_image latency_ms=3.48 camera_id=2 status=409
+2025-11-04 16:18:57.%f - [PERF] - camera_cycle_total_ms=185.56 camera_id=2
+2025-11-04 16:18:57.%f - [PERF] - iteration_total_ms=391.55
+2025-11-04 16:19:57.%f - [PERF] - get_frame latency_ms=10.16 camera_id=1
+2025-11-04 16:19:57.%f - [PERF] - load_image latency_ms=6.01 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251116_frame.jpg
+2025-11-04 16:19:58.%f - [PERF] - inference latency_ms=152.66 camera_id=1 detections=4
+2025-11-04 16:19:58.%f - [PERF] - copy_image latency_ms=14.41 camera_id=1 status=200
+2025-11-04 16:19:58.%f - [PERF] - add_result latency_ms=5.69 camera_id=1 status=200
+2025-11-04 16:19:58.%f - [PERF] - camera_cycle_total_ms=239.12 camera_id=1
+2025-11-04 16:19:58.%f - [PERF] - get_frame latency_ms=8.74 camera_id=2
+2025-11-04 16:19:58.%f - [PERF] - load_image latency_ms=3.35 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251117_frame.jpg
+2025-11-04 16:19:58.%f - [PERF] - inference latency_ms=155.96 camera_id=2 detections=2
+2025-11-04 16:19:58.%f - [PERF] - copy_image latency_ms=12.19 camera_id=2 status=200
+2025-11-04 16:19:58.%f - [PERF] - add_result latency_ms=5.56 camera_id=2 status=200
+2025-11-04 16:19:58.%f - [PERF] - camera_cycle_total_ms=237.83 camera_id=2
+2025-11-04 16:19:58.%f - [PERF] - iteration_total_ms=479.75
+2025-11-04 16:20:58.%f - [PERF] - get_frame latency_ms=9.02 camera_id=1
+2025-11-04 16:20:58.%f - [PERF] - load_image latency_ms=3.36 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251117_frame.jpg
+2025-11-04 16:20:58.%f - [PERF] - inference latency_ms=147.84 camera_id=1 detections=3
+2025-11-04 16:20:58.%f - [PERF] - copy_image latency_ms=9.09 camera_id=1 status=200
+2025-11-04 16:20:58.%f - [PERF] - add_result latency_ms=5.06 camera_id=1 status=200
+2025-11-04 16:20:58.%f - [PERF] - camera_cycle_total_ms=225.42 camera_id=1
+2025-11-04 16:20:58.%f - [PERF] - get_frame latency_ms=9.94 camera_id=2
+2025-11-04 16:20:58.%f - [PERF] - load_image latency_ms=3.74 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251118_frame.jpg
+2025-11-04 16:20:58.%f - [PERF] - inference latency_ms=124.33 camera_id=2 detections=5
+2025-11-04 16:20:58.%f - [PERF] - copy_image latency_ms=12.50 camera_id=2 status=200
+2025-11-04 16:20:58.%f - [PERF] - add_result latency_ms=5.42 camera_id=2 status=200
+2025-11-04 16:20:58.%f - [PERF] - camera_cycle_total_ms=204.65 camera_id=2
+2025-11-04 16:20:58.%f - [PERF] - iteration_total_ms=432.87
+2025-11-04 16:21:58.%f - [PERF] - get_frame latency_ms=9.09 camera_id=1
+2025-11-04 16:21:58.%f - [PERF] - load_image latency_ms=3.24 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251118_frame.jpg
+2025-11-04 16:21:59.%f - [PERF] - inference latency_ms=131.37 camera_id=1 detections=2
+2025-11-04 16:21:59.%f - [PERF] - copy_image latency_ms=3.45 camera_id=1 status=409
+2025-11-04 16:21:59.%f - [PERF] - camera_cycle_total_ms=192.77 camera_id=1
+2025-11-04 16:21:59.%f - [PERF] - get_frame latency_ms=8.98 camera_id=2
+2025-11-04 16:21:59.%f - [PERF] - load_image latency_ms=3.23 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251119_frame.jpg
+2025-11-04 16:21:59.%f - [PERF] - inference latency_ms=123.06 camera_id=2 detections=2
+2025-11-04 16:21:59.%f - [PERF] - copy_image latency_ms=13.35 camera_id=2 status=200
+2025-11-04 16:21:59.%f - [PERF] - add_result latency_ms=4.78 camera_id=2 status=200
+2025-11-04 16:21:59.%f - [PERF] - camera_cycle_total_ms=204.39 camera_id=2
+2025-11-04 16:21:59.%f - [PERF] - iteration_total_ms=399.80
+2025-11-04 16:22:59.%f - [PERF] - get_frame latency_ms=8.05 camera_id=1
+2025-11-04 16:22:59.%f - [PERF] - load_image latency_ms=3.04 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251119_frame.jpg
+2025-11-04 16:22:59.%f - [PERF] - inference latency_ms=109.98 camera_id=1 detections=5
+2025-11-04 16:22:59.%f - [PERF] - copy_image latency_ms=12.55 camera_id=1 status=200
+2025-11-04 16:22:59.%f - [PERF] - add_result latency_ms=4.42 camera_id=1 status=200
+2025-11-04 16:22:59.%f - [PERF] - camera_cycle_total_ms=189.25 camera_id=1
+2025-11-04 16:22:59.%f - [PERF] - get_frame latency_ms=8.23 camera_id=2
+2025-11-04 16:22:59.%f - [PERF] - load_image latency_ms=2.91 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251120_frame.jpg
+2025-11-04 16:22:59.%f - [PERF] - inference latency_ms=123.64 camera_id=2 detections=2
+2025-11-04 16:22:59.%f - [PERF] - copy_image latency_ms=9.11 camera_id=2 status=200
+2025-11-04 16:22:59.%f - [PERF] - add_result latency_ms=5.95 camera_id=2 status=200
+2025-11-04 16:22:59.%f - [PERF] - camera_cycle_total_ms=200.15 camera_id=2
+2025-11-04 16:22:59.%f - [PERF] - iteration_total_ms=391.85
+2025-11-04 16:23:59.%f - [PERF] - get_frame latency_ms=10.05 camera_id=1
+2025-11-04 16:23:59.%f - [PERF] - load_image latency_ms=2.84 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251120_frame.jpg
+2025-11-04 16:23:59.%f - [PERF] - inference latency_ms=120.43 camera_id=1 detections=2
+2025-11-04 16:23:59.%f - [PERF] - copy_image latency_ms=8.79 camera_id=1 status=200
+2025-11-04 16:23:59.%f - [PERF] - add_result latency_ms=4.72 camera_id=1 status=200
+2025-11-04 16:23:59.%f - [PERF] - camera_cycle_total_ms=199.75 camera_id=1
+2025-11-04 16:23:59.%f - [PERF] - get_frame latency_ms=9.53 camera_id=2
+2025-11-04 16:24:00.%f - [PERF] - load_image latency_ms=3.58 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251121_frame.jpg
+2025-11-04 16:24:00.%f - [PERF] - inference latency_ms=139.48 camera_id=2 detections=3
+2025-11-04 16:24:00.%f - [PERF] - copy_image latency_ms=3.56 camera_id=2 status=409
+2025-11-04 16:24:00.%f - [PERF] - camera_cycle_total_ms=206.71 camera_id=2
+2025-11-04 16:24:00.%f - [PERF] - iteration_total_ms=409.19
+2025-11-04 16:25:00.%f - [PERF] - get_frame latency_ms=10.06 camera_id=1
+2025-11-04 16:25:00.%f - [PERF] - load_image latency_ms=4.96 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251122_frame.jpg
+2025-11-04 16:25:00.%f - [PERF] - inference latency_ms=113.31 camera_id=1 detections=2
+2025-11-04 16:25:00.%f - [PERF] - copy_image latency_ms=8.27 camera_id=1 status=200
+2025-11-04 16:25:00.%f - [PERF] - add_result latency_ms=5.23 camera_id=1 status=200
+2025-11-04 16:25:00.%f - [PERF] - camera_cycle_total_ms=191.98 camera_id=1
+2025-11-04 16:25:00.%f - [PERF] - get_frame latency_ms=8.04 camera_id=2
+2025-11-04 16:25:00.%f - [PERF] - load_image latency_ms=2.53 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251123_frame.jpg
+2025-11-04 16:25:00.%f - [PERF] - inference latency_ms=148.10 camera_id=2 detections=2
+2025-11-04 16:25:00.%f - [PERF] - copy_image latency_ms=8.75 camera_id=2 status=200
+2025-11-04 16:25:00.%f - [PERF] - add_result latency_ms=5.35 camera_id=2 status=200
+2025-11-04 16:25:00.%f - [PERF] - camera_cycle_total_ms=216.89 camera_id=2
+2025-11-04 16:25:00.%f - [PERF] - iteration_total_ms=411.64
+2025-11-04 16:26:00.%f - [PERF] - get_frame latency_ms=9.57 camera_id=1
+2025-11-04 16:26:00.%f - [PERF] - load_image latency_ms=2.70 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251123_frame.jpg
+2025-11-04 16:26:01.%f - [PERF] - inference latency_ms=237.10 camera_id=1 detections=2
+2025-11-04 16:26:01.%f - [PERF] - copy_image latency_ms=7.85 camera_id=1 status=200
+2025-11-04 16:26:01.%f - [PERF] - add_result latency_ms=7.49 camera_id=1 status=200
+2025-11-04 16:26:01.%f - [PERF] - camera_cycle_total_ms=315.68 camera_id=1
+2025-11-04 16:26:01.%f - [PERF] - get_frame latency_ms=9.93 camera_id=2
+2025-11-04 16:26:01.%f - [PERF] - load_image latency_ms=2.62 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251124_frame.jpg
+2025-11-04 16:26:01.%f - [PERF] - inference latency_ms=193.43 camera_id=2 detections=2
+2025-11-04 16:26:01.%f - [PERF] - copy_image latency_ms=12.79 camera_id=2 status=200
+2025-11-04 16:26:01.%f - [PERF] - add_result latency_ms=7.63 camera_id=2 status=200
+2025-11-04 16:26:01.%f - [PERF] - camera_cycle_total_ms=276.02 camera_id=2
+2025-11-04 16:26:01.%f - [PERF] - iteration_total_ms=594.55
+2025-11-04 16:27:01.%f - [PERF] - get_frame latency_ms=9.43 camera_id=1
+2025-11-04 16:27:01.%f - [PERF] - load_image latency_ms=2.81 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251124_frame.jpg
+2025-11-04 16:27:01.%f - [PERF] - inference latency_ms=139.78 camera_id=1 detections=3
+2025-11-04 16:27:01.%f - [PERF] - copy_image latency_ms=8.34 camera_id=1 status=200
+2025-11-04 16:27:01.%f - [PERF] - add_result latency_ms=5.01 camera_id=1 status=200
+2025-11-04 16:27:01.%f - [PERF] - camera_cycle_total_ms=214.12 camera_id=1
+2025-11-04 16:27:01.%f - [PERF] - get_frame latency_ms=9.94 camera_id=2
+2025-11-04 16:27:01.%f - [PERF] - load_image latency_ms=2.77 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251125_frame.jpg
+2025-11-04 16:27:01.%f - [PERF] - inference latency_ms=129.95 camera_id=2 detections=2
+2025-11-04 16:27:01.%f - [PERF] - copy_image latency_ms=10.86 camera_id=2 status=200
+2025-11-04 16:27:01.%f - [PERF] - add_result latency_ms=4.83 camera_id=2 status=200
+2025-11-04 16:27:01.%f - [PERF] - camera_cycle_total_ms=210.82 camera_id=2
+2025-11-04 16:27:01.%f - [PERF] - iteration_total_ms=427.68
+2025-11-04 16:28:01.%f - [PERF] - get_frame latency_ms=8.62 camera_id=1
+2025-11-04 16:28:01.%f - [PERF] - load_image latency_ms=2.68 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251125_frame.jpg
+2025-11-04 16:28:02.%f - [PERF] - inference latency_ms=131.01 camera_id=1 detections=3
+2025-11-04 16:28:02.%f - [PERF] - copy_image latency_ms=10.81 camera_id=1 status=200
+2025-11-04 16:28:02.%f - [PERF] - add_result latency_ms=5.90 camera_id=1 status=200
+2025-11-04 16:28:02.%f - [PERF] - camera_cycle_total_ms=208.11 camera_id=1
+2025-11-04 16:28:02.%f - [PERF] - get_frame latency_ms=9.92 camera_id=2
+2025-11-04 16:28:02.%f - [PERF] - load_image latency_ms=2.53 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251126_frame.jpg
+2025-11-04 16:28:02.%f - [PERF] - inference latency_ms=121.15 camera_id=2 detections=2
+2025-11-04 16:28:02.%f - [PERF] - copy_image latency_ms=10.77 camera_id=2 status=200
+2025-11-04 16:28:02.%f - [PERF] - add_result latency_ms=5.17 camera_id=2 status=200
+2025-11-04 16:28:02.%f - [PERF] - camera_cycle_total_ms=200.70 camera_id=2
+2025-11-04 16:28:02.%f - [PERF] - iteration_total_ms=411.88
+2025-11-04 16:29:02.%f - [PERF] - get_frame latency_ms=8.16 camera_id=1
+2025-11-04 16:29:02.%f - [PERF] - load_image latency_ms=2.69 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251126_frame.jpg
+2025-11-04 16:29:02.%f - [PERF] - inference latency_ms=130.03 camera_id=1 detections=3
+2025-11-04 16:29:02.%f - [PERF] - copy_image latency_ms=14.25 camera_id=1 status=200
+2025-11-04 16:29:02.%f - [PERF] - add_result latency_ms=4.13 camera_id=1 status=200
+2025-11-04 16:29:02.%f - [PERF] - camera_cycle_total_ms=204.69 camera_id=1
+2025-11-04 16:29:02.%f - [PERF] - get_frame latency_ms=9.43 camera_id=2
+2025-11-04 16:29:02.%f - [PERF] - load_image latency_ms=2.49 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251127_frame.jpg
+2025-11-04 16:29:02.%f - [PERF] - inference latency_ms=122.38 camera_id=2 detections=6
+2025-11-04 16:29:02.%f - [PERF] - copy_image latency_ms=10.39 camera_id=2 status=200
+2025-11-04 16:29:02.%f - [PERF] - add_result latency_ms=5.64 camera_id=2 status=200
+2025-11-04 16:29:02.%f - [PERF] - camera_cycle_total_ms=198.66 camera_id=2
+2025-11-04 16:29:02.%f - [PERF] - iteration_total_ms=405.94
+2025-11-04 16:30:02.%f - [PERF] - get_frame latency_ms=10.32 camera_id=1
+2025-11-04 16:30:02.%f - [PERF] - load_image latency_ms=3.20 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251127_frame.jpg
+2025-11-04 16:30:02.%f - [PERF] - inference latency_ms=145.67 camera_id=1 detections=3
+2025-11-04 16:30:03.%f - [PERF] - copy_image latency_ms=14.12 camera_id=1 status=200
+2025-11-04 16:30:03.%f - [PERF] - add_result latency_ms=6.06 camera_id=1 status=200
+2025-11-04 16:30:03.%f - [PERF] - camera_cycle_total_ms=226.33 camera_id=1
+2025-11-04 16:30:03.%f - [PERF] - get_frame latency_ms=8.33 camera_id=2
+2025-11-04 16:30:03.%f - [PERF] - load_image latency_ms=2.42 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251128_frame.jpg
+2025-11-04 16:30:03.%f - [PERF] - inference latency_ms=234.53 camera_id=2 detections=5
+2025-11-04 16:30:03.%f - [PERF] - copy_image latency_ms=13.37 camera_id=2 status=200
+2025-11-04 16:30:03.%f - [PERF] - add_result latency_ms=5.68 camera_id=2 status=200
+2025-11-04 16:30:03.%f - [PERF] - camera_cycle_total_ms=318.72 camera_id=2
+2025-11-04 16:30:03.%f - [PERF] - iteration_total_ms=548.01
+2025-11-04 16:31:03.%f - [PERF] - get_frame latency_ms=8.84 camera_id=1
+2025-11-04 16:31:03.%f - [PERF] - load_image latency_ms=2.62 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251128_frame.jpg
+2025-11-04 16:31:03.%f - [PERF] - inference latency_ms=134.98 camera_id=1 detections=2
+2025-11-04 16:31:03.%f - [PERF] - copy_image latency_ms=10.79 camera_id=1 status=200
+2025-11-04 16:31:03.%f - [PERF] - add_result latency_ms=4.19 camera_id=1 status=200
+2025-11-04 16:31:03.%f - [PERF] - camera_cycle_total_ms=209.15 camera_id=1
+2025-11-04 16:31:03.%f - [PERF] - get_frame latency_ms=9.63 camera_id=2
+2025-11-04 16:31:03.%f - [PERF] - load_image latency_ms=3.17 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251129_frame.jpg
+2025-11-04 16:31:03.%f - [PERF] - inference latency_ms=129.43 camera_id=2 detections=4
+2025-11-04 16:31:03.%f - [PERF] - copy_image latency_ms=9.67 camera_id=2 status=200
+2025-11-04 16:31:03.%f - [PERF] - add_result latency_ms=5.17 camera_id=2 status=200
+2025-11-04 16:31:03.%f - [PERF] - camera_cycle_total_ms=205.60 camera_id=2
+2025-11-04 16:31:03.%f - [PERF] - iteration_total_ms=417.36
+2025-11-04 16:32:03.%f - [PERF] - get_frame latency_ms=9.69 camera_id=1
+2025-11-04 16:32:03.%f - [PERF] - load_image latency_ms=2.71 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251129_frame.jpg
+2025-11-04 16:32:04.%f - [PERF] - inference latency_ms=144.80 camera_id=1 detections=3
+2025-11-04 16:32:04.%f - [PERF] - copy_image latency_ms=9.20 camera_id=1 status=200
+2025-11-04 16:32:04.%f - [PERF] - add_result latency_ms=5.18 camera_id=1 status=200
+2025-11-04 16:32:04.%f - [PERF] - camera_cycle_total_ms=217.70 camera_id=1
+2025-11-04 16:32:04.%f - [PERF] - get_frame latency_ms=9.91 camera_id=2
+2025-11-04 16:32:04.%f - [PERF] - load_image latency_ms=3.20 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251130_frame.jpg
+2025-11-04 16:32:04.%f - [PERF] - inference latency_ms=123.60 camera_id=2 detections=3
+2025-11-04 16:32:04.%f - [PERF] - copy_image latency_ms=8.03 camera_id=2 status=200
+2025-11-04 16:32:04.%f - [PERF] - add_result latency_ms=4.58 camera_id=2 status=200
+2025-11-04 16:32:04.%f - [PERF] - camera_cycle_total_ms=199.20 camera_id=2
+2025-11-04 16:32:04.%f - [PERF] - iteration_total_ms=419.23
+2025-11-04 16:33:04.%f - [PERF] - get_frame latency_ms=8.84 camera_id=1
+2025-11-04 16:33:04.%f - [PERF] - load_image latency_ms=2.59 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251130_frame.jpg
+2025-11-04 16:33:04.%f - [PERF] - inference latency_ms=191.19 camera_id=1 detections=2
+2025-11-04 16:33:04.%f - [PERF] - copy_image latency_ms=8.28 camera_id=1 status=200
+2025-11-04 16:33:04.%f - [PERF] - add_result latency_ms=5.08 camera_id=1 status=200
+2025-11-04 16:33:04.%f - [PERF] - camera_cycle_total_ms=267.11 camera_id=1
+2025-11-04 16:33:04.%f - [PERF] - get_frame latency_ms=8.50 camera_id=2
+2025-11-04 16:33:04.%f - [PERF] - load_image latency_ms=2.46 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251131_frame.jpg
+2025-11-04 16:33:04.%f - [PERF] - inference latency_ms=134.02 camera_id=2 detections=5
+2025-11-04 16:33:04.%f - [PERF] - copy_image latency_ms=12.85 camera_id=2 status=200
+2025-11-04 16:33:04.%f - [PERF] - add_result latency_ms=4.32 camera_id=2 status=200
+2025-11-04 16:33:04.%f - [PERF] - camera_cycle_total_ms=207.62 camera_id=2
+2025-11-04 16:33:04.%f - [PERF] - iteration_total_ms=477.13
+2025-11-04 16:34:04.%f - [PERF] - get_frame latency_ms=9.23 camera_id=1
+2025-11-04 16:34:04.%f - [PERF] - load_image latency_ms=3.20 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251131_frame.jpg
+2025-11-04 16:34:05.%f - [PERF] - inference latency_ms=142.81 camera_id=1 detections=3
+2025-11-04 16:34:05.%f - [PERF] - copy_image latency_ms=9.67 camera_id=1 status=200
+2025-11-04 16:34:05.%f - [PERF] - add_result latency_ms=5.83 camera_id=1 status=200
+2025-11-04 16:34:05.%f - [PERF] - camera_cycle_total_ms=219.93 camera_id=1
+2025-11-04 16:34:05.%f - [PERF] - get_frame latency_ms=10.51 camera_id=2
+2025-11-04 16:34:05.%f - [PERF] - load_image latency_ms=2.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251132_frame.jpg
+2025-11-04 16:34:05.%f - [PERF] - inference latency_ms=122.70 camera_id=2 detections=8
+2025-11-04 16:34:05.%f - [PERF] - copy_image latency_ms=9.31 camera_id=2 status=200
+2025-11-04 16:34:05.%f - [PERF] - add_result latency_ms=5.03 camera_id=2 status=200
+2025-11-04 16:34:05.%f - [PERF] - camera_cycle_total_ms=199.08 camera_id=2
+2025-11-04 16:34:05.%f - [PERF] - iteration_total_ms=421.86
+2025-11-04 16:35:05.%f - [PERF] - get_frame latency_ms=8.79 camera_id=1
+2025-11-04 16:35:05.%f - [PERF] - load_image latency_ms=3.98 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251132_frame.jpg
+2025-11-04 16:35:05.%f - [PERF] - inference latency_ms=122.49 camera_id=1 detections=2
+2025-11-04 16:35:05.%f - [PERF] - copy_image latency_ms=8.54 camera_id=1 status=200
+2025-11-04 16:35:05.%f - [PERF] - add_result latency_ms=5.18 camera_id=1 status=200
+2025-11-04 16:35:05.%f - [PERF] - camera_cycle_total_ms=201.19 camera_id=1
+2025-11-04 16:35:05.%f - [PERF] - get_frame latency_ms=10.52 camera_id=2
+2025-11-04 16:35:05.%f - [PERF] - load_image latency_ms=3.59 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251133_frame.jpg
+2025-11-04 16:35:05.%f - [PERF] - inference latency_ms=136.17 camera_id=2 detections=2
+2025-11-04 16:35:05.%f - [PERF] - copy_image latency_ms=7.88 camera_id=2 status=200
+2025-11-04 16:35:05.%f - [PERF] - add_result latency_ms=4.40 camera_id=2 status=200
+2025-11-04 16:35:05.%f - [PERF] - camera_cycle_total_ms=210.35 camera_id=2
+2025-11-04 16:35:05.%f - [PERF] - iteration_total_ms=414.33
+2025-11-04 16:36:05.%f - [PERF] - get_frame latency_ms=9.26 camera_id=1
+2025-11-04 16:36:05.%f - [PERF] - load_image latency_ms=3.16 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251133_frame.jpg
+2025-11-04 16:36:06.%f - [PERF] - inference latency_ms=125.76 camera_id=1 detections=3
+2025-11-04 16:36:06.%f - [PERF] - copy_image latency_ms=8.57 camera_id=1 status=200
+2025-11-04 16:36:06.%f - [PERF] - add_result latency_ms=7.17 camera_id=1 status=200
+2025-11-04 16:36:06.%f - [PERF] - camera_cycle_total_ms=197.98 camera_id=1
+2025-11-04 16:36:06.%f - [PERF] - get_frame latency_ms=9.26 camera_id=2
+2025-11-04 16:36:06.%f - [PERF] - load_image latency_ms=3.04 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251134_frame.jpg
+2025-11-04 16:36:06.%f - [PERF] - inference latency_ms=140.40 camera_id=2 detections=3
+2025-11-04 16:36:06.%f - [PERF] - copy_image latency_ms=9.23 camera_id=2 status=200
+2025-11-04 16:36:06.%f - [PERF] - add_result latency_ms=6.06 camera_id=2 status=200
+2025-11-04 16:36:06.%f - [PERF] - camera_cycle_total_ms=217.35 camera_id=2
+2025-11-04 16:36:06.%f - [PERF] - iteration_total_ms=418.04
+2025-11-04 16:37:06.%f - [PERF] - get_frame latency_ms=13.11 camera_id=1
+2025-11-04 16:37:06.%f - [PERF] - load_image latency_ms=3.23 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251134_frame.jpg
+2025-11-04 16:37:07.%f - [PERF] - inference latency_ms=1109.97 camera_id=1 detections=2
+2025-11-04 16:37:07.%f - [PERF] - copy_image latency_ms=20.58 camera_id=1 status=200
+2025-11-04 16:37:07.%f - [PERF] - add_result latency_ms=6.93 camera_id=1 status=200
+2025-11-04 16:37:07.%f - [PERF] - camera_cycle_total_ms=1207.66 camera_id=1
+2025-11-04 16:37:07.%f - [PERF] - get_frame latency_ms=8.64 camera_id=2
+2025-11-04 16:37:07.%f - [PERF] - load_image latency_ms=3.06 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251135_frame.jpg
+2025-11-04 16:37:08.%f - [PERF] - inference latency_ms=458.50 camera_id=2 detections=3
+2025-11-04 16:37:08.%f - [PERF] - copy_image latency_ms=12.26 camera_id=2 status=200
+2025-11-04 16:37:08.%f - [PERF] - add_result latency_ms=9.48 camera_id=2 status=200
+2025-11-04 16:37:08.%f - [PERF] - camera_cycle_total_ms=546.57 camera_id=2
+2025-11-04 16:37:08.%f - [PERF] - iteration_total_ms=1757.15
+2025-11-04 16:38:08.%f - [PERF] - get_frame latency_ms=8.49 camera_id=1
+2025-11-04 16:38:08.%f - [PERF] - load_image latency_ms=3.39 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251135_frame.jpg
+2025-11-04 16:38:08.%f - [PERF] - inference latency_ms=292.09 camera_id=1 detections=1
+2025-11-04 16:38:08.%f - [PERF] - copy_image latency_ms=14.22 camera_id=1 status=200
+2025-11-04 16:38:08.%f - [PERF] - add_result latency_ms=5.41 camera_id=1 status=200
+2025-11-04 16:38:08.%f - [PERF] - camera_cycle_total_ms=375.21 camera_id=1
+2025-11-04 16:38:08.%f - [PERF] - get_frame latency_ms=8.68 camera_id=2
+2025-11-04 16:38:08.%f - [PERF] - load_image latency_ms=3.11 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251136_frame.jpg
+2025-11-04 16:38:09.%f - [PERF] - inference latency_ms=547.35 camera_id=2 detections=4
+2025-11-04 16:38:09.%f - [PERF] - copy_image latency_ms=12.19 camera_id=2 status=200
+2025-11-04 16:38:09.%f - [PERF] - add_result latency_ms=5.28 camera_id=2 status=200
+2025-11-04 16:38:09.%f - [PERF] - camera_cycle_total_ms=629.35 camera_id=2
+2025-11-04 16:38:09.%f - [PERF] - iteration_total_ms=1006.99
+2025-11-04 16:39:09.%f - [PERF] - get_frame latency_ms=12.52 camera_id=1
+2025-11-04 16:39:09.%f - [PERF] - load_image latency_ms=3.31 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251136_frame.jpg
+2025-11-04 16:39:09.%f - [PERF] - inference latency_ms=186.24 camera_id=1 detections=3
+2025-11-04 16:39:09.%f - [PERF] - copy_image latency_ms=16.42 camera_id=1 status=200
+2025-11-04 16:39:09.%f - [PERF] - add_result latency_ms=8.75 camera_id=1 status=200
+2025-11-04 16:39:09.%f - [PERF] - camera_cycle_total_ms=278.42 camera_id=1
+2025-11-04 16:39:09.%f - [PERF] - get_frame latency_ms=9.22 camera_id=2
+2025-11-04 16:39:09.%f - [PERF] - load_image latency_ms=3.15 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251137_frame.jpg
+2025-11-04 16:39:09.%f - [PERF] - inference latency_ms=305.03 camera_id=2 detections=2
+2025-11-04 16:39:09.%f - [PERF] - copy_image latency_ms=9.63 camera_id=2 status=200
+2025-11-04 16:39:09.%f - [PERF] - add_result latency_ms=6.92 camera_id=2 status=200
+2025-11-04 16:39:09.%f - [PERF] - camera_cycle_total_ms=388.30 camera_id=2
+2025-11-04 16:39:09.%f - [PERF] - iteration_total_ms=671.03
+2025-11-04 16:40:09.%f - [PERF] - get_frame latency_ms=7.96 camera_id=1
+2025-11-04 16:40:09.%f - [PERF] - load_image latency_ms=2.60 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251137_frame.jpg
+2025-11-04 16:40:10.%f - [PERF] - inference latency_ms=162.08 camera_id=1 detections=3
+2025-11-04 16:40:10.%f - [PERF] - copy_image latency_ms=13.48 camera_id=1 status=200
+2025-11-04 16:40:10.%f - [PERF] - add_result latency_ms=5.51 camera_id=1 status=200
+2025-11-04 16:40:10.%f - [PERF] - camera_cycle_total_ms=235.11 camera_id=1
+2025-11-04 16:40:10.%f - [PERF] - get_frame latency_ms=9.59 camera_id=2
+2025-11-04 16:40:10.%f - [PERF] - load_image latency_ms=4.62 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251138_frame.jpg
+2025-11-04 16:40:10.%f - [PERF] - inference latency_ms=175.68 camera_id=2 detections=3
+2025-11-04 16:40:10.%f - [PERF] - copy_image latency_ms=8.16 camera_id=2 status=200
+2025-11-04 16:40:10.%f - [PERF] - add_result latency_ms=6.01 camera_id=2 status=200
+2025-11-04 16:40:10.%f - [PERF] - camera_cycle_total_ms=276.62 camera_id=2
+2025-11-04 16:40:10.%f - [PERF] - iteration_total_ms=513.95
+2025-11-04 16:41:10.%f - [PERF] - get_frame latency_ms=8.69 camera_id=1
+2025-11-04 16:41:10.%f - [PERF] - load_image latency_ms=2.98 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251138_frame.jpg
+2025-11-04 16:41:10.%f - [PERF] - inference latency_ms=160.16 camera_id=1 detections=4
+2025-11-04 16:41:10.%f - [PERF] - copy_image latency_ms=14.03 camera_id=1 status=200
+2025-11-04 16:41:10.%f - [PERF] - add_result latency_ms=5.75 camera_id=1 status=200
+2025-11-04 16:41:10.%f - [PERF] - camera_cycle_total_ms=236.31 camera_id=1
+2025-11-04 16:41:10.%f - [PERF] - get_frame latency_ms=8.44 camera_id=2
+2025-11-04 16:41:10.%f - [PERF] - load_image latency_ms=2.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251139_frame.jpg
+2025-11-04 16:41:11.%f - [PERF] - inference latency_ms=268.05 camera_id=2 detections=4
+2025-11-04 16:41:11.%f - [PERF] - copy_image latency_ms=11.98 camera_id=2 status=200
+2025-11-04 16:41:11.%f - [PERF] - add_result latency_ms=6.71 camera_id=2 status=200
+2025-11-04 16:41:11.%f - [PERF] - camera_cycle_total_ms=348.52 camera_id=2
+2025-11-04 16:41:11.%f - [PERF] - iteration_total_ms=587.33
+2025-11-04 16:42:11.%f - [PERF] - get_frame latency_ms=8.62 camera_id=1
+2025-11-04 16:42:11.%f - [PERF] - load_image latency_ms=3.19 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251139_frame.jpg
+2025-11-04 16:42:11.%f - [PERF] - inference latency_ms=131.79 camera_id=1 detections=4
+2025-11-04 16:42:11.%f - [PERF] - copy_image latency_ms=11.62 camera_id=1 status=200
+2025-11-04 16:42:11.%f - [PERF] - add_result latency_ms=6.14 camera_id=1 status=200
+2025-11-04 16:42:11.%f - [PERF] - camera_cycle_total_ms=212.16 camera_id=1
+2025-11-04 16:42:11.%f - [PERF] - get_frame latency_ms=9.87 camera_id=2
+2025-11-04 16:42:11.%f - [PERF] - load_image latency_ms=2.77 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251140_frame.jpg
+2025-11-04 16:42:11.%f - [PERF] - inference latency_ms=129.22 camera_id=2 detections=4
+2025-11-04 16:42:11.%f - [PERF] - copy_image latency_ms=9.41 camera_id=2 status=200
+2025-11-04 16:42:11.%f - [PERF] - add_result latency_ms=5.48 camera_id=2 status=200
+2025-11-04 16:42:11.%f - [PERF] - camera_cycle_total_ms=201.73 camera_id=2
+2025-11-04 16:42:11.%f - [PERF] - iteration_total_ms=416.28
+2025-11-04 16:43:11.%f - [PERF] - get_frame latency_ms=8.29 camera_id=1
+2025-11-04 16:43:11.%f - [PERF] - load_image latency_ms=2.72 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251140_frame.jpg
+2025-11-04 16:43:11.%f - [PERF] - inference latency_ms=124.50 camera_id=1 detections=1
+2025-11-04 16:43:11.%f - [PERF] - copy_image latency_ms=11.29 camera_id=1 status=200
+2025-11-04 16:43:11.%f - [PERF] - add_result latency_ms=3.96 camera_id=1 status=200
+2025-11-04 16:43:11.%f - [PERF] - camera_cycle_total_ms=193.74 camera_id=1
+2025-11-04 16:43:11.%f - [PERF] - get_frame latency_ms=8.82 camera_id=2
+2025-11-04 16:43:11.%f - [PERF] - load_image latency_ms=3.21 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251141_frame.jpg
+2025-11-04 16:43:12.%f - [PERF] - inference latency_ms=285.15 camera_id=2 detections=7
+2025-11-04 16:43:12.%f - [PERF] - copy_image latency_ms=13.57 camera_id=2 status=200
+2025-11-04 16:43:12.%f - [PERF] - add_result latency_ms=6.43 camera_id=2 status=200
+2025-11-04 16:43:12.%f - [PERF] - camera_cycle_total_ms=371.87 camera_id=2
+2025-11-04 16:43:12.%f - [PERF] - iteration_total_ms=568.41
+2025-11-04 16:44:12.%f - [PERF] - get_frame latency_ms=9.19 camera_id=1
+2025-11-04 16:44:12.%f - [PERF] - load_image latency_ms=2.67 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251141_frame.jpg
+2025-11-04 16:44:12.%f - [PERF] - inference latency_ms=200.47 camera_id=1 detections=3
+2025-11-04 16:44:12.%f - [PERF] - copy_image latency_ms=14.50 camera_id=1 status=200
+2025-11-04 16:44:12.%f - [PERF] - add_result latency_ms=7.05 camera_id=1 status=200
+2025-11-04 16:44:12.%f - [PERF] - camera_cycle_total_ms=283.35 camera_id=1
+2025-11-04 16:44:12.%f - [PERF] - get_frame latency_ms=9.02 camera_id=2
+2025-11-04 16:44:12.%f - [PERF] - load_image latency_ms=2.49 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251142_frame.jpg
+2025-11-04 16:44:13.%f - [PERF] - inference latency_ms=402.24 camera_id=2 detections=6
+2025-11-04 16:44:13.%f - [PERF] - copy_image latency_ms=13.23 camera_id=2 status=200
+2025-11-04 16:44:13.%f - [PERF] - add_result latency_ms=5.07 camera_id=2 status=200
+2025-11-04 16:44:13.%f - [PERF] - camera_cycle_total_ms=481.90 camera_id=2
+2025-11-04 16:44:13.%f - [PERF] - iteration_total_ms=768.28
+2025-11-04 16:45:13.%f - [PERF] - get_frame latency_ms=11.45 camera_id=1
+2025-11-04 16:45:13.%f - [PERF] - load_image latency_ms=3.05 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251142_frame.jpg
+2025-11-04 16:45:13.%f - [PERF] - inference latency_ms=237.43 camera_id=1 detections=2
+2025-11-04 16:45:13.%f - [PERF] - copy_image latency_ms=15.83 camera_id=1 status=200
+2025-11-04 16:45:13.%f - [PERF] - add_result latency_ms=6.68 camera_id=1 status=200
+2025-11-04 16:45:13.%f - [PERF] - camera_cycle_total_ms=329.34 camera_id=1
+2025-11-04 16:45:13.%f - [PERF] - get_frame latency_ms=8.79 camera_id=2
+2025-11-04 16:45:13.%f - [PERF] - load_image latency_ms=2.58 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251143_frame.jpg
+2025-11-04 16:45:13.%f - [PERF] - inference latency_ms=218.83 camera_id=2 detections=2
+2025-11-04 16:45:13.%f - [PERF] - copy_image latency_ms=13.69 camera_id=2 status=200
+2025-11-04 16:45:13.%f - [PERF] - add_result latency_ms=7.54 camera_id=2 status=200
+2025-11-04 16:45:13.%f - [PERF] - camera_cycle_total_ms=300.13 camera_id=2
+2025-11-04 16:45:13.%f - [PERF] - iteration_total_ms=632.30
+2025-11-04 16:46:13.%f - [PERF] - get_frame latency_ms=8.87 camera_id=1
+2025-11-04 16:46:13.%f - [PERF] - load_image latency_ms=4.74 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251143_frame.jpg
+2025-11-04 16:46:14.%f - [PERF] - inference latency_ms=332.53 camera_id=1 detections=3
+2025-11-04 16:46:14.%f - [PERF] - copy_image latency_ms=13.34 camera_id=1 status=200
+2025-11-04 16:46:14.%f - [PERF] - add_result latency_ms=8.58 camera_id=1 status=200
+2025-11-04 16:46:14.%f - [PERF] - camera_cycle_total_ms=426.50 camera_id=1
+2025-11-04 16:46:14.%f - [PERF] - get_frame latency_ms=9.40 camera_id=2
+2025-11-04 16:46:14.%f - [PERF] - load_image latency_ms=2.60 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251144_frame.jpg
+2025-11-04 16:46:14.%f - [PERF] - inference latency_ms=309.82 camera_id=2 detections=3
+2025-11-04 16:46:14.%f - [PERF] - copy_image latency_ms=9.62 camera_id=2 status=200
+2025-11-04 16:46:14.%f - [PERF] - add_result latency_ms=9.06 camera_id=2 status=200
+2025-11-04 16:46:14.%f - [PERF] - camera_cycle_total_ms=392.60 camera_id=2
+2025-11-04 16:46:14.%f - [PERF] - iteration_total_ms=822.50
+2025-11-04 16:47:14.%f - [PERF] - get_frame latency_ms=10.08 camera_id=1
+2025-11-04 16:47:14.%f - [PERF] - load_image latency_ms=2.79 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251144_frame.jpg
+2025-11-04 16:47:15.%f - [PERF] - inference latency_ms=296.50 camera_id=1 detections=6
+2025-11-04 16:47:15.%f - [PERF] - copy_image latency_ms=14.32 camera_id=1 status=200
+2025-11-04 16:47:15.%f - [PERF] - add_result latency_ms=6.53 camera_id=1 status=200
+2025-11-04 16:47:15.%f - [PERF] - camera_cycle_total_ms=377.07 camera_id=1
+2025-11-04 16:47:15.%f - [PERF] - get_frame latency_ms=10.27 camera_id=2
+2025-11-04 16:47:15.%f - [PERF] - load_image latency_ms=2.81 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251145_frame.jpg
+2025-11-04 16:47:15.%f - [PERF] - inference latency_ms=171.35 camera_id=2 detections=6
+2025-11-04 16:47:15.%f - [PERF] - copy_image latency_ms=16.45 camera_id=2 status=200
+2025-11-04 16:47:15.%f - [PERF] - add_result latency_ms=5.79 camera_id=2 status=200
+2025-11-04 16:47:15.%f - [PERF] - camera_cycle_total_ms=256.20 camera_id=2
+2025-11-04 16:47:15.%f - [PERF] - iteration_total_ms=635.70
+2025-11-04 16:48:15.%f - [PERF] - get_frame latency_ms=9.42 camera_id=1
+2025-11-04 16:48:15.%f - [PERF] - load_image latency_ms=2.77 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251145_frame.jpg
+2025-11-04 16:48:15.%f - [PERF] - inference latency_ms=280.58 camera_id=1 detections=3
+2025-11-04 16:48:15.%f - [PERF] - copy_image latency_ms=15.34 camera_id=1 status=200
+2025-11-04 16:48:15.%f - [PERF] - add_result latency_ms=7.89 camera_id=1 status=200
+2025-11-04 16:48:15.%f - [PERF] - camera_cycle_total_ms=367.63 camera_id=1
+2025-11-04 16:48:15.%f - [PERF] - get_frame latency_ms=11.71 camera_id=2
+2025-11-04 16:48:15.%f - [PERF] - load_image latency_ms=4.24 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251146_frame.jpg
+2025-11-04 16:48:16.%f - [PERF] - inference latency_ms=445.69 camera_id=2 detections=4
+2025-11-04 16:48:16.%f - [PERF] - copy_image latency_ms=13.44 camera_id=2 status=200
+2025-11-04 16:48:16.%f - [PERF] - add_result latency_ms=7.54 camera_id=2 status=200
+2025-11-04 16:48:16.%f - [PERF] - camera_cycle_total_ms=550.83 camera_id=2
+2025-11-04 16:48:16.%f - [PERF] - iteration_total_ms=921.34
+2025-11-04 16:49:16.%f - [PERF] - get_frame latency_ms=8.24 camera_id=1
+2025-11-04 16:49:16.%f - [PERF] - load_image latency_ms=3.96 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251146_frame.jpg
+2025-11-04 16:49:16.%f - [PERF] - inference latency_ms=201.23 camera_id=1 detections=4
+2025-11-04 16:49:16.%f - [PERF] - copy_image latency_ms=16.96 camera_id=1 status=200
+2025-11-04 16:49:16.%f - [PERF] - add_result latency_ms=6.51 camera_id=1 status=200
+2025-11-04 16:49:16.%f - [PERF] - camera_cycle_total_ms=297.82 camera_id=1
+2025-11-04 16:49:16.%f - [PERF] - get_frame latency_ms=11.51 camera_id=2
+2025-11-04 16:49:16.%f - [PERF] - load_image latency_ms=3.13 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251147_frame.jpg
+2025-11-04 16:49:17.%f - [PERF] - inference latency_ms=368.08 camera_id=2 detections=1
+2025-11-04 16:49:17.%f - [PERF] - copy_image latency_ms=16.16 camera_id=2 status=200
+2025-11-04 16:49:17.%f - [PERF] - add_result latency_ms=10.16 camera_id=2 status=200
+2025-11-04 16:49:17.%f - [PERF] - camera_cycle_total_ms=464.70 camera_id=2
+2025-11-04 16:49:17.%f - [PERF] - iteration_total_ms=765.32
+2025-11-04 16:50:17.%f - [PERF] - get_frame latency_ms=14.61 camera_id=1
+2025-11-04 16:50:17.%f - [PERF] - load_image latency_ms=2.78 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251147_frame.jpg
+2025-11-04 16:50:17.%f - [PERF] - inference latency_ms=737.38 camera_id=1 detections=5
+2025-11-04 16:50:17.%f - [PERF] - copy_image latency_ms=13.05 camera_id=1 status=200
+2025-11-04 16:50:17.%f - [PERF] - add_result latency_ms=5.07 camera_id=1 status=200
+2025-11-04 16:50:18.%f - [PERF] - camera_cycle_total_ms=832.34 camera_id=1
+2025-11-04 16:50:18.%f - [PERF] - get_frame latency_ms=8.47 camera_id=2
+2025-11-04 16:50:18.%f - [PERF] - load_image latency_ms=2.65 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251148_frame.jpg
+2025-11-04 16:50:18.%f - [PERF] - inference latency_ms=114.03 camera_id=2 detections=4
+2025-11-04 16:50:18.%f - [PERF] - copy_image latency_ms=9.07 camera_id=2 status=200
+2025-11-04 16:50:18.%f - [PERF] - add_result latency_ms=4.79 camera_id=2 status=200
+2025-11-04 16:50:18.%f - [PERF] - camera_cycle_total_ms=184.91 camera_id=2
+2025-11-04 16:50:18.%f - [PERF] - iteration_total_ms=1019.52
+2025-11-04 16:51:18.%f - [PERF] - get_frame latency_ms=9.57 camera_id=1
+2025-11-04 16:51:18.%f - [PERF] - load_image latency_ms=2.74 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251148_frame.jpg
+2025-11-04 16:51:18.%f - [PERF] - inference latency_ms=121.09 camera_id=1 detections=6
+2025-11-04 16:51:18.%f - [PERF] - copy_image latency_ms=10.73 camera_id=1 status=200
+2025-11-04 16:51:18.%f - [PERF] - add_result latency_ms=4.43 camera_id=1 status=200
+2025-11-04 16:51:18.%f - [PERF] - camera_cycle_total_ms=196.40 camera_id=1
+2025-11-04 16:51:18.%f - [PERF] - get_frame latency_ms=8.43 camera_id=2
+2025-11-04 16:51:18.%f - [PERF] - load_image latency_ms=2.75 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251149_frame.jpg
+2025-11-04 16:51:18.%f - [PERF] - inference latency_ms=128.29 camera_id=2 detections=6
+2025-11-04 16:51:18.%f - [PERF] - copy_image latency_ms=8.44 camera_id=2 status=200
+2025-11-04 16:51:18.%f - [PERF] - add_result latency_ms=4.85 camera_id=2 status=200
+2025-11-04 16:51:18.%f - [PERF] - camera_cycle_total_ms=196.79 camera_id=2
+2025-11-04 16:51:18.%f - [PERF] - iteration_total_ms=396.12
+2025-11-04 16:52:18.%f - [PERF] - get_frame latency_ms=8.38 camera_id=1
+2025-11-04 16:52:18.%f - [PERF] - load_image latency_ms=2.74 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251149_frame.jpg
+2025-11-04 16:52:18.%f - [PERF] - inference latency_ms=102.66 camera_id=1 detections=3
+2025-11-04 16:52:18.%f - [PERF] - copy_image latency_ms=12.14 camera_id=1 status=200
+2025-11-04 16:52:18.%f - [PERF] - add_result latency_ms=4.39 camera_id=1 status=200
+2025-11-04 16:52:18.%f - [PERF] - camera_cycle_total_ms=177.44 camera_id=1
+2025-11-04 16:52:18.%f - [PERF] - get_frame latency_ms=8.07 camera_id=2
+2025-11-04 16:52:18.%f - [PERF] - load_image latency_ms=2.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251150_frame.jpg
+2025-11-04 16:52:19.%f - [PERF] - inference latency_ms=108.50 camera_id=2 detections=3
+2025-11-04 16:52:19.%f - [PERF] - copy_image latency_ms=8.53 camera_id=2 status=200
+2025-11-04 16:52:19.%f - [PERF] - add_result latency_ms=4.33 camera_id=2 status=200
+2025-11-04 16:52:19.%f - [PERF] - camera_cycle_total_ms=179.66 camera_id=2
+2025-11-04 16:52:19.%f - [PERF] - iteration_total_ms=359.61
+2025-11-04 16:53:19.%f - [PERF] - get_frame latency_ms=9.10 camera_id=1
+2025-11-04 16:53:19.%f - [PERF] - load_image latency_ms=2.70 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251150_frame.jpg
+2025-11-04 16:53:19.%f - [PERF] - inference latency_ms=143.29 camera_id=1 detections=3
+2025-11-04 16:53:19.%f - [PERF] - copy_image latency_ms=15.76 camera_id=1 status=200
+2025-11-04 16:53:19.%f - [PERF] - add_result latency_ms=4.19 camera_id=1 status=200
+2025-11-04 16:53:19.%f - [PERF] - camera_cycle_total_ms=222.39 camera_id=1
+2025-11-04 16:53:19.%f - [PERF] - get_frame latency_ms=8.48 camera_id=2
+2025-11-04 16:53:19.%f - [PERF] - load_image latency_ms=2.90 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251151_frame.jpg
+2025-11-04 16:53:19.%f - [PERF] - inference latency_ms=122.43 camera_id=2 detections=4
+2025-11-04 16:53:19.%f - [PERF] - copy_image latency_ms=3.09 camera_id=2 status=409
+2025-11-04 16:53:19.%f - [PERF] - camera_cycle_total_ms=181.86 camera_id=2
+2025-11-04 16:53:19.%f - [PERF] - iteration_total_ms=407.31
+2025-11-04 16:54:19.%f - [PERF] - get_frame latency_ms=8.79 camera_id=1
+2025-11-04 16:54:19.%f - [PERF] - load_image latency_ms=2.56 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251151_frame.jpg
+2025-11-04 16:54:19.%f - [PERF] - inference latency_ms=98.02 camera_id=1 detections=2
+2025-11-04 16:54:19.%f - [PERF] - copy_image latency_ms=7.42 camera_id=1 status=200
+2025-11-04 16:54:19.%f - [PERF] - add_result latency_ms=4.27 camera_id=1 status=200
+2025-11-04 16:54:19.%f - [PERF] - camera_cycle_total_ms=165.84 camera_id=1
+2025-11-04 16:54:19.%f - [PERF] - get_frame latency_ms=7.61 camera_id=2
+2025-11-04 16:54:19.%f - [PERF] - load_image latency_ms=2.88 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251152_frame.jpg
+2025-11-04 16:54:19.%f - [PERF] - inference latency_ms=108.54 camera_id=2 detections=7
+2025-11-04 16:54:19.%f - [PERF] - copy_image latency_ms=3.47 camera_id=2 status=409
+2025-11-04 16:54:19.%f - [PERF] - camera_cycle_total_ms=164.92 camera_id=2
+2025-11-04 16:54:19.%f - [PERF] - iteration_total_ms=333.46
+2025-11-04 16:55:20.%f - [PERF] - get_frame latency_ms=9.23 camera_id=1
+2025-11-04 16:55:20.%f - [PERF] - load_image latency_ms=2.61 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251152_frame.jpg
+2025-11-04 16:55:20.%f - [PERF] - inference latency_ms=96.06 camera_id=1 detections=1
+2025-11-04 16:55:20.%f - [PERF] - copy_image latency_ms=11.21 camera_id=1 status=200
+2025-11-04 16:55:20.%f - [PERF] - add_result latency_ms=4.56 camera_id=1 status=200
+2025-11-04 16:55:20.%f - [PERF] - camera_cycle_total_ms=170.73 camera_id=1
+2025-11-04 16:55:20.%f - [PERF] - get_frame latency_ms=8.29 camera_id=2
+2025-11-04 16:55:20.%f - [PERF] - load_image latency_ms=2.76 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251153_frame.jpg
+2025-11-04 16:55:20.%f - [PERF] - inference latency_ms=90.93 camera_id=2 detections=2
+2025-11-04 16:55:20.%f - [PERF] - copy_image latency_ms=2.85 camera_id=2 status=409
+2025-11-04 16:55:20.%f - [PERF] - camera_cycle_total_ms=151.80 camera_id=2
+2025-11-04 16:55:20.%f - [PERF] - iteration_total_ms=325.41
+2025-11-04 16:56:20.%f - [PERF] - get_frame latency_ms=8.83 camera_id=1
+2025-11-04 16:56:20.%f - [PERF] - load_image latency_ms=2.64 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251153_frame.jpg
+2025-11-04 16:56:20.%f - [PERF] - inference latency_ms=101.23 camera_id=1 detections=2
+2025-11-04 16:56:20.%f - [PERF] - copy_image latency_ms=9.56 camera_id=1 status=200
+2025-11-04 16:56:20.%f - [PERF] - add_result latency_ms=4.04 camera_id=1 status=200
+2025-11-04 16:56:20.%f - [PERF] - camera_cycle_total_ms=173.98 camera_id=1
+2025-11-04 16:56:20.%f - [PERF] - get_frame latency_ms=7.26 camera_id=2
+2025-11-04 16:56:20.%f - [PERF] - load_image latency_ms=2.57 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251154_frame.jpg
+2025-11-04 16:56:20.%f - [PERF] - inference latency_ms=89.34 camera_id=2 detections=5
+2025-11-04 16:56:20.%f - [PERF] - copy_image latency_ms=5.61 camera_id=2 status=409
+2025-11-04 16:56:20.%f - [PERF] - camera_cycle_total_ms=147.56 camera_id=2
+2025-11-04 16:56:20.%f - [PERF] - iteration_total_ms=324.12
+2025-11-04 16:57:20.%f - [PERF] - get_frame latency_ms=8.40 camera_id=1
+2025-11-04 16:57:20.%f - [PERF] - load_image latency_ms=2.64 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251154_frame.jpg
+2025-11-04 16:57:20.%f - [PERF] - inference latency_ms=118.34 camera_id=1 detections=0
+2025-11-04 16:57:20.%f - [PERF] - camera_cycle_total_ms=177.07 camera_id=1
+2025-11-04 16:57:20.%f - [PERF] - get_frame latency_ms=7.90 camera_id=2
+2025-11-04 16:57:20.%f - [PERF] - load_image latency_ms=2.41 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251155_frame.jpg
+2025-11-04 16:57:21.%f - [PERF] - inference latency_ms=106.50 camera_id=2 detections=6
+2025-11-04 16:57:21.%f - [PERF] - copy_image latency_ms=3.00 camera_id=2 status=409
+2025-11-04 16:57:21.%f - [PERF] - camera_cycle_total_ms=165.63 camera_id=2
+2025-11-04 16:57:21.%f - [PERF] - iteration_total_ms=345.28
+2025-11-04 16:58:21.%f - [PERF] - get_frame latency_ms=8.12 camera_id=1
+2025-11-04 16:58:21.%f - [PERF] - load_image latency_ms=2.88 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251155_frame.jpg
+2025-11-04 16:58:21.%f - [PERF] - inference latency_ms=162.41 camera_id=1 detections=1
+2025-11-04 16:58:21.%f - [PERF] - copy_image latency_ms=12.20 camera_id=1 status=200
+2025-11-04 16:58:21.%f - [PERF] - add_result latency_ms=4.87 camera_id=1 status=200
+2025-11-04 16:58:21.%f - [PERF] - camera_cycle_total_ms=235.27 camera_id=1
+2025-11-04 16:58:21.%f - [PERF] - get_frame latency_ms=9.13 camera_id=2
+2025-11-04 16:58:21.%f - [PERF] - load_image latency_ms=2.93 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251156_frame.jpg
+2025-11-04 16:58:21.%f - [PERF] - inference latency_ms=120.19 camera_id=2 detections=2
+2025-11-04 16:58:21.%f - [PERF] - copy_image latency_ms=9.06 camera_id=2 status=200
+2025-11-04 16:58:21.%f - [PERF] - add_result latency_ms=5.86 camera_id=2 status=200
+2025-11-04 16:58:21.%f - [PERF] - camera_cycle_total_ms=192.85 camera_id=2
+2025-11-04 16:58:21.%f - [PERF] - iteration_total_ms=430.39
+2025-11-04 16:59:21.%f - [PERF] - get_frame latency_ms=8.97 camera_id=1
+2025-11-04 16:59:21.%f - [PERF] - load_image latency_ms=2.74 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251156_frame.jpg
+2025-11-04 16:59:21.%f - [PERF] - get_frame latency_ms=8.81 camera_id=2
+2025-11-04 16:59:21.%f - [PERF] - load_image latency_ms=0.66 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251157_frame.jpg
+2025-11-04 16:59:21.%f - [PERF] - iteration_total_ms=125.12
+2025-11-04 17:00:21.%f - [PERF] - get_frame latency_ms=8.88 camera_id=1
+2025-11-04 17:00:21.%f - [PERF] - load_image latency_ms=0.47 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251157_frame.jpg
+2025-11-04 17:00:21.%f - [PERF] - get_frame latency_ms=8.19 camera_id=2
+2025-11-04 17:00:21.%f - [PERF] - load_image latency_ms=0.56 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251158_frame.jpg
+2025-11-04 17:00:21.%f - [PERF] - iteration_total_ms=111.94
+2025-11-04 17:01:22.%f - [PERF] - get_frame latency_ms=9.09 camera_id=1
+2025-11-04 17:01:22.%f - [PERF] - load_image latency_ms=2.74 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251158_frame.jpg
+2025-11-04 17:01:22.%f - [PERF] - inference latency_ms=155.29 camera_id=1 detections=1
+2025-11-04 17:01:22.%f - [PERF] - copy_image latency_ms=14.34 camera_id=1 status=200
+2025-11-04 17:01:22.%f - [PERF] - add_result latency_ms=4.20 camera_id=1 status=200
+2025-11-04 17:01:22.%f - [PERF] - camera_cycle_total_ms=238.70 camera_id=1
+2025-11-04 17:01:22.%f - [PERF] - get_frame latency_ms=9.07 camera_id=2
+2025-11-04 17:01:22.%f - [PERF] - load_image latency_ms=2.70 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251159_frame.jpg
+2025-11-04 17:01:22.%f - [PERF] - inference latency_ms=171.22 camera_id=2 detections=5
+2025-11-04 17:01:22.%f - [PERF] - copy_image latency_ms=7.30 camera_id=2 status=200
+2025-11-04 17:01:22.%f - [PERF] - add_result latency_ms=8.78 camera_id=2 status=200
+2025-11-04 17:01:22.%f - [PERF] - camera_cycle_total_ms=248.63 camera_id=2
+2025-11-04 17:01:22.%f - [PERF] - iteration_total_ms=490.00
+2025-11-04 17:02:22.%f - [PERF] - get_frame latency_ms=9.71 camera_id=1
+2025-11-04 17:02:22.%f - [PERF] - load_image latency_ms=3.25 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251159_frame.jpg
+2025-11-04 17:02:22.%f - [PERF] - inference latency_ms=152.30 camera_id=1 detections=1
+2025-11-04 17:02:22.%f - [PERF] - copy_image latency_ms=11.25 camera_id=1 status=200
+2025-11-04 17:02:22.%f - [PERF] - add_result latency_ms=4.95 camera_id=1 status=200
+2025-11-04 17:02:22.%f - [PERF] - camera_cycle_total_ms=234.12 camera_id=1
+2025-11-04 17:02:22.%f - [PERF] - get_frame latency_ms=8.61 camera_id=2
+2025-11-04 17:02:22.%f - [PERF] - load_image latency_ms=3.20 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251160_frame.jpg
+2025-11-04 17:02:22.%f - [PERF] - inference latency_ms=109.80 camera_id=2 detections=6
+2025-11-04 17:02:22.%f - [PERF] - copy_image latency_ms=3.18 camera_id=2 status=409
+2025-11-04 17:02:22.%f - [PERF] - camera_cycle_total_ms=171.03 camera_id=2
+2025-11-04 17:02:22.%f - [PERF] - iteration_total_ms=408.09
+2025-11-04 17:03:23.%f - [PERF] - get_frame latency_ms=8.94 camera_id=1
+2025-11-04 17:03:23.%f - [PERF] - load_image latency_ms=2.66 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762251160_frame.jpg
+2025-11-04 17:03:23.%f - [PERF] - inference latency_ms=103.04 camera_id=1 detections=2
+2025-11-04 17:03:23.%f - [PERF] - copy_image latency_ms=11.93 camera_id=1 status=200
+2025-11-04 17:03:23.%f - [PERF] - add_result latency_ms=4.84 camera_id=1 status=200
+2025-11-04 17:03:23.%f - [PERF] - camera_cycle_total_ms=177.54 camera_id=1
+2025-11-04 17:03:23.%f - [PERF] - get_frame latency_ms=9.56 camera_id=2
+2025-11-04 17:03:23.%f - [PERF] - load_image latency_ms=2.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762251161_frame.jpg
+2025-11-04 17:03:23.%f - [PERF] - inference latency_ms=146.85 camera_id=2 detections=3
+2025-11-04 17:03:23.%f - [PERF] - copy_image latency_ms=4.69 camera_id=2 status=409
+2025-11-04 17:03:23.%f - [PERF] - camera_cycle_total_ms=214.27 camera_id=2
+2025-11-04 17:03:23.%f - [PERF] - iteration_total_ms=394.56
+2025-11-04 17:04:23.%f - [PERF] - get_frame latency_ms=8.52 camera_id=1
+2025-11-04 17:04:23.%f - [PERF] - load_image latency_ms=2.36 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762255959_frame.jpg
+2025-11-04 17:04:23.%f - [PERF] - inference latency_ms=109.94 camera_id=1 detections=2
+2025-11-04 17:04:23.%f - [PERF] - copy_image latency_ms=7.31 camera_id=1 status=200
+2025-11-04 17:04:23.%f - [PERF] - add_result latency_ms=4.35 camera_id=1 status=200
+2025-11-04 17:04:23.%f - [PERF] - camera_cycle_total_ms=183.36 camera_id=1
+2025-11-04 17:04:23.%f - [PERF] - get_frame latency_ms=8.91 camera_id=2
+2025-11-04 17:04:23.%f - [PERF] - load_image latency_ms=2.50 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762255960_frame.jpg
+2025-11-04 17:04:23.%f - [PERF] - inference latency_ms=139.01 camera_id=2 detections=3
+2025-11-04 17:04:23.%f - [PERF] - copy_image latency_ms=3.60 camera_id=2 status=409
+2025-11-04 17:04:23.%f - [PERF] - camera_cycle_total_ms=202.14 camera_id=2
+2025-11-04 17:04:23.%f - [PERF] - iteration_total_ms=388.36
+2025-11-04 17:05:23.%f - [PERF] - get_frame latency_ms=9.38 camera_id=1
+2025-11-04 17:05:23.%f - [PERF] - load_image latency_ms=2.76 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762256007_frame.jpg
+2025-11-04 17:05:24.%f - [PERF] - inference latency_ms=124.04 camera_id=1 detections=1
+2025-11-04 17:05:24.%f - [PERF] - copy_image latency_ms=8.73 camera_id=1 status=200
+2025-11-04 17:05:24.%f - [PERF] - add_result latency_ms=4.53 camera_id=1 status=200
+2025-11-04 17:05:24.%f - [PERF] - camera_cycle_total_ms=195.53 camera_id=1
+2025-11-04 17:05:24.%f - [PERF] - get_frame latency_ms=7.44 camera_id=2
+2025-11-04 17:05:24.%f - [PERF] - load_image latency_ms=2.67 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762255961_frame.jpg
+2025-11-04 17:05:24.%f - [PERF] - inference latency_ms=141.85 camera_id=2 detections=2
+2025-11-04 17:05:24.%f - [PERF] - copy_image latency_ms=6.15 camera_id=2 status=409
+2025-11-04 17:05:24.%f - [PERF] - camera_cycle_total_ms=204.93 camera_id=2
+2025-11-04 17:05:24.%f - [PERF] - iteration_total_ms=403.34
+2025-11-04 17:06:24.%f - [PERF] - get_frame latency_ms=9.06 camera_id=1
+2025-11-04 17:06:24.%f - [PERF] - load_image latency_ms=2.64 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762256013_frame.jpg
+2025-11-04 17:06:24.%f - [PERF] - inference latency_ms=218.19 camera_id=1 detections=4
+2025-11-04 17:06:24.%f - [PERF] - copy_image latency_ms=13.82 camera_id=1 status=200
+2025-11-04 17:06:24.%f - [PERF] - add_result latency_ms=5.55 camera_id=1 status=200
+2025-11-04 17:06:24.%f - [PERF] - camera_cycle_total_ms=301.97 camera_id=1
+2025-11-04 17:06:24.%f - [PERF] - get_frame latency_ms=8.91 camera_id=2
+2025-11-04 17:06:24.%f - [PERF] - load_image latency_ms=2.78 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762255962_frame.jpg
+2025-11-04 17:06:24.%f - [PERF] - inference latency_ms=111.30 camera_id=2 detections=4
+2025-11-04 17:06:24.%f - [PERF] - copy_image latency_ms=3.54 camera_id=2 status=409
+2025-11-04 17:06:24.%f - [PERF] - camera_cycle_total_ms=176.35 camera_id=2
+2025-11-04 17:06:24.%f - [PERF] - iteration_total_ms=481.25
+2025-11-04 17:07:24.%f - [PERF] - get_frame latency_ms=8.49 camera_id=1
+2025-11-04 17:07:24.%f - [PERF] - camera_cycle_total_ms=21.43 camera_id=1
+2025-11-04 17:07:24.%f - [PERF] - get_frame latency_ms=8.30 camera_id=2
+2025-11-04 17:07:24.%f - [PERF] - camera_cycle_total_ms=21.37 camera_id=2
+2025-11-04 17:07:24.%f - [PERF] - iteration_total_ms=45.53
+2025-11-04 17:08:25.%f - [PERF] - get_frame latency_ms=7.99 camera_id=1
+2025-11-04 17:08:25.%f - [PERF] - camera_cycle_total_ms=19.55 camera_id=1
+2025-11-04 17:08:25.%f - [PERF] - get_frame latency_ms=8.73 camera_id=2
+2025-11-04 17:08:25.%f - [PERF] - camera_cycle_total_ms=20.76 camera_id=2
+2025-11-04 17:08:25.%f - [PERF] - iteration_total_ms=43.24
+2025-11-04 17:09:25.%f - [PERF] - get_frame latency_ms=7.64 camera_id=1
+2025-11-04 17:09:25.%f - [PERF] - camera_cycle_total_ms=18.38 camera_id=1
+2025-11-04 17:09:25.%f - [PERF] - get_frame latency_ms=7.43 camera_id=2
+2025-11-04 17:09:25.%f - [PERF] - camera_cycle_total_ms=18.58 camera_id=2
+2025-11-04 17:09:25.%f - [PERF] - iteration_total_ms=40.24
+2025-11-04 17:10:25.%f - [PERF] - get_frame latency_ms=7.70 camera_id=1
+2025-11-04 17:10:25.%f - [PERF] - camera_cycle_total_ms=16.76 camera_id=1
+2025-11-04 17:10:25.%f - [PERF] - get_frame latency_ms=7.22 camera_id=2
+2025-11-04 17:10:25.%f - [PERF] - camera_cycle_total_ms=17.00 camera_id=2
+2025-11-04 17:10:25.%f - [PERF] - iteration_total_ms=36.17
+2025-11-04 17:11:25.%f - [PERF] - get_frame latency_ms=7.63 camera_id=1
+2025-11-04 17:11:25.%f - [PERF] - camera_cycle_total_ms=17.83 camera_id=1
+2025-11-04 17:11:25.%f - [PERF] - get_frame latency_ms=6.61 camera_id=2
+2025-11-04 17:11:25.%f - [PERF] - camera_cycle_total_ms=15.40 camera_id=2
+2025-11-04 17:11:25.%f - [PERF] - iteration_total_ms=36.37
+2025-11-04 17:12:25.%f - [PERF] - get_frame latency_ms=7.54 camera_id=1
+2025-11-04 17:12:25.%f - [PERF] - camera_cycle_total_ms=17.77 camera_id=1
+2025-11-04 17:12:25.%f - [PERF] - get_frame latency_ms=7.49 camera_id=2
+2025-11-04 17:12:25.%f - [PERF] - camera_cycle_total_ms=16.79 camera_id=2
+2025-11-04 17:12:25.%f - [PERF] - iteration_total_ms=36.63
+2025-11-04 17:13:25.%f - [PERF] - get_frame latency_ms=8.71 camera_id=1
+2025-11-04 17:13:25.%f - [PERF] - camera_cycle_total_ms=20.26 camera_id=1
+2025-11-04 17:13:25.%f - [PERF] - get_frame latency_ms=8.41 camera_id=2
+2025-11-04 17:13:25.%f - [PERF] - camera_cycle_total_ms=19.22 camera_id=2
+2025-11-04 17:13:25.%f - [PERF] - iteration_total_ms=41.76
+2025-11-04 17:14:25.%f - [PERF] - get_frame latency_ms=8.05 camera_id=1
+2025-11-04 17:14:25.%f - [PERF] - camera_cycle_total_ms=18.51 camera_id=1
+2025-11-04 17:14:25.%f - [PERF] - get_frame latency_ms=7.88 camera_id=2
+2025-11-04 17:14:25.%f - [PERF] - camera_cycle_total_ms=21.62 camera_id=2
+2025-11-04 17:14:25.%f - [PERF] - iteration_total_ms=42.67
+2025-11-04 17:15:25.%f - [PERF] - get_frame latency_ms=8.26 camera_id=1
+2025-11-04 17:15:25.%f - [PERF] - camera_cycle_total_ms=18.88 camera_id=1
+2025-11-04 17:15:25.%f - [PERF] - get_frame latency_ms=8.09 camera_id=2
+2025-11-04 17:15:25.%f - [PERF] - camera_cycle_total_ms=19.02 camera_id=2
+2025-11-04 17:15:25.%f - [PERF] - iteration_total_ms=40.67
+2025-11-04 17:16:25.%f - [PERF] - get_frame latency_ms=9.43 camera_id=1
+2025-11-04 17:16:25.%f - [PERF] - camera_cycle_total_ms=22.56 camera_id=1
+2025-11-04 17:16:25.%f - [PERF] - get_frame latency_ms=9.42 camera_id=2
+2025-11-04 17:16:25.%f - [PERF] - camera_cycle_total_ms=20.89 camera_id=2
+2025-11-04 17:16:25.%f - [PERF] - iteration_total_ms=46.51
+2025-11-04 17:17:25.%f - [PERF] - get_frame latency_ms=7.37 camera_id=1
+2025-11-04 17:17:25.%f - [PERF] - camera_cycle_total_ms=18.53 camera_id=1
+2025-11-04 17:17:25.%f - [PERF] - get_frame latency_ms=6.67 camera_id=2
+2025-11-04 17:17:25.%f - [PERF] - camera_cycle_total_ms=15.52 camera_id=2
+2025-11-04 17:17:25.%f - [PERF] - iteration_total_ms=36.23
+2025-11-04 17:18:26.%f - [PERF] - get_frame latency_ms=7.12 camera_id=1
+2025-11-04 17:18:26.%f - [PERF] - camera_cycle_total_ms=18.16 camera_id=1
+2025-11-04 17:18:26.%f - [PERF] - get_frame latency_ms=7.13 camera_id=2
+2025-11-04 17:18:26.%f - [PERF] - camera_cycle_total_ms=16.89 camera_id=2
+2025-11-04 17:18:26.%f - [PERF] - iteration_total_ms=37.37
+2025-11-04 17:19:26.%f - [PERF] - get_frame latency_ms=8.08 camera_id=1
+2025-11-04 17:19:26.%f - [PERF] - camera_cycle_total_ms=18.12 camera_id=1
+2025-11-04 17:19:26.%f - [PERF] - get_frame latency_ms=6.46 camera_id=2
+2025-11-04 17:19:26.%f - [PERF] - camera_cycle_total_ms=17.60 camera_id=2
+2025-11-04 17:19:26.%f - [PERF] - iteration_total_ms=37.98
+2025-11-04 17:20:26.%f - [PERF] - get_frame latency_ms=8.25 camera_id=1
+2025-11-04 17:20:26.%f - [PERF] - camera_cycle_total_ms=18.95 camera_id=1
+2025-11-04 17:20:26.%f - [PERF] - get_frame latency_ms=7.10 camera_id=2
+2025-11-04 17:20:26.%f - [PERF] - camera_cycle_total_ms=16.59 camera_id=2
+2025-11-04 17:20:26.%f - [PERF] - iteration_total_ms=38.50
+2025-11-04 17:21:26.%f - [PERF] - get_frame latency_ms=7.98 camera_id=1
+2025-11-04 17:21:26.%f - [PERF] - camera_cycle_total_ms=19.79 camera_id=1
+2025-11-04 17:21:26.%f - [PERF] - get_frame latency_ms=7.70 camera_id=2
+2025-11-04 17:21:26.%f - [PERF] - camera_cycle_total_ms=18.26 camera_id=2
+2025-11-04 17:21:26.%f - [PERF] - iteration_total_ms=41.08
+2025-11-04 17:22:26.%f - [PERF] - get_frame latency_ms=8.03 camera_id=1
+2025-11-04 17:22:26.%f - [PERF] - camera_cycle_total_ms=19.16 camera_id=1
+2025-11-04 17:22:26.%f - [PERF] - get_frame latency_ms=7.76 camera_id=2
+2025-11-04 17:22:26.%f - [PERF] - camera_cycle_total_ms=18.14 camera_id=2
+2025-11-04 17:22:26.%f - [PERF] - iteration_total_ms=40.24
+2025-11-04 17:23:26.%f - [PERF] - get_frame latency_ms=7.90 camera_id=1
+2025-11-04 17:23:26.%f - [PERF] - camera_cycle_total_ms=19.93 camera_id=1
+2025-11-04 17:23:26.%f - [PERF] - get_frame latency_ms=8.39 camera_id=2
+2025-11-04 17:23:26.%f - [PERF] - camera_cycle_total_ms=20.42 camera_id=2
+2025-11-04 17:23:26.%f - [PERF] - iteration_total_ms=43.52
+2025-11-04 17:24:26.%f - [PERF] - get_frame latency_ms=14.42 camera_id=1
+2025-11-04 17:24:26.%f - [PERF] - camera_cycle_total_ms=27.94 camera_id=1
+2025-11-04 17:24:26.%f - [PERF] - get_frame latency_ms=7.47 camera_id=2
+2025-11-04 17:24:26.%f - [PERF] - camera_cycle_total_ms=18.42 camera_id=2
+2025-11-04 17:24:26.%f - [PERF] - iteration_total_ms=49.48
+2025-11-04 17:25:26.%f - [PERF] - get_frame latency_ms=8.19 camera_id=1
+2025-11-04 17:25:26.%f - [PERF] - camera_cycle_total_ms=19.50 camera_id=1
+2025-11-04 17:25:26.%f - [PERF] - get_frame latency_ms=8.39 camera_id=2
+2025-11-04 17:25:26.%f - [PERF] - camera_cycle_total_ms=18.35 camera_id=2
+2025-11-04 17:25:26.%f - [PERF] - iteration_total_ms=41.12
+2025-11-04 17:26:26.%f - [PERF] - get_frame latency_ms=8.00 camera_id=1
+2025-11-04 17:26:26.%f - [PERF] - camera_cycle_total_ms=19.53 camera_id=1
+2025-11-04 17:26:26.%f - [PERF] - get_frame latency_ms=6.87 camera_id=2
+2025-11-04 17:26:26.%f - [PERF] - camera_cycle_total_ms=15.68 camera_id=2
+2025-11-04 17:26:26.%f - [PERF] - iteration_total_ms=38.26
+2025-11-04 17:27:26.%f - [PERF] - get_frame latency_ms=8.27 camera_id=1
+2025-11-04 17:27:26.%f - [PERF] - camera_cycle_total_ms=19.58 camera_id=1
+2025-11-04 17:27:26.%f - [PERF] - get_frame latency_ms=7.45 camera_id=2
+2025-11-04 17:27:26.%f - [PERF] - camera_cycle_total_ms=17.58 camera_id=2
+2025-11-04 17:27:26.%f - [PERF] - iteration_total_ms=40.19
+2025-11-04 17:28:27.%f - [PERF] - get_frame latency_ms=9.21 camera_id=1
+2025-11-04 17:28:27.%f - [PERF] - camera_cycle_total_ms=22.10 camera_id=1
+2025-11-04 17:28:27.%f - [PERF] - get_frame latency_ms=7.56 camera_id=2
+2025-11-04 17:28:27.%f - [PERF] - camera_cycle_total_ms=18.54 camera_id=2
+2025-11-04 17:28:27.%f - [PERF] - iteration_total_ms=44.57
+2025-11-04 17:29:27.%f - [PERF] - get_frame latency_ms=8.34 camera_id=1
+2025-11-04 17:29:27.%f - [PERF] - camera_cycle_total_ms=19.28 camera_id=1
+2025-11-04 17:29:27.%f - [PERF] - get_frame latency_ms=6.81 camera_id=2
+2025-11-04 17:29:27.%f - [PERF] - camera_cycle_total_ms=16.23 camera_id=2
+2025-11-04 17:29:27.%f - [PERF] - iteration_total_ms=38.48
+2025-11-04 17:30:27.%f - [PERF] - get_frame latency_ms=8.01 camera_id=1
+2025-11-04 17:30:27.%f - [PERF] - camera_cycle_total_ms=19.37 camera_id=1
+2025-11-04 17:30:27.%f - [PERF] - get_frame latency_ms=6.90 camera_id=2
+2025-11-04 17:30:27.%f - [PERF] - camera_cycle_total_ms=16.35 camera_id=2
+2025-11-04 17:30:27.%f - [PERF] - iteration_total_ms=38.65
+2025-11-04 17:31:27.%f - [PERF] - get_frame latency_ms=8.16 camera_id=1
+2025-11-04 17:31:27.%f - [PERF] - camera_cycle_total_ms=19.16 camera_id=1
+2025-11-04 17:31:27.%f - [PERF] - get_frame latency_ms=8.85 camera_id=2
+2025-11-04 17:31:27.%f - [PERF] - camera_cycle_total_ms=20.59 camera_id=2
+2025-11-04 17:31:27.%f - [PERF] - iteration_total_ms=42.93
+2025-11-04 17:32:27.%f - [PERF] - get_frame latency_ms=8.67 camera_id=1
+2025-11-04 17:32:27.%f - [PERF] - camera_cycle_total_ms=21.87 camera_id=1
+2025-11-04 17:32:27.%f - [PERF] - get_frame latency_ms=7.56 camera_id=2
+2025-11-04 17:32:27.%f - [PERF] - camera_cycle_total_ms=19.04 camera_id=2
+2025-11-04 17:32:27.%f - [PERF] - iteration_total_ms=43.77
+2025-11-04 17:33:27.%f - [PERF] - get_frame latency_ms=7.96 camera_id=1
+2025-11-04 17:33:27.%f - [PERF] - camera_cycle_total_ms=18.32 camera_id=1
+2025-11-04 17:33:27.%f - [PERF] - get_frame latency_ms=7.47 camera_id=2
+2025-11-04 17:33:27.%f - [PERF] - camera_cycle_total_ms=18.03 camera_id=2
+2025-11-04 17:33:27.%f - [PERF] - iteration_total_ms=39.38
+2025-11-04 17:34:27.%f - [PERF] - get_frame latency_ms=7.44 camera_id=1
+2025-11-04 17:34:27.%f - [PERF] - camera_cycle_total_ms=17.77 camera_id=1
+2025-11-04 17:34:27.%f - [PERF] - get_frame latency_ms=6.91 camera_id=2
+2025-11-04 17:34:27.%f - [PERF] - camera_cycle_total_ms=16.73 camera_id=2
+2025-11-04 17:34:27.%f - [PERF] - iteration_total_ms=36.57
+2025-11-04 17:35:27.%f - [PERF] - get_frame latency_ms=8.71 camera_id=1
+2025-11-04 17:35:27.%f - [PERF] - camera_cycle_total_ms=19.06 camera_id=1
+2025-11-04 17:35:27.%f - [PERF] - get_frame latency_ms=7.88 camera_id=2
+2025-11-04 17:35:27.%f - [PERF] - camera_cycle_total_ms=18.46 camera_id=2
+2025-11-04 17:35:27.%f - [PERF] - iteration_total_ms=40.56
+2025-11-04 17:36:27.%f - [PERF] - get_frame latency_ms=8.01 camera_id=1
+2025-11-04 17:36:27.%f - [PERF] - camera_cycle_total_ms=18.65 camera_id=1
+2025-11-04 17:36:27.%f - [PERF] - get_frame latency_ms=7.41 camera_id=2
+2025-11-04 17:36:27.%f - [PERF] - camera_cycle_total_ms=18.22 camera_id=2
+2025-11-04 17:36:27.%f - [PERF] - iteration_total_ms=39.91
+2025-11-04 17:37:27.%f - [PERF] - get_frame latency_ms=7.53 camera_id=1
+2025-11-04 17:37:27.%f - [PERF] - camera_cycle_total_ms=18.30 camera_id=1
+2025-11-04 17:37:27.%f - [PERF] - get_frame latency_ms=6.67 camera_id=2
+2025-11-04 17:37:27.%f - [PERF] - camera_cycle_total_ms=16.00 camera_id=2
+2025-11-04 17:37:27.%f - [PERF] - iteration_total_ms=37.34
+2025-11-04 17:38:28.%f - [PERF] - get_frame latency_ms=8.42 camera_id=1
+2025-11-04 17:38:28.%f - [PERF] - camera_cycle_total_ms=19.54 camera_id=1
+2025-11-04 17:38:28.%f - [PERF] - get_frame latency_ms=7.41 camera_id=2
+2025-11-04 17:38:28.%f - [PERF] - camera_cycle_total_ms=18.32 camera_id=2
+2025-11-04 17:38:28.%f - [PERF] - iteration_total_ms=41.04
+2025-11-04 17:39:28.%f - [PERF] - get_frame latency_ms=8.52 camera_id=1
+2025-11-04 17:39:28.%f - [PERF] - camera_cycle_total_ms=19.34 camera_id=1
+2025-11-04 17:39:28.%f - [PERF] - get_frame latency_ms=7.60 camera_id=2
+2025-11-04 17:39:28.%f - [PERF] - camera_cycle_total_ms=18.50 camera_id=2
+2025-11-04 17:39:28.%f - [PERF] - iteration_total_ms=40.93
+2025-11-04 17:40:28.%f - [PERF] - get_frame latency_ms=8.19 camera_id=1
+2025-11-04 17:40:28.%f - [PERF] - camera_cycle_total_ms=19.05 camera_id=1
+2025-11-04 17:40:28.%f - [PERF] - get_frame latency_ms=7.43 camera_id=2
+2025-11-04 17:40:28.%f - [PERF] - camera_cycle_total_ms=17.66 camera_id=2
+2025-11-04 17:40:28.%f - [PERF] - iteration_total_ms=40.08
+2025-11-04 17:41:28.%f - [PERF] - get_frame latency_ms=7.47 camera_id=1
+2025-11-04 17:41:28.%f - [PERF] - camera_cycle_total_ms=17.82 camera_id=1
+2025-11-04 17:41:28.%f - [PERF] - get_frame latency_ms=7.42 camera_id=2
+2025-11-04 17:41:28.%f - [PERF] - camera_cycle_total_ms=17.45 camera_id=2
+2025-11-04 17:41:28.%f - [PERF] - iteration_total_ms=37.84
+2025-11-04 17:42:28.%f - [PERF] - get_frame latency_ms=8.02 camera_id=1
+2025-11-04 17:42:28.%f - [PERF] - camera_cycle_total_ms=19.33 camera_id=1
+2025-11-04 17:42:28.%f - [PERF] - get_frame latency_ms=7.95 camera_id=2
+2025-11-04 17:42:28.%f - [PERF] - camera_cycle_total_ms=18.78 camera_id=2
+2025-11-04 17:42:28.%f - [PERF] - iteration_total_ms=41.03
+2025-11-04 17:43:28.%f - [PERF] - get_frame latency_ms=8.72 camera_id=1
+2025-11-04 17:43:28.%f - [PERF] - camera_cycle_total_ms=19.84 camera_id=1
+2025-11-04 17:43:28.%f - [PERF] - get_frame latency_ms=7.68 camera_id=2
+2025-11-04 17:43:28.%f - [PERF] - camera_cycle_total_ms=18.19 camera_id=2
+2025-11-04 17:43:28.%f - [PERF] - iteration_total_ms=40.97
+2025-11-04 17:44:28.%f - [PERF] - get_frame latency_ms=8.33 camera_id=1
+2025-11-04 17:44:28.%f - [PERF] - camera_cycle_total_ms=19.26 camera_id=1
+2025-11-04 17:44:28.%f - [PERF] - get_frame latency_ms=8.25 camera_id=2
+2025-11-04 17:44:28.%f - [PERF] - camera_cycle_total_ms=20.24 camera_id=2
+2025-11-04 17:44:28.%f - [PERF] - iteration_total_ms=42.54
+2025-11-04 17:45:28.%f - [PERF] - get_frame latency_ms=8.07 camera_id=1
+2025-11-04 17:45:28.%f - [PERF] - camera_cycle_total_ms=19.74 camera_id=1
+2025-11-04 17:45:28.%f - [PERF] - get_frame latency_ms=7.57 camera_id=2
+2025-11-04 17:45:28.%f - [PERF] - camera_cycle_total_ms=17.95 camera_id=2
+2025-11-04 17:45:28.%f - [PERF] - iteration_total_ms=40.93
+2025-11-04 17:46:28.%f - [PERF] - get_frame latency_ms=7.97 camera_id=1
+2025-11-04 17:46:28.%f - [PERF] - camera_cycle_total_ms=19.24 camera_id=1
+2025-11-04 17:46:28.%f - [PERF] - get_frame latency_ms=7.81 camera_id=2
+2025-11-04 17:46:28.%f - [PERF] - camera_cycle_total_ms=18.78 camera_id=2
+2025-11-04 17:46:28.%f - [PERF] - iteration_total_ms=40.99
+2025-11-04 17:47:28.%f - [PERF] - get_frame latency_ms=7.24 camera_id=1
+2025-11-04 17:47:28.%f - [PERF] - camera_cycle_total_ms=17.17 camera_id=1
+2025-11-04 17:47:28.%f - [PERF] - get_frame latency_ms=6.91 camera_id=2
+2025-11-04 17:47:28.%f - [PERF] - camera_cycle_total_ms=16.35 camera_id=2
+2025-11-04 17:47:28.%f - [PERF] - iteration_total_ms=35.90
+2025-11-04 17:48:29.%f - [PERF] - get_frame latency_ms=25.14 camera_id=1
+2025-11-04 17:48:29.%f - [PERF] - camera_cycle_total_ms=67.57 camera_id=1
+2025-11-04 17:48:29.%f - [PERF] - get_frame latency_ms=28.88 camera_id=2
+2025-11-04 17:48:29.%f - [PERF] - camera_cycle_total_ms=61.27 camera_id=2
+2025-11-04 17:48:29.%f - [PERF] - iteration_total_ms=133.94
+2025-11-04 17:49:29.%f - [PERF] - get_frame latency_ms=30.11 camera_id=1
+2025-11-04 17:49:29.%f - [PERF] - camera_cycle_total_ms=61.77 camera_id=1
+2025-11-04 17:49:29.%f - [PERF] - get_frame latency_ms=18.68 camera_id=2
+2025-11-04 17:49:29.%f - [PERF] - camera_cycle_total_ms=51.03 camera_id=2
+2025-11-04 17:49:29.%f - [PERF] - iteration_total_ms=120.17
+2025-11-04 17:50:29.%f - [PERF] - get_frame latency_ms=9.61 camera_id=1
+2025-11-04 17:50:29.%f - [PERF] - camera_cycle_total_ms=22.88 camera_id=1
+2025-11-04 17:50:29.%f - [PERF] - get_frame latency_ms=9.85 camera_id=2
+2025-11-04 17:50:29.%f - [PERF] - camera_cycle_total_ms=22.54 camera_id=2
+2025-11-04 17:50:29.%f - [PERF] - iteration_total_ms=49.10
+2025-11-04 17:51:29.%f - [PERF] - get_frame latency_ms=7.72 camera_id=1
+2025-11-04 17:51:29.%f - [PERF] - camera_cycle_total_ms=18.36 camera_id=1
+2025-11-04 17:51:29.%f - [PERF] - get_frame latency_ms=8.15 camera_id=2
+2025-11-04 17:51:29.%f - [PERF] - camera_cycle_total_ms=19.52 camera_id=2
+2025-11-04 17:51:29.%f - [PERF] - iteration_total_ms=40.24
+2025-11-04 17:52:29.%f - [PERF] - get_frame latency_ms=8.55 camera_id=1
+2025-11-04 17:52:29.%f - [PERF] - camera_cycle_total_ms=20.69 camera_id=1
+2025-11-04 17:52:29.%f - [PERF] - get_frame latency_ms=8.15 camera_id=2
+2025-11-04 17:52:29.%f - [PERF] - camera_cycle_total_ms=19.54 camera_id=2
+2025-11-04 17:52:29.%f - [PERF] - iteration_total_ms=43.42
+2025-11-04 17:53:29.%f - [PERF] - get_frame latency_ms=9.52 camera_id=1
+2025-11-04 17:53:29.%f - [PERF] - camera_cycle_total_ms=21.16 camera_id=1
+2025-11-04 17:53:29.%f - [PERF] - get_frame latency_ms=8.79 camera_id=2
+2025-11-04 17:53:29.%f - [PERF] - camera_cycle_total_ms=20.56 camera_id=2
+2025-11-04 17:53:29.%f - [PERF] - iteration_total_ms=45.14
+2025-11-04 17:54:29.%f - [PERF] - get_frame latency_ms=13.62 camera_id=1
+2025-11-04 17:54:29.%f - [PERF] - camera_cycle_total_ms=27.12 camera_id=1
+2025-11-04 17:54:29.%f - [PERF] - get_frame latency_ms=9.34 camera_id=2
+2025-11-04 17:54:29.%f - [PERF] - camera_cycle_total_ms=24.62 camera_id=2
+2025-11-04 17:54:29.%f - [PERF] - iteration_total_ms=55.12
+2025-11-04 17:55:29.%f - [PERF] - get_frame latency_ms=8.03 camera_id=1
+2025-11-04 17:55:29.%f - [PERF] - camera_cycle_total_ms=19.19 camera_id=1
+2025-11-04 17:55:29.%f - [PERF] - get_frame latency_ms=8.76 camera_id=2
+2025-11-04 17:55:29.%f - [PERF] - camera_cycle_total_ms=19.86 camera_id=2
+2025-11-04 17:55:29.%f - [PERF] - iteration_total_ms=42.13
+2025-11-04 17:56:30.%f - [PERF] - get_frame latency_ms=8.47 camera_id=1
+2025-11-04 17:56:30.%f - [PERF] - camera_cycle_total_ms=20.10 camera_id=1
+2025-11-04 17:56:30.%f - [PERF] - get_frame latency_ms=8.78 camera_id=2
+2025-11-04 17:56:30.%f - [PERF] - camera_cycle_total_ms=19.39 camera_id=2
+2025-11-04 17:56:30.%f - [PERF] - iteration_total_ms=42.57
+2025-11-04 17:57:30.%f - [PERF] - get_frame latency_ms=11.36 camera_id=1
+2025-11-04 17:57:30.%f - [PERF] - camera_cycle_total_ms=22.49 camera_id=1
+2025-11-04 17:57:30.%f - [PERF] - get_frame latency_ms=8.36 camera_id=2
+2025-11-04 17:57:30.%f - [PERF] - camera_cycle_total_ms=19.41 camera_id=2
+2025-11-04 17:57:30.%f - [PERF] - iteration_total_ms=44.42
+2025-11-04 17:58:30.%f - [PERF] - get_frame latency_ms=7.47 camera_id=1
+2025-11-04 17:58:30.%f - [PERF] - camera_cycle_total_ms=20.09 camera_id=1
+2025-11-04 17:58:30.%f - [PERF] - get_frame latency_ms=9.23 camera_id=2
+2025-11-04 17:58:30.%f - [PERF] - camera_cycle_total_ms=23.88 camera_id=2
+2025-11-04 17:58:30.%f - [PERF] - iteration_total_ms=46.41
+2025-11-04 18:22:38.%f - [PERF] - Performance logger initialized
+2025-11-04 18:22:40.%f - [PERF] - get_frame latency_ms=16.46 camera_id=1
+2025-11-04 18:22:40.%f - [PERF] - camera_cycle_total_ms=38.29 camera_id=1
+2025-11-04 18:22:40.%f - [PERF] - get_frame latency_ms=19.74 camera_id=2
+2025-11-04 18:22:40.%f - [PERF] - camera_cycle_total_ms=58.99 camera_id=2
+2025-11-04 18:22:40.%f - [PERF] - iteration_total_ms=100.50
+2025-11-04 18:23:10.%f - [PERF] - get_frame latency_ms=9.15 camera_id=1
+2025-11-04 18:23:10.%f - [PERF] - load_image latency_ms=9.49 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260746_frame.jpg
+2025-11-04 18:23:11.%f - [PERF] - inference latency_ms=122.78 camera_id=1 detections=1
+2025-11-04 18:23:11.%f - [PERF] - camera_cycle_total_ms=195.16 camera_id=1
+2025-11-04 18:23:11.%f - [PERF] - get_frame latency_ms=7.87 camera_id=2
+2025-11-04 18:23:11.%f - [PERF] - load_image latency_ms=2.11 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260748_frame.jpg
+2025-11-04 18:23:11.%f - [PERF] - inference latency_ms=83.55 camera_id=2 detections=4
+2025-11-04 18:23:11.%f - [PERF] - copy_image latency_ms=11.21 camera_id=2 status=200
+2025-11-04 18:23:11.%f - [PERF] - add_result latency_ms=4.29 camera_id=2 status=200
+2025-11-04 18:23:11.%f - [PERF] - camera_cycle_total_ms=155.73 camera_id=2
+2025-11-04 18:23:11.%f - [PERF] - iteration_total_ms=354.08
+2025-11-04 18:23:41.%f - [PERF] - get_frame latency_ms=11.40 camera_id=1
+2025-11-04 18:23:41.%f - [PERF] - load_image latency_ms=2.12 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260746_frame.jpg
+2025-11-04 18:23:42.%f - [PERF] - inference latency_ms=127.17 camera_id=1 detections=1
+2025-11-04 18:23:42.%f - [PERF] - camera_cycle_total_ms=1656.67 camera_id=1
+2025-11-04 18:23:42.%f - [PERF] - get_frame latency_ms=10.38 camera_id=2
+2025-11-04 18:23:43.%f - [PERF] - load_image latency_ms=2.36 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260748_frame.jpg
+2025-11-04 18:23:44.%f - [PERF] - inference latency_ms=114.41 camera_id=2 detections=4
+2025-11-04 18:23:44.%f - [PERF] - copy_image latency_ms=3.04 camera_id=2 status=409
+2025-11-04 18:23:44.%f - [PERF] - camera_cycle_total_ms=1630.17 camera_id=2
+2025-11-04 18:23:44.%f - [PERF] - iteration_total_ms=3289.82
+2025-11-04 18:24:14.%f - [PERF] - get_frame latency_ms=7.04 camera_id=1
+2025-11-04 18:24:15.%f - [PERF] - load_image latency_ms=2.59 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260749_frame.jpg
+2025-11-04 18:24:15.%f - [PERF] - inference latency_ms=109.41 camera_id=1 detections=1
+2025-11-04 18:24:15.%f - [PERF] - camera_cycle_total_ms=1198.02 camera_id=1
+2025-11-04 18:24:15.%f - [PERF] - get_frame latency_ms=6.54 camera_id=2
+2025-11-04 18:24:16.%f - [PERF] - load_image latency_ms=2.33 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260751_frame.jpg
+2025-11-04 18:24:16.%f - [PERF] - inference latency_ms=134.79 camera_id=2 detections=3
+2025-11-04 18:24:16.%f - [PERF] - camera_cycle_total_ms=886.27 camera_id=2
+2025-11-04 18:24:16.%f - [PERF] - iteration_total_ms=2086.37
+2025-11-04 18:24:46.%f - [PERF] - get_frame latency_ms=8.02 camera_id=1
+2025-11-04 18:24:46.%f - [PERF] - load_image latency_ms=2.61 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260749_frame.jpg
+2025-11-04 18:24:46.%f - [PERF] - inference latency_ms=110.96 camera_id=1 detections=1
+2025-11-04 18:24:46.%f - [PERF] - camera_cycle_total_ms=170.82 camera_id=1
+2025-11-04 18:24:46.%f - [PERF] - get_frame latency_ms=8.03 camera_id=2
+2025-11-04 18:24:46.%f - [PERF] - load_image latency_ms=2.53 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260751_frame.jpg
+2025-11-04 18:24:46.%f - [PERF] - inference latency_ms=122.45 camera_id=2 detections=3
+2025-11-04 18:24:47.%f - [PERF] - camera_cycle_total_ms=184.68 camera_id=2
+2025-11-04 18:24:47.%f - [PERF] - iteration_total_ms=358.03
+2025-11-04 18:25:17.%f - [PERF] - get_frame latency_ms=8.11 camera_id=1
+2025-11-04 18:25:17.%f - [PERF] - load_image latency_ms=2.57 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260800_frame.jpg
+2025-11-04 18:25:17.%f - [PERF] - inference latency_ms=123.89 camera_id=1 detections=4
+2025-11-04 18:25:17.%f - [PERF] - copy_image latency_ms=10.02 camera_id=1 status=200
+2025-11-04 18:25:17.%f - [PERF] - add_result latency_ms=4.33 camera_id=1 status=200
+2025-11-04 18:25:17.%f - [PERF] - camera_cycle_total_ms=196.92 camera_id=1
+2025-11-04 18:25:17.%f - [PERF] - get_frame latency_ms=8.06 camera_id=2
+2025-11-04 18:25:17.%f - [PERF] - load_image latency_ms=2.47 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260802_frame.jpg
+2025-11-04 18:25:17.%f - [PERF] - inference latency_ms=114.80 camera_id=2 detections=4
+2025-11-04 18:25:17.%f - [PERF] - camera_cycle_total_ms=173.00 camera_id=2
+2025-11-04 18:25:17.%f - [PERF] - iteration_total_ms=372.69
+2025-11-04 18:25:47.%f - [PERF] - get_frame latency_ms=8.05 camera_id=1
+2025-11-04 18:25:47.%f - [PERF] - load_image latency_ms=2.58 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260800_frame.jpg
+2025-11-04 18:25:47.%f - [PERF] - inference latency_ms=106.34 camera_id=1 detections=4
+2025-11-04 18:25:47.%f - [PERF] - copy_image latency_ms=3.02 camera_id=1 status=409
+2025-11-04 18:25:47.%f - [PERF] - camera_cycle_total_ms=167.66 camera_id=1
+2025-11-04 18:25:47.%f - [PERF] - get_frame latency_ms=7.82 camera_id=2
+2025-11-04 18:25:47.%f - [PERF] - load_image latency_ms=2.65 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260802_frame.jpg
+2025-11-04 18:25:47.%f - [PERF] - inference latency_ms=108.32 camera_id=2 detections=4
+2025-11-04 18:25:47.%f - [PERF] - camera_cycle_total_ms=168.00 camera_id=2
+2025-11-04 18:25:47.%f - [PERF] - iteration_total_ms=338.35
+2025-11-04 18:26:17.%f - [PERF] - get_frame latency_ms=7.95 camera_id=1
+2025-11-04 18:26:17.%f - [PERF] - load_image latency_ms=2.61 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260806_frame.jpg
+2025-11-04 18:26:18.%f - [PERF] - inference latency_ms=141.27 camera_id=1 detections=3
+2025-11-04 18:26:18.%f - [PERF] - copy_image latency_ms=12.59 camera_id=1 status=200
+2025-11-04 18:26:18.%f - [PERF] - add_result latency_ms=3.80 camera_id=1 status=200
+2025-11-04 18:26:18.%f - [PERF] - camera_cycle_total_ms=215.04 camera_id=1
+2025-11-04 18:26:18.%f - [PERF] - get_frame latency_ms=7.49 camera_id=2
+2025-11-04 18:26:18.%f - [PERF] - load_image latency_ms=2.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260808_frame.jpg
+2025-11-04 18:26:18.%f - [PERF] - inference latency_ms=113.46 camera_id=2 detections=7
+2025-11-04 18:26:18.%f - [PERF] - copy_image latency_ms=9.42 camera_id=2 status=200
+2025-11-04 18:26:18.%f - [PERF] - add_result latency_ms=4.22 camera_id=2 status=200
+2025-11-04 18:26:18.%f - [PERF] - camera_cycle_total_ms=181.71 camera_id=2
+2025-11-04 18:26:18.%f - [PERF] - iteration_total_ms=401.12
+2025-11-04 18:26:48.%f - [PERF] - get_frame latency_ms=8.27 camera_id=1
+2025-11-04 18:26:48.%f - [PERF] - load_image latency_ms=3.22 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260806_frame.jpg
+2025-11-04 18:26:48.%f - [PERF] - inference latency_ms=156.40 camera_id=1 detections=3
+2025-11-04 18:26:48.%f - [PERF] - copy_image latency_ms=5.85 camera_id=1 status=409
+2025-11-04 18:26:48.%f - [PERF] - camera_cycle_total_ms=220.81 camera_id=1
+2025-11-04 18:26:48.%f - [PERF] - get_frame latency_ms=8.85 camera_id=2
+2025-11-04 18:26:48.%f - [PERF] - load_image latency_ms=2.69 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260808_frame.jpg
+2025-11-04 18:26:48.%f - [PERF] - inference latency_ms=134.73 camera_id=2 detections=7
+2025-11-04 18:26:48.%f - [PERF] - copy_image latency_ms=4.94 camera_id=2 status=409
+2025-11-04 18:26:48.%f - [PERF] - camera_cycle_total_ms=204.07 camera_id=2
+2025-11-04 18:26:48.%f - [PERF] - iteration_total_ms=427.49
+2025-11-04 18:27:18.%f - [PERF] - get_frame latency_ms=8.28 camera_id=1
+2025-11-04 18:27:18.%f - [PERF] - load_image latency_ms=2.73 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260812_frame.jpg
+2025-11-04 18:27:18.%f - [PERF] - inference latency_ms=155.44 camera_id=1 detections=5
+2025-11-04 18:27:18.%f - [PERF] - copy_image latency_ms=8.27 camera_id=1 status=409
+2025-11-04 18:27:18.%f - [PERF] - camera_cycle_total_ms=222.15 camera_id=1
+2025-11-04 18:27:18.%f - [PERF] - get_frame latency_ms=8.57 camera_id=2
+2025-11-04 18:27:18.%f - [PERF] - load_image latency_ms=2.46 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260814_frame.jpg
+2025-11-04 18:27:19.%f - [PERF] - inference latency_ms=159.21 camera_id=2 detections=7
+2025-11-04 18:27:19.%f - [PERF] - copy_image latency_ms=2.84 camera_id=2 status=409
+2025-11-04 18:27:19.%f - [PERF] - camera_cycle_total_ms=225.75 camera_id=2
+2025-11-04 18:27:19.%f - [PERF] - iteration_total_ms=450.36
+2025-11-04 18:27:49.%f - [PERF] - get_frame latency_ms=8.09 camera_id=1
+2025-11-04 18:27:49.%f - [PERF] - load_image latency_ms=3.21 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260812_frame.jpg
+2025-11-04 18:27:49.%f - [PERF] - inference latency_ms=160.71 camera_id=1 detections=5
+2025-11-04 18:27:49.%f - [PERF] - copy_image latency_ms=6.80 camera_id=1 status=409
+2025-11-04 18:27:49.%f - [PERF] - camera_cycle_total_ms=226.02 camera_id=1
+2025-11-04 18:27:49.%f - [PERF] - get_frame latency_ms=7.66 camera_id=2
+2025-11-04 18:27:49.%f - [PERF] - load_image latency_ms=2.35 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260814_frame.jpg
+2025-11-04 18:27:49.%f - [PERF] - inference latency_ms=121.66 camera_id=2 detections=7
+2025-11-04 18:27:49.%f - [PERF] - copy_image latency_ms=3.71 camera_id=2 status=409
+2025-11-04 18:27:49.%f - [PERF] - camera_cycle_total_ms=177.68 camera_id=2
+2025-11-04 18:27:49.%f - [PERF] - iteration_total_ms=406.35
+2025-11-04 18:28:19.%f - [PERF] - get_frame latency_ms=8.64 camera_id=1
+2025-11-04 18:28:19.%f - [PERF] - load_image latency_ms=2.64 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260818_frame.jpg
+2025-11-04 18:28:19.%f - [PERF] - inference latency_ms=116.87 camera_id=1 detections=4
+2025-11-04 18:28:19.%f - [PERF] - camera_cycle_total_ms=177.45 camera_id=1
+2025-11-04 18:28:19.%f - [PERF] - get_frame latency_ms=8.13 camera_id=2
+2025-11-04 18:28:19.%f - [PERF] - load_image latency_ms=2.42 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260820_frame.jpg
+2025-11-04 18:28:19.%f - [PERF] - inference latency_ms=134.53 camera_id=2 detections=6
+2025-11-04 18:28:19.%f - [PERF] - copy_image latency_ms=3.22 camera_id=2 status=409
+2025-11-04 18:28:19.%f - [PERF] - camera_cycle_total_ms=191.45 camera_id=2
+2025-11-04 18:28:19.%f - [PERF] - iteration_total_ms=371.67
+2025-11-04 18:28:50.%f - [PERF] - get_frame latency_ms=8.34 camera_id=1
+2025-11-04 18:28:50.%f - [PERF] - load_image latency_ms=2.64 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260818_frame.jpg
+2025-11-04 18:28:50.%f - [PERF] - inference latency_ms=115.03 camera_id=1 detections=4
+2025-11-04 18:28:50.%f - [PERF] - camera_cycle_total_ms=169.10 camera_id=1
+2025-11-04 18:28:50.%f - [PERF] - get_frame latency_ms=8.97 camera_id=2
+2025-11-04 18:28:50.%f - [PERF] - load_image latency_ms=5.92 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260820_frame.jpg
+2025-11-04 18:28:50.%f - [PERF] - inference latency_ms=133.53 camera_id=2 detections=6
+2025-11-04 18:28:50.%f - [PERF] - copy_image latency_ms=3.21 camera_id=2 status=409
+2025-11-04 18:28:50.%f - [PERF] - camera_cycle_total_ms=197.36 camera_id=2
+2025-11-04 18:28:50.%f - [PERF] - iteration_total_ms=369.11
+2025-11-04 18:29:20.%f - [PERF] - get_frame latency_ms=8.82 camera_id=1
+2025-11-04 18:29:20.%f - [PERF] - load_image latency_ms=2.56 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260824_frame.jpg
+2025-11-04 18:29:20.%f - [PERF] - inference latency_ms=130.44 camera_id=1 detections=3
+2025-11-04 18:29:20.%f - [PERF] - camera_cycle_total_ms=188.19 camera_id=1
+2025-11-04 18:29:20.%f - [PERF] - get_frame latency_ms=8.28 camera_id=2
+2025-11-04 18:29:20.%f - [PERF] - load_image latency_ms=2.49 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260826_frame.jpg
+2025-11-04 18:29:20.%f - [PERF] - inference latency_ms=123.11 camera_id=2 detections=7
+2025-11-04 18:29:20.%f - [PERF] - copy_image latency_ms=3.49 camera_id=2 status=409
+2025-11-04 18:29:20.%f - [PERF] - camera_cycle_total_ms=185.47 camera_id=2
+2025-11-04 18:29:20.%f - [PERF] - iteration_total_ms=376.32
+2025-11-04 18:29:50.%f - [PERF] - get_frame latency_ms=9.42 camera_id=1
+2025-11-04 18:29:50.%f - [PERF] - load_image latency_ms=2.52 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260824_frame.jpg
+2025-11-04 18:29:50.%f - [PERF] - inference latency_ms=98.56 camera_id=1 detections=3
+2025-11-04 18:29:50.%f - [PERF] - camera_cycle_total_ms=160.72 camera_id=1
+2025-11-04 18:29:51.%f - [PERF] - get_frame latency_ms=9.32 camera_id=2
+2025-11-04 18:29:51.%f - [PERF] - load_image latency_ms=2.50 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260826_frame.jpg
+2025-11-04 18:29:51.%f - [PERF] - inference latency_ms=170.23 camera_id=2 detections=7
+2025-11-04 18:29:51.%f - [PERF] - copy_image latency_ms=2.89 camera_id=2 status=409
+2025-11-04 18:29:51.%f - [PERF] - camera_cycle_total_ms=232.57 camera_id=2
+2025-11-04 18:29:51.%f - [PERF] - iteration_total_ms=395.94
+2025-11-04 18:30:21.%f - [PERF] - get_frame latency_ms=8.74 camera_id=1
+2025-11-04 18:30:21.%f - [PERF] - load_image latency_ms=3.10 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260830_frame.jpg
+2025-11-04 18:30:21.%f - [PERF] - inference latency_ms=207.19 camera_id=1 detections=2
+2025-11-04 18:30:21.%f - [PERF] - camera_cycle_total_ms=274.04 camera_id=1
+2025-11-04 18:30:21.%f - [PERF] - get_frame latency_ms=10.38 camera_id=2
+2025-11-04 18:30:21.%f - [PERF] - load_image latency_ms=2.66 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260832_frame.jpg
+2025-11-04 18:30:21.%f - [PERF] - inference latency_ms=195.18 camera_id=2 detections=10
+2025-11-04 18:30:21.%f - [PERF] - copy_image latency_ms=4.48 camera_id=2 status=409
+2025-11-04 18:30:21.%f - [PERF] - camera_cycle_total_ms=267.41 camera_id=2
+2025-11-04 18:30:21.%f - [PERF] - iteration_total_ms=544.16
+2025-11-04 18:30:51.%f - [PERF] - get_frame latency_ms=7.93 camera_id=1
+2025-11-04 18:30:51.%f - [PERF] - load_image latency_ms=2.78 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260830_frame.jpg
+2025-11-04 18:30:52.%f - [PERF] - inference latency_ms=138.13 camera_id=1 detections=2
+2025-11-04 18:30:52.%f - [PERF] - camera_cycle_total_ms=205.36 camera_id=1
+2025-11-04 18:30:52.%f - [PERF] - get_frame latency_ms=12.04 camera_id=2
+2025-11-04 18:30:52.%f - [PERF] - load_image latency_ms=3.32 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260832_frame.jpg
+2025-11-04 18:30:52.%f - [PERF] - inference latency_ms=222.84 camera_id=2 detections=10
+2025-11-04 18:30:52.%f - [PERF] - copy_image latency_ms=3.33 camera_id=2 status=409
+2025-11-04 18:30:52.%f - [PERF] - camera_cycle_total_ms=304.91 camera_id=2
+2025-11-04 18:30:52.%f - [PERF] - iteration_total_ms=512.57
+2025-11-04 18:31:22.%f - [PERF] - get_frame latency_ms=7.23 camera_id=1
+2025-11-04 18:31:22.%f - [PERF] - load_image latency_ms=2.77 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260836_frame.jpg
+2025-11-04 18:31:22.%f - [PERF] - inference latency_ms=103.06 camera_id=1 detections=2
+2025-11-04 18:31:22.%f - [PERF] - camera_cycle_total_ms=157.60 camera_id=1
+2025-11-04 18:31:22.%f - [PERF] - get_frame latency_ms=8.30 camera_id=2
+2025-11-04 18:31:22.%f - [PERF] - load_image latency_ms=2.55 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260838_frame.jpg
+2025-11-04 18:31:22.%f - [PERF] - inference latency_ms=166.01 camera_id=2 detections=7
+2025-11-04 18:31:22.%f - [PERF] - copy_image latency_ms=5.18 camera_id=2 status=409
+2025-11-04 18:31:22.%f - [PERF] - camera_cycle_total_ms=230.12 camera_id=2
+2025-11-04 18:31:22.%f - [PERF] - iteration_total_ms=389.97
+2025-11-04 18:31:52.%f - [PERF] - get_frame latency_ms=8.98 camera_id=1
+2025-11-04 18:31:52.%f - [PERF] - load_image latency_ms=2.77 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260836_frame.jpg
+2025-11-04 18:31:52.%f - [PERF] - inference latency_ms=154.51 camera_id=1 detections=2
+2025-11-04 18:31:53.%f - [PERF] - camera_cycle_total_ms=219.59 camera_id=1
+2025-11-04 18:31:53.%f - [PERF] - get_frame latency_ms=9.71 camera_id=2
+2025-11-04 18:31:53.%f - [PERF] - load_image latency_ms=2.52 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260838_frame.jpg
+2025-11-04 18:31:53.%f - [PERF] - inference latency_ms=136.34 camera_id=2 detections=7
+2025-11-04 18:31:53.%f - [PERF] - copy_image latency_ms=3.77 camera_id=2 status=409
+2025-11-04 18:31:53.%f - [PERF] - camera_cycle_total_ms=204.23 camera_id=2
+2025-11-04 18:31:53.%f - [PERF] - iteration_total_ms=426.40
+2025-11-04 18:37:02.%f - [PERF] - Performance logger initialized
+2025-11-04 18:37:03.%f - [PERF] - get_frame latency_ms=9.29 camera_id=1
+2025-11-04 18:37:03.%f - [PERF] - camera_cycle_total_ms=20.99 camera_id=1
+2025-11-04 18:37:03.%f - [PERF] - get_frame latency_ms=8.81 camera_id=2
+2025-11-04 18:37:03.%f - [PERF] - camera_cycle_total_ms=19.27 camera_id=2
+2025-11-04 18:37:03.%f - [PERF] - iteration_total_ms=43.05
+2025-11-04 18:37:34.%f - [PERF] - get_frame latency_ms=8.30 camera_id=1
+2025-11-04 18:37:34.%f - [PERF] - camera_cycle_total_ms=19.55 camera_id=1
+2025-11-04 18:37:34.%f - [PERF] - get_frame latency_ms=9.02 camera_id=2
+2025-11-04 18:37:34.%f - [PERF] - camera_cycle_total_ms=22.70 camera_id=2
+2025-11-04 18:37:34.%f - [PERF] - iteration_total_ms=44.95
+2025-11-04 18:38:04.%f - [PERF] - get_frame latency_ms=9.12 camera_id=1
+2025-11-04 18:38:04.%f - [PERF] - load_image latency_ms=4.31 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260883_frame.jpg
+2025-11-04 18:38:04.%f - [PERF] - inference latency_ms=140.91 camera_id=1 detections=2
+2025-11-04 18:38:04.%f - [PERF] - camera_cycle_total_ms=202.27 camera_id=1
+2025-11-04 18:38:04.%f - [PERF] - get_frame latency_ms=10.23 camera_id=2
+2025-11-04 18:38:04.%f - [PERF] - load_image latency_ms=2.77 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260885_frame.jpg
+2025-11-04 18:38:04.%f - [PERF] - inference latency_ms=153.42 camera_id=2 detections=4
+2025-11-04 18:38:04.%f - [PERF] - copy_image latency_ms=10.25 camera_id=2 status=200
+2025-11-04 18:38:04.%f - [PERF] - add_result latency_ms=7.46 camera_id=2 status=200
+2025-11-04 18:38:04.%f - [PERF] - camera_cycle_total_ms=232.96 camera_id=2
+2025-11-04 18:38:04.%f - [PERF] - iteration_total_ms=437.99
+2025-11-04 18:38:34.%f - [PERF] - get_frame latency_ms=9.11 camera_id=1
+2025-11-04 18:38:34.%f - [PERF] - load_image latency_ms=2.65 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260883_frame.jpg
+2025-11-04 18:38:34.%f - [PERF] - inference latency_ms=104.02 camera_id=1 detections=2
+2025-11-04 18:38:34.%f - [PERF] - camera_cycle_total_ms=165.01 camera_id=1
+2025-11-04 18:38:34.%f - [PERF] - get_frame latency_ms=6.69 camera_id=2
+2025-11-04 18:38:34.%f - [PERF] - load_image latency_ms=2.57 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762260885_frame.jpg
+2025-11-04 18:38:34.%f - [PERF] - inference latency_ms=212.23 camera_id=2 detections=4
+2025-11-04 18:38:34.%f - [PERF] - copy_image latency_ms=3.05 camera_id=2 status=409
+2025-11-04 18:38:34.%f - [PERF] - camera_cycle_total_ms=267.90 camera_id=2
+2025-11-04 18:38:34.%f - [PERF] - iteration_total_ms=435.76
+2025-11-04 18:39:05.%f - [PERF] - get_frame latency_ms=8.99 camera_id=1
+2025-11-04 18:39:05.%f - [PERF] - load_image latency_ms=2.64 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260884_frame.jpg
+2025-11-04 18:39:05.%f - [PERF] - inference latency_ms=205.04 camera_id=1 detections=2
+2025-11-04 18:39:05.%f - [PERF] - camera_cycle_total_ms=269.06 camera_id=1
+2025-11-04 18:39:05.%f - [PERF] - get_frame latency_ms=8.40 camera_id=2
+2025-11-04 18:39:05.%f - [PERF] - load_image latency_ms=2.26 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261668_frame.jpg
+2025-11-04 18:39:05.%f - [PERF] - inference latency_ms=163.68 camera_id=2 detections=5
+2025-11-04 18:39:05.%f - [PERF] - copy_image latency_ms=11.99 camera_id=2 status=200
+2025-11-04 18:39:05.%f - [PERF] - add_result latency_ms=4.98 camera_id=2 status=200
+2025-11-04 18:39:05.%f - [PERF] - camera_cycle_total_ms=243.93 camera_id=2
+2025-11-04 18:39:05.%f - [PERF] - iteration_total_ms=515.75
+2025-11-04 18:39:35.%f - [PERF] - get_frame latency_ms=9.69 camera_id=1
+2025-11-04 18:39:35.%f - [PERF] - load_image latency_ms=2.68 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260884_frame.jpg
+2025-11-04 18:39:35.%f - [PERF] - inference latency_ms=123.16 camera_id=1 detections=2
+2025-11-04 18:39:35.%f - [PERF] - camera_cycle_total_ms=184.57 camera_id=1
+2025-11-04 18:39:35.%f - [PERF] - get_frame latency_ms=6.83 camera_id=2
+2025-11-04 18:39:35.%f - [PERF] - load_image latency_ms=2.12 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261668_frame.jpg
+2025-11-04 18:39:35.%f - [PERF] - inference latency_ms=146.09 camera_id=2 detections=5
+2025-11-04 18:39:35.%f - [PERF] - copy_image latency_ms=3.84 camera_id=2 status=409
+2025-11-04 18:39:35.%f - [PERF] - camera_cycle_total_ms=200.88 camera_id=2
+2025-11-04 18:39:35.%f - [PERF] - iteration_total_ms=388.30
+2025-11-04 18:40:05.%f - [PERF] - get_frame latency_ms=9.68 camera_id=1
+2025-11-04 18:40:06.%f - [PERF] - load_image latency_ms=2.57 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260890_frame.jpg
+2025-11-04 18:40:06.%f - [PERF] - inference latency_ms=112.48 camera_id=1 detections=3
+2025-11-04 18:40:06.%f - [PERF] - copy_image latency_ms=14.34 camera_id=1 status=200
+2025-11-04 18:40:06.%f - [PERF] - add_result latency_ms=4.60 camera_id=1 status=200
+2025-11-04 18:40:06.%f - [PERF] - camera_cycle_total_ms=192.74 camera_id=1
+2025-11-04 18:40:06.%f - [PERF] - get_frame latency_ms=8.07 camera_id=2
+2025-11-04 18:40:06.%f - [PERF] - load_image latency_ms=2.76 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261670_frame.jpg
+2025-11-04 18:40:06.%f - [PERF] - inference latency_ms=114.96 camera_id=2 detections=6
+2025-11-04 18:40:06.%f - [PERF] - copy_image latency_ms=10.31 camera_id=2 status=200
+2025-11-04 18:40:06.%f - [PERF] - add_result latency_ms=4.18 camera_id=2 status=200
+2025-11-04 18:40:06.%f - [PERF] - camera_cycle_total_ms=190.06 camera_id=2
+2025-11-04 18:40:06.%f - [PERF] - iteration_total_ms=385.54
+2025-11-04 18:40:36.%f - [PERF] - get_frame latency_ms=7.40 camera_id=1
+2025-11-04 18:40:36.%f - [PERF] - load_image latency_ms=2.63 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260890_frame.jpg
+2025-11-04 18:40:36.%f - [PERF] - inference latency_ms=115.04 camera_id=1 detections=3
+2025-11-04 18:40:36.%f - [PERF] - copy_image latency_ms=4.07 camera_id=1 status=409
+2025-11-04 18:40:36.%f - [PERF] - camera_cycle_total_ms=173.47 camera_id=1
+2025-11-04 18:40:36.%f - [PERF] - get_frame latency_ms=8.59 camera_id=2
+2025-11-04 18:40:36.%f - [PERF] - load_image latency_ms=3.14 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261670_frame.jpg
+2025-11-04 18:40:36.%f - [PERF] - inference latency_ms=107.74 camera_id=2 detections=6
+2025-11-04 18:40:36.%f - [PERF] - copy_image latency_ms=4.02 camera_id=2 status=409
+2025-11-04 18:40:36.%f - [PERF] - camera_cycle_total_ms=170.44 camera_id=2
+2025-11-04 18:40:36.%f - [PERF] - iteration_total_ms=346.33
+2025-11-04 18:41:06.%f - [PERF] - get_frame latency_ms=7.80 camera_id=1
+2025-11-04 18:41:06.%f - [PERF] - load_image latency_ms=2.87 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260896_frame.jpg
+2025-11-04 18:41:06.%f - [PERF] - inference latency_ms=155.34 camera_id=1 detections=2
+2025-11-04 18:41:06.%f - [PERF] - camera_cycle_total_ms=214.13 camera_id=1
+2025-11-04 18:41:06.%f - [PERF] - get_frame latency_ms=8.01 camera_id=2
+2025-11-04 18:41:07.%f - [PERF] - load_image latency_ms=2.51 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261672_frame.jpg
+2025-11-04 18:41:07.%f - [PERF] - inference latency_ms=120.39 camera_id=2 detections=4
+2025-11-04 18:41:07.%f - [PERF] - copy_image latency_ms=10.33 camera_id=2 status=200
+2025-11-04 18:41:07.%f - [PERF] - add_result latency_ms=5.65 camera_id=2 status=200
+2025-11-04 18:41:07.%f - [PERF] - camera_cycle_total_ms=196.37 camera_id=2
+2025-11-04 18:41:07.%f - [PERF] - iteration_total_ms=412.32
+2025-11-04 18:41:37.%f - [PERF] - get_frame latency_ms=8.69 camera_id=1
+2025-11-04 18:41:37.%f - [PERF] - load_image latency_ms=2.73 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260896_frame.jpg
+2025-11-04 18:41:37.%f - [PERF] - inference latency_ms=100.02 camera_id=1 detections=2
+2025-11-04 18:41:37.%f - [PERF] - camera_cycle_total_ms=161.33 camera_id=1
+2025-11-04 18:41:37.%f - [PERF] - get_frame latency_ms=8.71 camera_id=2
+2025-11-04 18:41:37.%f - [PERF] - load_image latency_ms=3.01 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261672_frame.jpg
+2025-11-04 18:41:37.%f - [PERF] - inference latency_ms=176.52 camera_id=2 detections=4
+2025-11-04 18:41:37.%f - [PERF] - copy_image latency_ms=3.58 camera_id=2 status=409
+2025-11-04 18:41:37.%f - [PERF] - camera_cycle_total_ms=241.80 camera_id=2
+2025-11-04 18:41:37.%f - [PERF] - iteration_total_ms=405.80
+2025-11-04 18:42:07.%f - [PERF] - get_frame latency_ms=9.81 camera_id=1
+2025-11-04 18:42:07.%f - [PERF] - load_image latency_ms=2.61 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260902_frame.jpg
+2025-11-04 18:42:07.%f - [PERF] - inference latency_ms=114.60 camera_id=1 detections=2
+2025-11-04 18:42:07.%f - [PERF] - camera_cycle_total_ms=180.30 camera_id=1
+2025-11-04 18:42:07.%f - [PERF] - get_frame latency_ms=8.27 camera_id=2
+2025-11-04 18:42:07.%f - [PERF] - load_image latency_ms=2.40 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261674_frame.jpg
+2025-11-04 18:42:07.%f - [PERF] - inference latency_ms=117.59 camera_id=2 detections=2
+2025-11-04 18:42:08.%f - [PERF] - camera_cycle_total_ms=176.80 camera_id=2
+2025-11-04 18:42:08.%f - [PERF] - iteration_total_ms=359.61
+2025-11-04 18:42:38.%f - [PERF] - get_frame latency_ms=10.87 camera_id=1
+2025-11-04 18:42:38.%f - [PERF] - load_image latency_ms=3.93 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260902_frame.jpg
+2025-11-04 18:42:38.%f - [PERF] - inference latency_ms=279.84 camera_id=1 detections=2
+2025-11-04 18:42:38.%f - [PERF] - camera_cycle_total_ms=347.34 camera_id=1
+2025-11-04 18:42:38.%f - [PERF] - get_frame latency_ms=11.82 camera_id=2
+2025-11-04 18:42:38.%f - [PERF] - load_image latency_ms=2.83 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261674_frame.jpg
+2025-11-04 18:42:38.%f - [PERF] - inference latency_ms=151.96 camera_id=2 detections=2
+2025-11-04 18:42:38.%f - [PERF] - camera_cycle_total_ms=221.51 camera_id=2
+2025-11-04 18:42:38.%f - [PERF] - iteration_total_ms=571.43
+2025-11-04 18:43:08.%f - [PERF] - get_frame latency_ms=7.56 camera_id=1
+2025-11-04 18:43:08.%f - [PERF] - load_image latency_ms=2.67 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260908_frame.jpg
+2025-11-04 18:43:08.%f - [PERF] - inference latency_ms=117.11 camera_id=1 detections=2
+2025-11-04 18:43:08.%f - [PERF] - camera_cycle_total_ms=169.77 camera_id=1
+2025-11-04 18:43:08.%f - [PERF] - get_frame latency_ms=8.18 camera_id=2
+2025-11-04 18:43:08.%f - [PERF] - load_image latency_ms=2.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261676_frame.jpg
+2025-11-04 18:43:09.%f - [PERF] - inference latency_ms=222.64 camera_id=2 detections=2
+2025-11-04 18:43:09.%f - [PERF] - camera_cycle_total_ms=280.81 camera_id=2
+2025-11-04 18:43:09.%f - [PERF] - iteration_total_ms=452.80
+2025-11-04 18:43:39.%f - [PERF] - get_frame latency_ms=9.25 camera_id=1
+2025-11-04 18:43:39.%f - [PERF] - load_image latency_ms=2.55 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260908_frame.jpg
+2025-11-04 18:43:39.%f - [PERF] - inference latency_ms=116.82 camera_id=1 detections=2
+2025-11-04 18:43:39.%f - [PERF] - camera_cycle_total_ms=180.47 camera_id=1
+2025-11-04 18:43:39.%f - [PERF] - get_frame latency_ms=8.24 camera_id=2
+2025-11-04 18:43:39.%f - [PERF] - load_image latency_ms=2.71 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261676_frame.jpg
+2025-11-04 18:43:39.%f - [PERF] - inference latency_ms=108.32 camera_id=2 detections=2
+2025-11-04 18:43:39.%f - [PERF] - camera_cycle_total_ms=168.68 camera_id=2
+2025-11-04 18:43:39.%f - [PERF] - iteration_total_ms=351.96
+2025-11-04 18:44:09.%f - [PERF] - get_frame latency_ms=8.46 camera_id=1
+2025-11-04 18:44:09.%f - [PERF] - load_image latency_ms=2.84 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260914_frame.jpg
+2025-11-04 18:44:09.%f - [PERF] - inference latency_ms=117.93 camera_id=1 detections=2
+2025-11-04 18:44:09.%f - [PERF] - camera_cycle_total_ms=181.72 camera_id=1
+2025-11-04 18:44:09.%f - [PERF] - get_frame latency_ms=8.56 camera_id=2
+2025-11-04 18:44:09.%f - [PERF] - load_image latency_ms=2.54 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261678_frame.jpg
+2025-11-04 18:44:09.%f - [PERF] - inference latency_ms=146.57 camera_id=2 detections=5
+2025-11-04 18:44:09.%f - [PERF] - copy_image latency_ms=8.09 camera_id=2 status=200
+2025-11-04 18:44:09.%f - [PERF] - add_result latency_ms=4.81 camera_id=2 status=200
+2025-11-04 18:44:09.%f - [PERF] - camera_cycle_total_ms=220.53 camera_id=2
+2025-11-04 18:44:09.%f - [PERF] - iteration_total_ms=404.39
+2025-11-04 18:44:39.%f - [PERF] - get_frame latency_ms=8.65 camera_id=1
+2025-11-04 18:44:39.%f - [PERF] - load_image latency_ms=2.72 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260914_frame.jpg
+2025-11-04 18:44:40.%f - [PERF] - inference latency_ms=149.06 camera_id=1 detections=2
+2025-11-04 18:44:40.%f - [PERF] - camera_cycle_total_ms=212.23 camera_id=1
+2025-11-04 18:44:40.%f - [PERF] - get_frame latency_ms=7.90 camera_id=2
+2025-11-04 18:44:40.%f - [PERF] - load_image latency_ms=2.47 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261678_frame.jpg
+2025-11-04 18:44:40.%f - [PERF] - inference latency_ms=106.17 camera_id=2 detections=5
+2025-11-04 18:44:40.%f - [PERF] - copy_image latency_ms=3.46 camera_id=2 status=409
+2025-11-04 18:44:40.%f - [PERF] - camera_cycle_total_ms=164.06 camera_id=2
+2025-11-04 18:44:40.%f - [PERF] - iteration_total_ms=378.66
+2025-11-04 18:45:10.%f - [PERF] - get_frame latency_ms=9.01 camera_id=1
+2025-11-04 18:45:10.%f - [PERF] - load_image latency_ms=2.72 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260920_frame.jpg
+2025-11-04 18:45:10.%f - [PERF] - inference latency_ms=137.78 camera_id=1 detections=6
+2025-11-04 18:45:10.%f - [PERF] - copy_image latency_ms=8.93 camera_id=1 status=200
+2025-11-04 18:45:10.%f - [PERF] - add_result latency_ms=4.29 camera_id=1 status=200
+2025-11-04 18:45:10.%f - [PERF] - camera_cycle_total_ms=208.84 camera_id=1
+2025-11-04 18:45:10.%f - [PERF] - get_frame latency_ms=7.57 camera_id=2
+2025-11-04 18:45:10.%f - [PERF] - load_image latency_ms=2.82 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261680_frame.jpg
+2025-11-04 18:45:10.%f - [PERF] - inference latency_ms=109.17 camera_id=2 detections=6
+2025-11-04 18:45:10.%f - [PERF] - copy_image latency_ms=10.96 camera_id=2 status=200
+2025-11-04 18:45:10.%f - [PERF] - add_result latency_ms=4.19 camera_id=2 status=200
+2025-11-04 18:45:10.%f - [PERF] - camera_cycle_total_ms=175.35 camera_id=2
+2025-11-04 18:45:10.%f - [PERF] - iteration_total_ms=386.74
+2025-11-04 18:45:40.%f - [PERF] - get_frame latency_ms=9.03 camera_id=1
+2025-11-04 18:45:40.%f - [PERF] - load_image latency_ms=2.58 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260920_frame.jpg
+2025-11-04 18:45:40.%f - [PERF] - inference latency_ms=167.43 camera_id=1 detections=6
+2025-11-04 18:45:40.%f - [PERF] - copy_image latency_ms=3.77 camera_id=1 status=409
+2025-11-04 18:45:40.%f - [PERF] - camera_cycle_total_ms=233.51 camera_id=1
+2025-11-04 18:45:41.%f - [PERF] - get_frame latency_ms=10.22 camera_id=2
+2025-11-04 18:45:41.%f - [PERF] - load_image latency_ms=2.62 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261680_frame.jpg
+2025-11-04 18:45:41.%f - [PERF] - inference latency_ms=190.87 camera_id=2 detections=6
+2025-11-04 18:45:41.%f - [PERF] - copy_image latency_ms=7.22 camera_id=2 status=409
+2025-11-04 18:45:41.%f - [PERF] - camera_cycle_total_ms=262.73 camera_id=2
+2025-11-04 18:45:41.%f - [PERF] - iteration_total_ms=499.18
+2025-11-04 18:46:11.%f - [PERF] - get_frame latency_ms=8.10 camera_id=1
+2025-11-04 18:46:11.%f - [PERF] - load_image latency_ms=3.69 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260926_frame.jpg
+2025-11-04 18:46:11.%f - [PERF] - inference latency_ms=206.55 camera_id=1 detections=5
+2025-11-04 18:46:11.%f - [PERF] - camera_cycle_total_ms=266.39 camera_id=1
+2025-11-04 18:46:11.%f - [PERF] - get_frame latency_ms=10.82 camera_id=2
+2025-11-04 18:46:11.%f - [PERF] - load_image latency_ms=3.38 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261682_frame.jpg
+2025-11-04 18:46:11.%f - [PERF] - inference latency_ms=185.60 camera_id=2 detections=5
+2025-11-04 18:46:11.%f - [PERF] - copy_image latency_ms=15.91 camera_id=2 status=200
+2025-11-04 18:46:11.%f - [PERF] - add_result latency_ms=6.24 camera_id=2 status=200
+2025-11-04 18:46:11.%f - [PERF] - camera_cycle_total_ms=274.42 camera_id=2
+2025-11-04 18:46:11.%f - [PERF] - iteration_total_ms=543.11
+2025-11-04 18:46:41.%f - [PERF] - get_frame latency_ms=8.50 camera_id=1
+2025-11-04 18:46:41.%f - [PERF] - load_image latency_ms=2.59 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260926_frame.jpg
+2025-11-04 18:46:42.%f - [PERF] - inference latency_ms=118.57 camera_id=1 detections=5
+2025-11-04 18:46:42.%f - [PERF] - camera_cycle_total_ms=176.93 camera_id=1
+2025-11-04 18:46:42.%f - [PERF] - get_frame latency_ms=7.69 camera_id=2
+2025-11-04 18:46:42.%f - [PERF] - load_image latency_ms=2.82 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261682_frame.jpg
+2025-11-04 18:46:42.%f - [PERF] - inference latency_ms=118.63 camera_id=2 detections=5
+2025-11-04 18:46:42.%f - [PERF] - copy_image latency_ms=3.52 camera_id=2 status=409
+2025-11-04 18:46:42.%f - [PERF] - camera_cycle_total_ms=183.31 camera_id=2
+2025-11-04 18:46:42.%f - [PERF] - iteration_total_ms=362.89
+2025-11-04 18:47:12.%f - [PERF] - get_frame latency_ms=12.93 camera_id=1
+2025-11-04 18:47:12.%f - [PERF] - load_image latency_ms=2.81 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260932_frame.jpg
+2025-11-04 18:47:12.%f - [PERF] - inference latency_ms=122.70 camera_id=1 detections=4
+2025-11-04 18:47:12.%f - [PERF] - copy_image latency_ms=7.62 camera_id=1 status=200
+2025-11-04 18:47:12.%f - [PERF] - add_result latency_ms=4.57 camera_id=1 status=200
+2025-11-04 18:47:12.%f - [PERF] - camera_cycle_total_ms=198.03 camera_id=1
+2025-11-04 18:47:12.%f - [PERF] - get_frame latency_ms=8.28 camera_id=2
+2025-11-04 18:47:12.%f - [PERF] - load_image latency_ms=2.63 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261684_frame.jpg
+2025-11-04 18:47:12.%f - [PERF] - inference latency_ms=108.61 camera_id=2 detections=3
+2025-11-04 18:47:12.%f - [PERF] - copy_image latency_ms=4.81 camera_id=2 status=409
+2025-11-04 18:47:12.%f - [PERF] - camera_cycle_total_ms=169.51 camera_id=2
+2025-11-04 18:47:12.%f - [PERF] - iteration_total_ms=370.02
+2025-11-04 18:47:42.%f - [PERF] - get_frame latency_ms=11.67 camera_id=1
+2025-11-04 18:47:42.%f - [PERF] - load_image latency_ms=4.48 camera_id=1 path=http://192.168.11.97/frames/dell/raw_frames/1/1762260932_frame.jpg
+2025-11-04 18:47:42.%f - [PERF] - inference latency_ms=172.06 camera_id=1 detections=4
+2025-11-04 18:47:42.%f - [PERF] - copy_image latency_ms=7.72 camera_id=1 status=409
+2025-11-04 18:47:42.%f - [PERF] - camera_cycle_total_ms=255.73 camera_id=1
+2025-11-04 18:47:42.%f - [PERF] - get_frame latency_ms=9.10 camera_id=2
+2025-11-04 18:47:42.%f - [PERF] - load_image latency_ms=3.25 camera_id=2 path=http://192.168.11.97/frames/dell/raw_frames/2/1762261684_frame.jpg
+2025-11-04 18:47:43.%f - [PERF] - inference latency_ms=229.69 camera_id=2 detections=3
+2025-11-04 18:47:43.%f - [PERF] - copy_image latency_ms=6.63 camera_id=2 status=409
+2025-11-04 18:47:43.%f - [PERF] - camera_cycle_total_ms=305.24 camera_id=2
+2025-11-04 18:47:43.%f - [PERF] - iteration_total_ms=563.67
