@@ -130,7 +130,7 @@ def store_result(file_name, file_path, file_url, bounding_box, frame_time, camer
 
 
 def get_device():
-    return select_device("cpu")
+    return select_device("0")
 
 
 def load_model(weight_path, map_location):
