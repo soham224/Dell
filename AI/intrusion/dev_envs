@@ -6,7 +6,7 @@ export MYSQL_DB_NAME=auto-serving-dell
 
 export IMAGE_SIZE=640
 
-export SLEEP_TIME=30
+export SLEEP_TIME=120
 
 export ROOT_URL=http://192.168.11.97/
 export ROOT_PATH=/home/dev1079

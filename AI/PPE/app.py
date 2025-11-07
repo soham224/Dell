@@ -302,14 +302,24 @@ if __name__ == "__main__":
                                 name, ext = os.path.splitext(src_base)
                                 overlay_filename = f"{name}_roi{ext or '.jpg'}"
                                 overlay_disk_path = os.path.join(src_dir, overlay_filename)
-                                saved_path = mu.save_overlay_image(over_img, overlay_disk_path)
-                                if saved_path:
-                                    base_url = (cfg.ROOT_URL or "").rstrip("/")
-                                    # Convert disk path to URL analogous to how raw frames are served
-                                    overlay_source_url = saved_path.replace(cfg.ROOT_PATH, base_url)
-                                    cfg.logger.info("Prepared ROI overlay source: %s", overlay_source_url)
+                                # Only attempt to save overlay if the destination directory is writable on this host.
+                                # This avoids permission errors when the raw frame path lives on a different machine
+                                # (e.g., /home/dev1079) while this code runs on dev1034.
+                                dest_dir = os.path.dirname(overlay_disk_path)
+                                if os.path.isdir(dest_dir) and os.access(dest_dir, os.W_OK):
+                                    saved_path = mu.save_overlay_image(over_img, overlay_disk_path)
+                                    if saved_path:
+                                        base_url = (cfg.ROOT_URL or "").rstrip("/")
+                                        # Convert disk path to URL analogous to how raw frames are served
+                                        overlay_source_url = saved_path.replace(cfg.ROOT_PATH, base_url)
+                                        cfg.logger.info("Prepared ROI overlay source: %s", overlay_source_url)
+                                    else:
+                                        cfg.logger.info("Overlay save not available; will use raw source image")
                                 else:
-                                    cfg.logger.warning("Overlay save failed; falling back to raw source image")
+                                    cfg.logger.debug(
+                                        "Skipping overlay save; non-writable or non-local path: %s",
+                                        dest_dir,
+                                    )
                             except Exception as e:
                                 cfg.logger.warning("Failed to create ROI overlay source: %s", e)
 
