@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  tusker-dell-ppe:
+    build: .
+    image : tusker-dell-ppe
+    container_name: tusker-dell-ppe
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - .env
+    volumes:
+      - /home/mihir/logs:/logs

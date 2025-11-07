@@ -1,0 +1,49 @@
+export MYSQL_HOST=192.168.11.88
+export MYSQL_PORT=3306
+export MYSQL_USER=admin
+export MYSQL_PASS=Admin@123
+export MYSQL_DB_NAME=auto-serving-dell
+
+export IMAGE_SIZE=640
+
+export SLEEP_TIME=30                            # 900
+
+export ROOT_URL=http://192.168.11.97/
+export ROOT_PATH=/home/dev1079
+
+export FRAME_STATUS_URL=http://192.168.11.97:8000/update_camera_status
+export GET_FRAME_URL=http://192.168.11.97:8000/get_frame_by_time
+export COPY_IMAGES_URL=http://192.168.11.97:8000/image_copy
+export DELETE_SOURCE_IMAGE_URL=http://192.168.11.97:8000/delete_image
+
+export RESULT_TYPE_ID=1
+
+export MODEL_CONF=0.35
+export MODEL_IOU=0.45
+
+export LOG_BASE_DIRECTORY=./logs
+
+export CAMERA_TABLE_NAME=camera_manager
+export RESULT_MAPPING_TABLE_NAME=camera_usecase_mapping
+
+export ADD_RESULT_URL=http://192.168.11.97:8005/api/v1/add_result
+
+export USER_ID=2
+
+# ===================== People In/Out additions =====================
+# Optional context IDs (used by counts payload)
+export LOCATION_ID=0
+export USECASE_ID=0
+
+# People counts API endpoint
+export PEOPLE_COUNTS_API_URL=http://192.168.11.97:8005/ai_people_footfall/add
+
+# Deep SORT / ReID config
+export REID_CKPT=./tracking/deep_sort_pytorch/deep_sort/deep/checkpoint/ckpt.t7
+export MAX_DIST=0.2
+export MIN_CONFIDENCE=0.3
+export NMS_MAX_OVERLAP=0.5
+export MAX_IOU_DISTANCE=0.7
+export MAX_AGE=30
+export N_INIT=3
+export NN_BUDGET=100
