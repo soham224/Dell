@@ -502,6 +502,89 @@ def get_all_camera():
         return []
 
 
+def get_cameras_for_usecase(usecase_id: Any) -> List[Dict[str, Any]]:
+    """Return list of cameras having an active mapping for given usecase_id.
+
+    Active means: status=1 and current UTC time within [start_time_utc, end_time_utc].
+    Returns items as {"id": camera_id} for compatibility with app flow.
+    """
+    try:
+        cursor = conn.cursor(dictionary=True)
+        query = (
+            f"SELECT DISTINCT camera_id FROM {cfg.RESULT_MAPPING_TABLE_NAME} "
+            "WHERE status = 1 AND usecase_id = %s "
+            "AND start_time_utc <= UTC_TIMESTAMP() AND end_time_utc >= UTC_TIMESTAMP()"
+        )
+        cursor.execute(query, (usecase_id,))
+        rows = cursor.fetchall()
+        cursor.close()
+        cameras = [{"id": int(r["camera_id"]) if r.get("camera_id") is not None else r.get("camera_id")} for r in rows]
+        cfg.logger.debug("get_cameras_for_usecase(%s) -> %s", usecase_id, cameras)
+        return cameras
+    except Exception as e:
+        cfg.logger.error("get_cameras_for_usecase error: %s", e)
+        return []
+
+
+def get_location_id_by_camera_id(camera_id: int) -> Optional[int]:
+    """Fetch location_id from camera table for the given camera_id."""
+    try:
+        cursor = conn.cursor(dictionary=True)
+        query = f"SELECT location_id FROM {cfg.CAMERA_TABLE_NAME} WHERE id = %s LIMIT 1"
+        cursor.execute(query, (int(camera_id),))
+        row = cursor.fetchone()
+        cursor.close()
+        if row and row.get("location_id") is not None:
+            try:
+                return int(row["location_id"])
+            except Exception:
+                return None
+        return None
+    except Exception as e:
+        cfg.logger.error("get_location_id_by_camera_id error: %s", e)
+        return None
+
+
+def get_people_config(camera_id: int, usecase_id: Any) -> Dict[str, Any]:
+    """Fetch active mapping row for People In/Out from camera_usecase_mapping.
+
+    Returns dict with keys:
+      - roi_box: Optional[List[int]] single [x1,y1,x2,y2]
+      - line: Optional[Dict[str, List[int]]] -> {"p1": [x,y], "p2": [x,y]}
+    """
+    cfg.logger.debug(
+        "Fetching people config | table=%s camera_id=%s usecase_id=%s",
+        cfg.RESULT_MAPPING_TABLE_NAME,
+        camera_id,
+        usecase_id,
+    )
+    out: Dict[str, Any] = {"roi_box": None, "line": None}
+    try:
+        cursor = conn.cursor(dictionary=True)
+        query = (
+            f"SELECT roi, line_roi FROM {cfg.RESULT_MAPPING_TABLE_NAME} "
+            "WHERE status = 1 AND usecase_id = %s AND camera_id = %s "
+            "AND start_time_utc <= UTC_TIMESTAMP() AND end_time_utc >= UTC_TIMESTAMP() "
+            "ORDER BY id DESC LIMIT 1"
+        )
+        cursor.execute(query, (usecase_id, camera_id))
+        row = cursor.fetchone()
+        cursor.close()
+        if not row:
+            cfg.logger.info("No active mapping (roi/line) found for camera_id=%s", camera_id)
+            return out
+        # ROI parse (take first rectangle if multiple)
+        rois = parse_roi_boxes(row.get("roi"))
+        if rois:
+            out["roi_box"] = rois[0]
+        # Line parse
+        out["line"] = parse_line_points(row.get("line_roi"))
+        cfg.logger.debug("people config parsed | roi=%s line=%s", out["roi_box"], out["line"])
+    except Exception as e:
+        cfg.logger.error("get_people_config error: %s", e)
+    return out
+
+
 # ============================ ROI Utilities ============================
 def parse_roi_boxes(roi_raw: Any) -> List[List[int]]:
     """Parse ROI boxes from DB value to a list of [x1,y1,x2,y2].
@@ -532,6 +615,50 @@ def parse_roi_boxes(roi_raw: Any) -> List[List[int]]:
     except Exception as e:
         cfg.logger.warning("Failed to parse ROI boxes: %s", e)
         return []
+
+
+def parse_line_points(line_raw: Any) -> Optional[Dict[str, List[int]]]:
+    """Parse a virtual line definition into {"p1":[x,y], "p2":[x,y]}.
+
+    Accepts formats:
+    - {"p1":[x,y], "p2":[x,y]}
+    - [[x1,y1],[x2,y2]]
+    - {"location": [[x1,y1],[x2,y2]]}
+    Returns None if invalid.
+    """
+    try:
+        if not line_raw:
+            return None
+        data = json.loads(line_raw) if isinstance(line_raw, str) else line_raw
+        # dict with p1/p2
+        if isinstance(data, dict):
+            if "p1" in data and "p2" in data:
+                p1 = list(map(int, data["p1"]))
+                p2 = list(map(int, data["p2"]))
+                if len(p1) == 2 and len(p2) == 2:
+                    return {"p1": p1, "p2": p2}
+            if "location" in data:
+                pts = data.get("location", [])
+                if (
+                    isinstance(pts, list)
+                    and len(pts) >= 2
+                    and all(isinstance(pt, (list, tuple)) and len(pt) == 2 for pt in pts[:2])
+                ):
+                    p1 = list(map(int, pts[0]))
+                    p2 = list(map(int, pts[1]))
+                    return {"p1": p1, "p2": p2}
+        # list of two points
+        if (
+            isinstance(data, list)
+            and len(data) >= 2
+            and all(isinstance(pt, (list, tuple)) and len(pt) == 2 for pt in data[:2])
+        ):
+            p1 = list(map(int, data[0]))
+            p2 = list(map(int, data[1]))
+            return {"p1": p1, "p2": p2}
+    except Exception as e:
+        cfg.logger.warning("Failed to parse line points: %s", e)
+    return None
 
 
 def box_center(box: List[int]) -> Tuple[int, int]:

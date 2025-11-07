@@ -16,5 +16,11 @@ engine = create_engine(
     pool_size=settings.MYSQL_POOL_SIZE,
     max_overflow=settings.MYSQL_MAX_OVERFLOW,
     pool_timeout=settings.MYSQL_POOL_TIMEOUT,
+    connect_args={
+        "connect_timeout": 5,
+        "read_timeout": 10,
+        "write_timeout": 10,
+        "init_command": "SET SESSION max_execution_time=10000",
+    },
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

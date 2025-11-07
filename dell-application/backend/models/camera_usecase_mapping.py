@@ -12,6 +12,7 @@ class CameraUseCaseMapping(Base):
     usecase_id = Column(Integer, ForeignKey("usecase.id"))
     roi = Column(JSON, nullable=True)
     roi_type = Column(String(255), nullable=True)
+    # line_roi = Column(JSON, nullable=True)
     usecase_timeout = Column(Integer, nullable=True)
     second_before_event = Column(Integer, nullable=True)
     second_after_event = Column(Integer, nullable=True)

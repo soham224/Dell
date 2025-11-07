@@ -119,7 +119,8 @@ def get_all_camera_label_mapping(
         for label in label_obj.labels
     ]
 
-    return set(labels)
+    # Ensure JSON-serializable response (set is not serializable)
+    return list(set(labels))
 
 
 @router.post(

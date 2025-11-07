@@ -18,6 +18,13 @@ mongo_client = pymongo.MongoClient(
     username=settings.MONGO_USER,
     password=settings.MONGO_PASS,
     authSource=settings.MONGO_AUTH_DB_NAME,
+    serverSelectionTimeoutMS=5000,  # 5s
+    connectTimeoutMS=5000,
+    socketTimeoutMS=10000,
+    retryWrites=True,
+    retryReads=True,
+    maxPoolSize=50,
+    minPoolSize=0,
 )
 
 db = mongo_client[settings.MONGO_DB]

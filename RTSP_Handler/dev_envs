@@ -9,3 +9,4 @@ export FRAMES_ROOT_DIR=/home/dev1079/frames/dell
 export USER_ID=2
 export LOG_BASE_DIRECTORY=./
 export CAMERA_RTSP_TABLE=camera_manager
+export RESIZE_TO_640=true

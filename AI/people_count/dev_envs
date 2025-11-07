@@ -32,8 +32,8 @@ export USER_ID=2
 
 # ===================== People In/Out additions =====================
 # Optional context IDs (used by counts payload)
-export LOCATION_ID=0
-export USECASE_ID=0
+
+export USECASE_ID=3
 
 # People counts API endpoint
 export PEOPLE_COUNTS_API_URL=http://192.168.11.97:8005/ai_people_footfall/add

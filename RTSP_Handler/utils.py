@@ -225,9 +225,18 @@ def get_command_for_frames(camera_id: str, config: dict) -> list:
     :return : list of rtsp to rtsp command
 
     """
+    # Build the ffmpeg filter chain based on resize setting
+    fps_filter = f"fps=1/{config.get('camera_fps')}"
+    if settings.RESIZE_TO_640:
+        vf_filter = (
+            f"{fps_filter},scale={settings.FRAME_WIDTH}:{settings.FRAME_HEIGHT}"
+        )
+    else:
+        vf_filter = fps_filter
+
     return [
         f"ffmpeg -rtsp_transport tcp -hide_banner -i '{config.get('camera_rtsp_url')}'"
-        f" -vf 'fps=1/{config.get('camera_fps')}'"
+        f" -vf '{vf_filter}'"
         f" -start_number $(date +%s)"
         f" {settings.FRAMES_ROOT_DIR}{os.sep}raw_frames{os.sep}{str(camera_id)}/%08d_frame.{settings.FRAME_SUFFIX}"
     ]

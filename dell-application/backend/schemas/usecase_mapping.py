@@ -27,6 +27,7 @@ class UsecaseMappingUpdate(BaseModel):
     usecase_id: Optional[int]
     roi: Optional[list]
     roi_type: Optional[str]
+    line_roi: Optional[list]
     usecase_timeout: Optional[int]
     second_before_event: Optional[int]
     second_after_event: Optional[int]

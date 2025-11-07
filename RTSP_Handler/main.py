@@ -18,6 +18,14 @@ logger = logging.getLogger()
 if __name__ == "__main__":
     # print(f"settings: {settings.json()}")
 
+    # Log frame resize configuration
+    if settings.RESIZE_TO_640:
+        logger.info(
+            f"Frame resizing enabled: {settings.FRAME_WIDTH}x{settings.FRAME_HEIGHT}"
+        )
+    else:
+        logger.info("Frame resizing disabled: using original frame size")
+
     # create a background process for notifier
     notifier_process = Process(target=set_notifier, daemon=True)
     notifier_process.start()

@@ -26,7 +26,7 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         )
 
     def get_by_usecase_id_and_company_id(
-        self, db: Session, usecase_id: int, company_id: int
+            self, db: Session, usecase_id: int, company_id: int
     ):
         return (
             db.query(
@@ -44,7 +44,7 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         )
 
     def get_by_usecase_id_and_location_list(
-        self, db: Session, usecase_id: int, location_list: list
+            self, db: Session, usecase_id: int, location_list: list
     ):
         return (
             db.query(
@@ -65,7 +65,7 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         return db.query(CameraUseCaseMapping).all()
 
     def get_all_camera_usecase_mapping_by_location_list(
-        self, db: Session, location_list: list
+            self, db: Session, location_list: list
     ):
         return (
             db.query(
@@ -96,9 +96,9 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         )
 
     def insert_camera_usecase_mapping(
-        self,
-        usecase_mapping_details,
-        db,
+            self,
+            usecase_mapping_details,
+            db,
     ):
         try:
             camera_usecase_mapping_obj = CameraUseCaseMapping(
@@ -134,7 +134,7 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
             )
 
     def get_camera_usecase_mapping_by_usecase_id_and_camera_id(
-        self, db: Session, usecase_id: int, camera_id: int
+            self, db: Session, usecase_id: int, camera_id: int
     ):
         try:
             return (
@@ -150,22 +150,33 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
             )
 
     def get_labels_by_list_of_camera_id(self, db: Session, camera_id: list):
+        # Cast incoming camera IDs to integers to ensure index usage and avoid implicit casts
+        try:
+            cam_ids = [int(cid) for cid in camera_id] if camera_id else []
+        except Exception:
+            # If casting fails, fall back to original list to avoid raising here
+            cam_ids = camera_id or []
+
+        # If empty, avoid generating an IN () clause which may result in unexpected behavior
+        if not cam_ids:
+            return []
+
         return (
             db.query(CameraUseCaseMapping)
-            .filter(CameraUseCaseMapping.camera_id.in_(camera_id))
+            .filter(CameraUseCaseMapping.camera_id.in_(cam_ids))
             .filter(CameraUseCaseMapping.labels != None)
             .all()
         )
 
     def update_camera_usecase_mapping(
-        self,
-        id,
-        i_name,
-        i_profession,
-        contact_no,
-        employee_id,
-        location_id,
-        db,
+            self,
+            id,
+            i_name,
+            i_profession,
+            contact_no,
+            employee_id,
+            location_id,
+            db,
     ):
         try:
             db_identity = (

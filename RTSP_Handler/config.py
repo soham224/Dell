@@ -36,6 +36,14 @@ class Settings(BaseSettings):
     # this is the time interval for retrying the rtsp stream if it goes down
     SLEEP_WHEN_RTSP_DOWN = 120  # unit: seconds
 
+    # frame resize control: when True, frames are resized to 640x640 via ffmpeg
+    # Set via env var RESIZE_TO_640=true|false
+    RESIZE_TO_640 = (
+        str(os.getenv("RESIZE_TO_640", "false")).strip().lower() == "true"
+    )
+    FRAME_WIDTH = 640
+    FRAME_HEIGHT = 640
+
     # this is for the camera source, config = from config.py, db = from database
     CAM_SOURCE = "db"  # config, db
 

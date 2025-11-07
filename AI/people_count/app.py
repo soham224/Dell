@@ -87,29 +87,33 @@ if __name__ == "__main__":
     while True:
         try:
             start_cycle_ts = time.time()
-            camera_list = mu.get_all_camera()
-            cfg.logger.info(f"camera_list :: {camera_list}")
+            # Determine usecase_id once per iteration
+            try:
+                usecase_id_main = int(cfg.USECASE_ID) if str(cfg.USECASE_ID).isdigit() else cfg.USECASE_ID
+            except Exception:
+                usecase_id_main = cfg.USECASE_ID
+            # Consider only cameras which have an active mapping for this usecase
+            camera_list = mu.get_cameras_for_usecase(usecase_id_main)
+            cfg.logger.info(f"camera_list (usecase={usecase_id_main}) :: {camera_list}")
 
             for camera in camera_list:
                 camera_id = int(camera["id"])
                 cfg.logger.info(f"Running People In/Out on camera_id :: {camera_id}")
                 cam_start_ts = time.time()
 
-                # Geometry from config
-                line_cfg = cfg.PEOPLE_LINE_CONFIG.get(camera_id)
-                roi_cfg = cfg.PEOPLE_ROI_CONFIG.get(camera_id)
+                # Fetch ROI and line from DB mapping
+                # Use same resolved usecase_id for mapping fetch
+                usecase_id = usecase_id_main
+                people_cfg = mu.get_people_config(camera_id=camera_id, usecase_id=usecase_id)
+                roi_box = people_cfg.get("roi_box")
+                line_cfg = people_cfg.get("line")
                 if not line_cfg or "p1" not in line_cfg or "p2" not in line_cfg:
                     cfg.logger.warning(
-                        "No line config for camera_id=%s. Skipping this camera.", camera_id
+                        "No line mapping in DB for camera_id=%s. Skipping this camera.", camera_id
                     )
                     continue
                 p1 = tuple(map(int, line_cfg["p1"]))
                 p2 = tuple(map(int, line_cfg["p2"]))
-                roi_box = None
-                if roi_cfg and "roi" in roi_cfg:
-                    rb = roi_cfg["roi"]
-                    if isinstance(rb, (list, tuple)) and len(rb) == 4:
-                        roi_box = list(map(int, rb))
 
                 # Use current UTC time minus 1 minute for frame fetching
                 dt_utc_minus_1 = datetime.now(timezone.utc) - timedelta(minutes=1)
@@ -232,6 +236,15 @@ if __name__ == "__main__":
                     cfg.logger.info(f"Result of Head Model::{result}")
 
                     # ROI filtering (limit to gate region)
+                    # If ROI is missing, use full frame as ROI
+                    if not roi_box:
+                        h, w = img0.shape[:2]
+                        roi_box = [0, 0, int(w - 1), int(h - 1)]
+                        cfg.logger.warning(
+                            "No ROI found in DB for camera_id=%s; defaulting to full frame ROI=%s",
+                            camera_id,
+                            roi_box,
+                        )
                     if roi_box:
                         before_roi = len(result.get("detection", []))
                         # filter formatted list by center-in-ROI
@@ -381,14 +394,16 @@ if __name__ == "__main__":
                         for label, cnt in (("IN", in_count), ("OUT", out_count)):
                             if cnt <= 0:
                                 continue
+                            # Fetch location_id for this camera from DB
+                            loc_id = mu.get_location_id_by_camera_id(camera_id) or 0
                             payload = {
                                 "frame_time": frame_time_iso,
                                 "frame_analysis": label,
                                 "frame_count": int(cnt),
                                 "camera_id": int(camera_id),
                                 "user_id": int(cfg.USER_ID) if str(cfg.USER_ID).isdigit() else cfg.USER_ID,
-                                "location_id": int(cfg.LOCATION_ID) if str(cfg.LOCATION_ID).isdigit() else cfg.LOCATION_ID,
-                                "usecase_id": int(cfg.USECASE_ID) if str(cfg.USECASE_ID).isdigit() else cfg.USECASE_ID,
+                                "location_id": int(loc_id),
+                                "usecase_id": int(usecase_id) if str(usecase_id).isdigit() else usecase_id,
                             }
                             cfg.logger.info("Posting counts | url=%s payload=%s", PEOPLE_COUNTS_API_URL, payload)
                             t_post_s = time.time()
