@@ -18,7 +18,6 @@ def get_all_available_usecases(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_superuser),
 ) -> Any:
-
     available_usecases = usecase_crud_obj.get_all_available_usecase(db)
     if not available_usecases:
         raise HTTPException(status_code=404, detail="No usecases available.")

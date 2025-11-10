@@ -167,7 +167,6 @@ def get_superuser_result_metadata(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_user),
 ) -> Any:
-
     if not camera_id_list or "-1" in camera_id_list:
         if not location_id_list or "-1" in location_id_list:
             location_obj = crud.location_crud_obj.get_all_company_enabled_location(

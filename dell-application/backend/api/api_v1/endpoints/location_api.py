@@ -20,7 +20,6 @@ def add_location(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_superuser),
 ) -> Any:
-
     if location_details.company_id is None:
         logging.warning("location name already taken")
         raise HTTPException(

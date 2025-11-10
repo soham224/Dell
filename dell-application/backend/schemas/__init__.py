@@ -5,11 +5,11 @@ from .msg import *
 from .notification import *
 from .pagination import *
 from .deployment_camera_schema import *
+from .camera import *
 from .usecase import *
 from .usecase_mapping import *
 from .deployment_job_rtsp import *
 from .filter import *
 from .rtsp_down_odit import *
 from .result import *
-
 from .ai_people_footfall_analysis import *

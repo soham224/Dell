@@ -118,7 +118,6 @@ def get_all_camera_usecase_mapping_by_usecase_id(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_user),
 ) -> Any:
-
     if crud.user.is_supervisor(current_user):
         if current_user.locations:
             location_id_list = [location.id for location in current_user.locations]

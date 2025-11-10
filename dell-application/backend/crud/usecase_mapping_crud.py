@@ -26,7 +26,7 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         )
 
     def get_by_usecase_id_and_company_id(
-            self, db: Session, usecase_id: int, company_id: int
+        self, db: Session, usecase_id: int, company_id: int
     ):
         return (
             db.query(
@@ -44,7 +44,7 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         )
 
     def get_by_usecase_id_and_location_list(
-            self, db: Session, usecase_id: int, location_list: list
+        self, db: Session, usecase_id: int, location_list: list
     ):
         return (
             db.query(
@@ -65,7 +65,7 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         return db.query(CameraUseCaseMapping).all()
 
     def get_all_camera_usecase_mapping_by_location_list(
-            self, db: Session, location_list: list
+        self, db: Session, location_list: list
     ):
         return (
             db.query(
@@ -96,9 +96,9 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         )
 
     def insert_camera_usecase_mapping(
-            self,
-            usecase_mapping_details,
-            db,
+        self,
+        usecase_mapping_details,
+        db,
     ):
         try:
             camera_usecase_mapping_obj = CameraUseCaseMapping(
@@ -134,7 +134,7 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
             )
 
     def get_camera_usecase_mapping_by_usecase_id_and_camera_id(
-            self, db: Session, usecase_id: int, camera_id: int
+        self, db: Session, usecase_id: int, camera_id: int
     ):
         try:
             return (
@@ -169,14 +169,14 @@ class CRUDUseCaseMapping(CRUDBase[CameraUseCaseMapping, UseCaseCreate, UseCaseUp
         )
 
     def update_camera_usecase_mapping(
-            self,
-            id,
-            i_name,
-            i_profession,
-            contact_no,
-            employee_id,
-            location_id,
-            db,
+        self,
+        id,
+        i_name,
+        i_profession,
+        contact_no,
+        employee_id,
+        location_id,
+        db,
     ):
         try:
             db_identity = (

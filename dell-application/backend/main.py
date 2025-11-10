@@ -43,11 +43,9 @@ app.include_router(api_router, prefix=settings.API_V1_STR)
 log_config_dict = read_logging_config("log_config.yml")
 setup_logging(log_config_dict)
 
-
 add_pagination(app)
 
 scheduler = BackgroundScheduler()
-
 
 # @app.on_event("startup")
 # def start_scheduler():

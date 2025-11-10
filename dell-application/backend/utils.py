@@ -13,6 +13,7 @@ from starlette.responses import FileResponse
 from starlette.responses import StreamingResponse
 from io import BytesIO
 
+
 # from core.aws_utils import upload_image_to_s3
 
 
@@ -55,21 +56,39 @@ def check_rtsp(rtsp: str):
 
 
 def check_rtsp_new(rtsp: str):
+    """Check RTSP reachability by grabbing a single frame via ffmpeg.
+
+    Improvements:
+    - Use TCP transport explicitly for better reliability across networks.
+    - Increase timeout (default 15s) and make it configurable via env CHECK_RTSP_TIMEOUT.
+    - Overwrite output file if it exists (-y) and improve error logging with stderr.
+    """
     logger = logging.getLogger("sentry_logger")
     file_name = f"{int(time.time())}.png"
     logging.info(f"Checking status for : {rtsp} || {file_name}")
 
+    # Configurable timeout in seconds via environment variable, default 15
+    try:
+        timeout_s = int(os.getenv("CHECK_RTSP_TIMEOUT", "15"))
+    except Exception:
+        timeout_s = 15
+
     if rtsp:
         try:
-            # command for fetch one frame from rtsp
-            cmd = [f"ffmpeg -i '{rtsp}' -vframes 1 {file_name}"]
-            # run ffmpeg command using subprocess
-            subprocess.run(cmd, capture_output=True, check=True, shell=True, timeout=5)
+            # Command to fetch one frame from RTSP using TCP transport
+            cmd = [f"ffmpeg -rtsp_transport tcp -i '{rtsp}' -vframes 1 -y {file_name}"]
+            # Run ffmpeg command using subprocess
+            res = subprocess.run(
+                cmd, capture_output=True, check=True, shell=True, timeout=timeout_s
+            )
         except subprocess.TimeoutExpired as e:
-            logger.error(f"TimeoutExpired Exception in check_rtsp : {e}")
+            logger.error(f"TimeoutExpired in check_rtsp (>{timeout_s}s): {e}")
             return False
         except subprocess.CalledProcessError as e:
-            logger.error(f"CalledProcessError Exception in check_rtsp : {e}")
+            stderr = e.stderr.decode(errors="ignore") if e.stderr else ""
+            logger.error(
+                f"CalledProcessError in check_rtsp (code={e.returncode}): {stderr[:500]}"
+            )
             return False
         except Exception as e:
             logger.error(f"Exception in check_rtsp : {e}")
@@ -77,7 +96,10 @@ def check_rtsp_new(rtsp: str):
 
         # check if frame is stored or not
         if os.path.isfile(file_name):
-            os.remove(file_name)
+            try:
+                os.remove(file_name)
+            except Exception:
+                pass
             return True
         return False
     else:

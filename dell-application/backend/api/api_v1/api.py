@@ -7,6 +7,7 @@ from api.api_v1.endpoints import (
     location_api,
     notification_api,
     camera_info_api,
+    camera_rtsp_api,
     camera_usecase_mapping_api,
     usecase_api,
     result_handler,
@@ -18,7 +19,6 @@ from api.api_v1.endpoints import (
     activity_api,
 )
 
-
 api_router = APIRouter()
 api_router.include_router(company_api.router, tags=["company management"])
 api_router.include_router(users.router, tags=["users"])
@@ -26,6 +26,7 @@ api_router.include_router(login.router, tags=["login"])
 api_router.include_router(location_api.router, tags=["location"])
 api_router.include_router(notification_api.router, tags=["Notification"])
 api_router.include_router(camera_info_api.camera_router, tags=["Camera_info API"])
+api_router.include_router(camera_rtsp_api.router, tags=["Camera RTSP API"])
 api_router.include_router(usecase_api.usecase_router, tags=["Use Case API"])
 
 api_router.include_router(

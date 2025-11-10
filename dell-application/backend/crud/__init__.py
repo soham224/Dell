@@ -5,7 +5,6 @@ from .notification_crud import notification_crud_obj
 from .usecase_mapping_crud import *
 from .usecase_crud import *
 from .deployment_camera_crud import *
-
+from .camera_rtsp_crud import camera_rtsp_crud_obj
 from .activity_crud import *
-
 from .ai_people_footfall_analysis_crud import ai_people_footfall_crud
