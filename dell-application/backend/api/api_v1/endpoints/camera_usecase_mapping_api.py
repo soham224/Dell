@@ -1,3 +1,11 @@
+"""Camera-usecase mapping endpoints.
+
+Manage associations between cameras and usecases, including create and
+various listing views with role-aware scoping.
+
+Category: API / Camera / Usecase Mapping
+"""
+
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException

@@ -1,3 +1,11 @@
+"""Filter endpoints for analytics.
+
+Provide filtered analytics views for superuser, admin, and supervisor,
+including last-graph-step detail retrieval.
+
+Category: API / Filters & Analytics
+"""
+
 import json
 import logging
 from typing import Any

@@ -1,3 +1,18 @@
+"""
+MongoDB result utilities.
+
+Provides helper functions to query and aggregate detection results stored in
+MongoDB. Includes pagination, label filtering, metadata summarization, and
+popup aggregation flows used by multiple endpoints.
+
+Notes:
+- All datetimes are treated as UTC in storage and queries unless a timezone
+  is explicitly applied in projection stages.
+- Functions often return JSON-serializable data via `bson.json_util.dumps`.
+
+Category: Core / Results / Mongo
+"""
+
 import datetime
 import json
 import logging
@@ -12,6 +27,8 @@ import crud
 
 from core.config import settings
 
+# Create a pooled MongoDB client with conservative timeouts to avoid hanging
+# API requests when Mongo is slow or temporarily unavailable.
 mongo_client = pymongo.MongoClient(
     host=settings.MONGO_HOST,
     port=int(settings.MONGO_PORT),
@@ -150,6 +167,7 @@ def get_paginated_result_by_user(
 
         skip_number = page_size * (page_number - 1)
 
+        # Stable sort by frame_date DESC then apply skip/limit for pagination.
         connection_cursor = (
             collection.find(my_filter)
             .sort("frame_date", -1)

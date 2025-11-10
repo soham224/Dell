@@ -1,3 +1,11 @@
+"""Dashboard widgets endpoints.
+
+Compute summary metrics (total cameras, active cameras, total usecases)
+ for admin, superuser, and supervisor scopes.
+
+Category: API / Widgets & Dashboard
+"""
+
 import threading
 from typing import Any
 

@@ -1,3 +1,12 @@
+"""Result data endpoints (Mongo-backed).
+
+Handles insertion and retrieval of detection results, metadata aggregation,
+popup summaries, and Excel export. Supervisor scoping is applied where
+relevant.
+
+Category: API / Results
+"""
+
 import json
 import logging
 from datetime import datetime, timedelta, timezone

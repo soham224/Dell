@@ -1,3 +1,11 @@
+"""User management endpoints.
+
+Create users and supervisors, list supervisors, update supervisor status,
+and manage supervisor-location mappings.
+
+Category: API / Users
+"""
+
 import datetime
 import logging
 from typing import Any, List, Optional
@@ -19,8 +27,9 @@ router = APIRouter()
 def create_user(
     *, db: Session = Depends(deps.get_db), user_in: schemas.UserCreate
 ) -> Any:
-    """
-    Create new user.
+    """Create a new user.
+
+    Raises 403 if a user already exists with the same email.
     """
     user = crud.user.get_by_email(db, email=user_in.user_email)
     if user:
@@ -42,8 +51,10 @@ def create_supervisor(
     user_in: schemas.UserCreate,
     current_user: models.User = Depends(deps.get_current_active_user),
 ) -> Any:
-    """
-    Create new supervisor.
+    """Create a new supervisor in the current user's company.
+
+    If `company_id` is not provided in the payload, it defaults to the
+    current user's company. Raises 400 if company_id cannot be determined.
     """
     # If company_id is not provided in the request, use the company_id from current_user
     company_id = user_in.company_id if user_in.company_id else current_user.company_id
@@ -71,6 +82,7 @@ def get_current_company_supervisor(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_user),
 ) -> Any:
+    """List all supervisors belonging to the current user's company."""
     user = crud.user.get_all_supervisor_by_company_id(db, current_user.company_id)
     return user
 
@@ -80,6 +92,7 @@ def get_all_supervisor(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_superuser),
 ) -> Any:
+    """List all supervisors (superuser-only)."""
     user = crud.user.get_all_supervisor(db)
     return user
 
@@ -92,6 +105,10 @@ def update_supervisor_status(
     user_id: int,
     current_user: models.User = Depends(deps.get_current_active_user),
 ) -> Any:
+    """Enable or disable a supervisor account by id.
+
+    Returns a confirmation message or 404 if user not found.
+    """
     user = crud.user.update_supervisor_status(db, user_id, user_status)
 
     if not user:
@@ -111,6 +128,10 @@ def get_all_location(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_user),
 ) -> Any:
+    """Remove a set of location mappings from the provided user id.
+
+    Raises 400 if the user does not exist or list is empty.
+    """
     user = crud.user.get_by_id(db, user_id=user_id)
     if user and location_id_list:
         for location_id in location_id_list:

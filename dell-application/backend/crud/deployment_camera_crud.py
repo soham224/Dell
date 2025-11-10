@@ -1,3 +1,11 @@
+"""CRUD operations for deployment cameras.
+
+Encapsulates common queries and mutations on `models.camera_manager.CameraManager`,
+including location-scoped listings and paginated filters.
+
+Category: Data Access / CRUD / Cameras
+"""
+
 import datetime
 
 from fastapi import HTTPException
@@ -100,6 +108,11 @@ class CRUDDeploymentCameras(
         camera_filter: CameraFilter,
         location_list: list,
     ):
+        """Return paginated camera items and page info for given filter.
+
+        Applies optional filtering by `location_list`, orders by id for
+        deterministic pagination, and computes total_count for page metadata.
+        """
         query = db.query(CameraManager).join(Location)  # only one join here
         if location_list:
             query = query.filter(CameraManager.location_id.in_(location_list))

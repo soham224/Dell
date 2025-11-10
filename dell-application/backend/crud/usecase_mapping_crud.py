@@ -1,3 +1,11 @@
+"""CRUD for camera-usecase mapping and label lookups.
+
+Encapsulates joins across `CameraUseCaseMapping`, `CameraManager`, `UseCase`,
+and `Location` to serve mapping views and label queries efficiently.
+
+Category: Data Access / CRUD / Usecase Mapping
+"""
+
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
 

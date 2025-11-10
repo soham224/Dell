@@ -1,3 +1,94 @@
+ # Backend Service (FastAPI)
+
+ This backend is a FastAPI service providing APIs for user, camera, RTSP, activity logs, notifications, and related features. It uses MySQL via SQLAlchemy for relational data and integrates with optional Sentry monitoring and AWS utilities.
+
+ Category: Documentation / Overview
+
+ ## Quickstart
+
+ 1. **Prerequisites**
+    - Python 3.8+
+    - MySQL 8.x reachable from your machine
+    - FFmpeg installed (needed for RTSP probing)
+
+ 2. **Environment variables** (example)
+    Create a `.env` or export these vars in your shell:
+    ```bash
+    export PROJECT_ENV=development
+    export MYSQL_HOSTNAME=localhost
+    export MYSQL_USERNAME=user
+    export MYSQL_PASS=pass
+    export MYSQL_PORT=3306
+    export MYSQL_DB_NAME=autoserving_db
+    export MYSQL_POOL_SIZE=10
+    export MYSQL_MAX_OVERFLOW=20
+    export MYSQL_POOL_TIMEOUT=30
+    export MYSQL_POOL_PRE_PING=true
+    export MYSQL_POOL_RECYCLE=1800
+
+    # Mongo vars (used by result utils); keep if features require them
+    export MONGO_HOST=localhost
+    export MONGO_USER=user
+    export MONGO_PASS=pass
+    export MONGO_DB_NAME=autoserving_mongo
+    export MONGO_PORT=27017
+    export MONGO_AUTH_DB_NAME=admin
+    export MONGO_COLL_NAME=results
+    ```
+
+ 3. **Install dependencies**
+    ```bash
+    python -m venv .venv && source .venv/bin/activate
+    pip install -r autoserving-req.txt
+    ```
+
+ 4. **Run the app**
+    ```bash
+    uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    ```
+
+ 5. **Explore APIs**
+    - Swagger UI: http://localhost:8000/docs
+    - OpenAPI JSON: http://localhost:8000/api/v1/openapi.json
+
+ ## Repository structure (backend)
+
+ ```
+ backend/
+ ├── api/
+ │   ├── api_v1/
+ │   │   ├── api.py                     # Aggregates routers and tags
+ │   │   └── endpoints/                 # All versioned API endpoints
+ │   ├── deps.py                        # DB session & auth dependencies
+ │   └── __init__.py
+ ├── applogging/
+ │   └── applogger.py                   # YAML-based logging config utils
+ ├── core/
+ │   ├── config.py                      # Pydantic settings (env-driven)
+ │   ├── aws_utils.py, result_utils.py  # AWS, result helpers (selected)
+ │   └── ...
+ ├── crud/                              # CRUD services layer
+ ├── db/
+ │   ├── base_class.py                  # Declarative Base and helpers
+ │   ├── base.py                        # Imports models to register metadata
+ │   ├── session.py                     # Engine & SessionLocal
+ │   └── init_db.py                     # Create tables on import
+ ├── models/                            # SQLAlchemy ORM models
+ ├── schemas/                           # Pydantic schemas
+ ├── main.py                            # FastAPI app bootstrap
+ ├── utils.py                           # JWT reset tokens, RTSP probing
+ ├── autoserving-req.txt                # Python dependencies
+ ├── Dockerfile                         # Container build (if used)
+ └── log_config.yml                     # Logging config (YAML)
+ ```
+
+ ## Development notes
+
+ - Do not hardcode secrets in source; prefer env vars or secret managers.
+ - Keep commented endpoints in `api/api_v1/endpoints/` for future enablement.
+ - Pagination is enabled globally via `fastapi_pagination.add_pagination(app)`.
+ - Background jobs (APScheduler) are present but disabled by default in `main.py`.
+
 # AutoServing API Service
 
 ## Project Overview

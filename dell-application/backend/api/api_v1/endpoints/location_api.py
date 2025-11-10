@@ -1,3 +1,11 @@
+"""Location management endpoints.
+
+CRUD and listing operations for locations, including company-scoped and
+supervisor-scoped queries and assignments.
+
+Category: API / Location
+"""
+
 from typing import Any, List
 import logging
 from api import deps

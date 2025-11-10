@@ -1,3 +1,11 @@
+"""Notification endpoints.
+
+Create, update, mark-read, and query notifications for users with
+supervisor-aware scoping.
+
+Category: API / Notification
+"""
+
 import datetime
 from typing import Any, List
 import logging
@@ -8,7 +16,6 @@ import crud
 import models
 import schemas
 from api import deps
-from core.result_utils import raise_notification
 
 router = APIRouter()
 

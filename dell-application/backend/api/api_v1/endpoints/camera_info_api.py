@@ -1,3 +1,12 @@
+"""Deployment camera endpoints.
+
+Manage deployment camera records and filtered listings scoped by user roles
+ and locations. Several update endpoints are intentionally commented for
+future enablement and should be retained.
+
+Category: API / Camera / Deployment
+"""
+
 from datetime import datetime
 from typing import List, Any
 

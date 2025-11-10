@@ -1,3 +1,11 @@
+"""RTSP down ODIT endpoints.
+
+Provides paginated queries for RTSP down ODIT records for current user and
+superuser scope.
+
+Category: API / RTSP / ODIT
+"""
+
 import models
 from api import deps
 from fastapi import APIRouter, Depends, HTTPException

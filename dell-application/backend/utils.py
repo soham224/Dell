@@ -1,3 +1,11 @@
+"""Utility helpers for auth tokens and RTSP probing.
+
+Contains helpers to generate/verify password reset tokens and to check
+RTSP reachability using ffmpeg. No core logic changes applied.
+
+Category: Core / Utilities
+"""
+
 import subprocess
 from datetime import datetime, timedelta
 from typing import Optional
@@ -18,6 +26,18 @@ from io import BytesIO
 
 
 def generate_password_reset_token(email: str) -> str:
+    """Generate a short-lived JWT token for password reset.
+
+    Parameters
+    ----------
+    email : str
+        The email address to embed as subject ("sub") in the token.
+
+    Returns
+    -------
+    str
+        Encoded JWT string expiring after `EMAIL_RESET_TOKEN_EXPIRE_HOURS`.
+    """
     delta = timedelta(hours=settings.EMAIL_RESET_TOKEN_EXPIRE_HOURS)
     now = datetime.utcnow()
     expires = now + delta
@@ -31,6 +51,18 @@ def generate_password_reset_token(email: str) -> str:
 
 
 def verify_password_reset_token(token: str) -> Optional[str]:
+    """Validate a password reset token and extract its subject email.
+
+    Parameters
+    ----------
+    token : str
+        JWT token previously issued by `generate_password_reset_token`.
+
+    Returns
+    -------
+    Optional[str]
+        The subject email if token is valid; otherwise `None`.
+    """
     try:
         decoded_token = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
         logging.info("decoded_token :: {}".format(decoded_token))
@@ -40,6 +72,7 @@ def verify_password_reset_token(token: str) -> Optional[str]:
 
 
 def check_rtsp(rtsp: str):
+    """Probe RTSP URL using ffmpeg `probe` and return boolean reachability."""
     try:
         logging.info("Checking status for : {} ".format(rtsp))
         if rtsp:
@@ -62,6 +95,16 @@ def check_rtsp_new(rtsp: str):
     - Use TCP transport explicitly for better reliability across networks.
     - Increase timeout (default 15s) and make it configurable via env CHECK_RTSP_TIMEOUT.
     - Overwrite output file if it exists (-y) and improve error logging with stderr.
+
+    Parameters
+    ----------
+    rtsp : str
+        The RTSP URL to test.
+
+    Returns
+    -------
+    bool
+        True if a frame could be extracted, False otherwise.
     """
     logger = logging.getLogger("sentry_logger")
     file_name = f"{int(time.time())}.png"
@@ -82,7 +125,7 @@ def check_rtsp_new(rtsp: str):
                 cmd, capture_output=True, check=True, shell=True, timeout=timeout_s
             )
         except subprocess.TimeoutExpired as e:
-            logger.error(f"TimeoutExpired in check_rtsp (>{timeout_s}s): {e}")
+            logger.error(f"Timeout Expired in check_rtsp (>{timeout_s}s): {e}")
             return False
         except subprocess.CalledProcessError as e:
             stderr = e.stderr.decode(errors="ignore") if e.stderr else ""

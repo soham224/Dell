@@ -1,3 +1,16 @@
+"""Application configuration settings.
+
+Centralized configuration powered by Pydantic `BaseSettings`. Values are
+primarily sourced from environment variables, enabling safe and flexible
+deployment across environments.
+
+Security note: Several defaults and constants here include credentials or
+external endpoints. In production, prefer injecting all secrets via
+environment variables or a secret manager. Do not log secret values.
+
+Category: Core / Configuration
+"""
+
 import json
 import secrets
 from typing import List
@@ -6,6 +19,17 @@ from pydantic import AnyHttpUrl, BaseSettings
 
 
 class Settings(BaseSettings):
+    """Strongly-typed application settings.
+
+    This class defines all configuration knobs used by the service, including
+    API metadata, database connections (MySQL and MongoDB), logging/monitoring
+    integrations, AWS resources, and miscellaneous constants. Values are read
+    from environment variables where specified.
+
+    Instances of this class should be treated as read-only and imported from
+    `core.config` as `settings`.
+    """
+
     API_V1_STR: str = "/api/v1"
     SECRET_KEY: str = secrets.token_urlsafe(32)
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 8 * 1

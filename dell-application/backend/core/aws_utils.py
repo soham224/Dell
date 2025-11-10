@@ -1,3 +1,14 @@
+"""AWS integration utilities.
+
+Helpers for S3 uploads/downloads, ECS task/service orchestration, Rekognition
+collection management, DynamoDB operations, and SQS/SNS messaging.
+
+Security note: This module relies on credentials configured via environment
+variables or the AWS default credential chain. Do not hardcode secrets.
+
+Category: Core / Integrations / AWS
+"""
+
 import json
 import logging
 

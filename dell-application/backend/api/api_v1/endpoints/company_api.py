@@ -1,3 +1,10 @@
+"""Company management endpoints.
+
+Create companies and list all companies (superuser-only).
+
+Category: API / Company
+"""
+
 import os
 from typing import Any, List
 
@@ -20,6 +27,11 @@ def add_company(
     company_details: schemas.CompanyCreate,
     db: Session = Depends(deps.get_db),
 ) -> Any:
+    """Create a new company record.
+
+    In production DBs (identified by env `MYSQL_DB_NAME` containing 'prod'),
+    also creates an AWS Rekognition collection keyed by the new company id.
+    """
     company_details.created_date = datetime.datetime.now().replace(microsecond=0)
     company_details.updated_date = datetime.datetime.now().replace(microsecond=0)
     if isinstance(company_details, dict):
@@ -42,6 +54,7 @@ def get_all_company(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_superuser),
 ) -> Any:
+    """Return all companies (requires superuser)."""
     db_obj = crud.company_crud_obj.get_all(db)
     if not db_obj:
         raise HTTPException(status_code=404, detail=CommonErrorEnum.NO_DATA_FOUND.value)

@@ -1,3 +1,12 @@
+"""API v1 Router Composition.
+
+This module aggregates and mounts all versioned API endpoint routers under a
+single `APIRouter` instance. Each included router is tagged to improve the
+generated OpenAPI/Swagger documentation discoverability.
+
+Category: API / Routing
+"""
+
 from fastapi import APIRouter
 
 from api.api_v1.endpoints import (
@@ -20,6 +29,8 @@ from api.api_v1.endpoints import (
 )
 
 api_router = APIRouter()
+# NOTE: Tag names appear in the interactive docs at `/docs` and help users
+# filter endpoints by functional area.
 api_router.include_router(company_api.router, tags=["company management"])
 api_router.include_router(users.router, tags=["users"])
 api_router.include_router(login.router, tags=["login"])

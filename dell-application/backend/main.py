@@ -1,3 +1,11 @@
+"""FastAPI application entrypoint.
+
+ This module wires together configuration, middleware (CORS), API routers,
+ logging, pagination, Sentry, and an optional APScheduler for background tasks.
+
+ Category: API / Application Bootstrap
+ """
+
 import os
 
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -40,13 +48,19 @@ if settings.PROJECT_ENV in ["development", "production"]:
 
 app.include_router(api_router, prefix=settings.API_V1_STR)
 
+# Structured logging configuration
 log_config_dict = read_logging_config("log_config.yml")
 setup_logging(log_config_dict)
 
+# Enable pagination utilities for List endpoints
 add_pagination(app)
 
+# Background scheduler for periodic maintenance tasks
 scheduler = BackgroundScheduler()
 
+# NOTE: The scheduler is kept commented to avoid unwanted background tasks
+# when running locally or in certain deployments. Keep this block for future
+# enablement without changing core logic.
 # @app.on_event("startup")
 # def start_scheduler():
 #     scheduler.add_job(

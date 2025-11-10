@@ -1,3 +1,11 @@
+"""CameraManager ORM model.
+
+Represents a deployed camera with RTSP details, processing configuration,
+and linkage to a `Location`.
+
+Category: Data Model / SQLAlchemy / Camera
+"""
+
 from sqlalchemy import Column, Integer, String, DateTime, Boolean, ForeignKey, JSON
 from sqlalchemy.orm import relationship
 
@@ -5,6 +13,8 @@ from db.base_class import Base
 
 
 class CameraManager(Base):
+    """Model for `camera_manager` storing RTSP and processing metadata."""
+
     __tablename__ = "camera_manager"
     id = Column(Integer, primary_key=True, index=True)
     rtsp_url = Column(String(255), nullable=False)

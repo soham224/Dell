@@ -1,3 +1,12 @@
+"""Camera RTSP endpoints.
+
+Endpoints to manage camera ROI linked to use-cases and to (optionally)
+check/operate on RTSP streams. Several endpoints are intentionally kept
+commented for future enablement; do not remove them.
+
+Category: API / Camera / RTSP
+"""
+
 import base64
 import logging
 import os
@@ -108,6 +117,12 @@ def get_camera_roi(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_user),
 ):
+    """Return the ROI list for a given camera/usecase pair.
+
+    Reads ROI from `CameraUseCaseMapping` using `camera_id` and `usecase_id`.
+
+    Raises 404 when no mapping is found.
+    """
     # Fetch ROI from CameraUseCaseMapping using camera_id + usecase_id
     db_object = crud.camera_rtsp_crud_obj.get_camera_usecase_roi_value(
         db=db,
@@ -125,6 +140,11 @@ def update_camera_roi(
     db: Session = Depends(deps.get_db),
     current_user: models.User = Depends(deps.get_current_active_user),
 ):
+    """Update ROI list for camera/usecase mapping.
+
+    Overwrites ROI for the specified `camera_id` and `usecase_id`.
+    Returns a success message upon completion.
+    """
     # Update ROI on CameraUseCaseMapping
     crud.camera_rtsp_crud_obj.update_camera_usecase_roi_value(
         db=db,

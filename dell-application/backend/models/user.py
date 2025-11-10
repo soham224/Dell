@@ -1,3 +1,11 @@
+"""User, Role, and Company ORM models.
+
+Defines relational schema and relationships for core identity and tenancy
+concepts used across the application.
+
+Category: Data Model / SQLAlchemy
+"""
+
 from sqlalchemy import Boolean, Column, Integer, String, Table, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from .location import UserLocation
@@ -13,6 +21,8 @@ UserRoles = Table(
 
 # role
 class Role(Base):
+    """Role assigned to users (e.g., admin, superadmin, supervisor)."""
+
     __tablename__ = "role"
     id = Column(Integer, primary_key=True, index=True)
     role = Column(String(255), nullable=False)
@@ -21,6 +31,8 @@ class Role(Base):
 
 # company user
 class User(Base):
+    """Primary user entity belonging to a `Company` with many-to-many roles and locations."""
+
     __tablename__ = "user"
     id = Column(Integer, primary_key=True, index=True)
     company_id = Column(Integer, ForeignKey("company.id"))
@@ -35,6 +47,8 @@ class User(Base):
 
 
 class Company(Base):
+    """Company/tenant metadata and deployment configuration."""
+
     __tablename__ = "company"
     id = Column(Integer, primary_key=True, index=True)
     company_email = Column(String(255), nullable=False)

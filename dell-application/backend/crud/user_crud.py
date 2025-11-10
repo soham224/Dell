@@ -1,3 +1,12 @@
+"""CRUD operations for users and role helpers.
+
+Provides user creation (user/supervisor), authentication, status updates,
+role checks, and location mappings. This layer isolates DB access patterns
+from API endpoint logic.
+
+Category: Data Access / CRUD / Users
+"""
+
 import datetime
 from typing import Any, Dict, Optional, Union
 
@@ -11,10 +20,14 @@ from .location_crud import location_crud_obj
 
 
 class CRUDUser(CRUDBase[User, UserCreate, UserUpdate]):
+    """CRUD operations for users and role helpers."""
+
     def get_by_email(self, db: Session, *, email: str) -> Optional[User]:
+        """Get a user by email."""
         return db.query(User).filter(User.user_email == email).first()
 
     def get_by_id(self, db: Session, *, user_id: int) -> Optional[User]:
+        """Get a user by ID."""
         return db.query(User).filter(User.id == user_id).first()
 
     def get_result_manager_by_id(self, db: Session, _id: int):
@@ -94,6 +107,7 @@ class CRUDUser(CRUDBase[User, UserCreate, UserUpdate]):
         return super().update(db, db_obj=db_obj, obj_in=update_data)
 
     def authenticate(self, db: Session, *, email: str, password: str) -> Optional[User]:
+        """Return the user if the email/password pair is valid; otherwise None."""
         user = self.get_by_email(db, email=email)
         if not user:
             return None
@@ -184,6 +198,7 @@ class CRUDUser(CRUDBase[User, UserCreate, UserUpdate]):
             return False
 
     def add_location_mapping(self, db: Session, user_id: int, location_obj_list: list):
+        """Replace the user's location mappings with the provided list."""
         user_db_obj = self.get_by_id(db=db, user_id=user_id)
         user_db_obj.locations = location_obj_list
         db.add(user_db_obj)

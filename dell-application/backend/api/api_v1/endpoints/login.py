@@ -1,3 +1,12 @@
+"""Authentication endpoints.
+
+Provides OAuth2 password grant login to issue bearer tokens, a token test
+endpoint to validate credentials, and a password reset endpoint using a
+previously issued token.
+
+Category: API / Auth
+"""
+
 import logging
 from datetime import timedelta
 from typing import Any
@@ -27,8 +36,10 @@ router = APIRouter()
 def login_access_token(
     db: Session = Depends(deps.get_db), form_data: OAuth2PasswordRequestForm = Depends()
 ) -> Any:
-    """
-    OAuth2 compatible token login, get an access token for future requests
+    """Issue an access token via OAuth2 password grant.
+
+    Validates user credentials and returns a bearer token encoded with the
+    user id as subject. Logs success/failure activity.
     """
     logging.info("login request : {}".format(form_data.username))
     user = crud.user.authenticate(
@@ -55,8 +66,9 @@ def login_access_token(
 
 @router.post("/login/test-token", response_model=schemas.User)
 def test_token(current_user: models.User = Depends(deps.get_current_user)) -> Any:
-    """
-    Test access token
+    """Return the current user for a valid access token.
+
+    Useful for clients to verify that their bearer token is still valid.
     """
     return current_user
 
@@ -67,8 +79,11 @@ def reset_password(
     new_password: str = Body(...),
     db: Session = Depends(deps.get_db),
 ) -> Any:
-    """
-    Reset password
+    """Reset a user's password using a one-time token.
+
+    The token is expected to be a short-lived JWT containing the user id as
+    subject. Fails if the token is invalid/expired, the user is missing, or is
+    inactive.
     """
     user_id = verify_password_reset_token(token)
     if not user_id:

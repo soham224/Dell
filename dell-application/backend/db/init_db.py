@@ -1,3 +1,11 @@
+"""Database initialization entry.
+
+ Ensures all SQLAlchemy models are registered and creates tables against the
+ configured engine. Invoked on module import.
+
+ Category: Database / Initialization
+ """
+
 from db import base
 from db.session import engine
 

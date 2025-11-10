@@ -1,3 +1,11 @@
+"""Camera label mapping endpoints.
+
+Fetch labels mapped to cameras across user, superuser, and supervisor scopes,
+and support location-scoped camera listing.
+
+Category: API / Camera / Labels
+"""
+
 import logging
 from typing import Any, List
 
