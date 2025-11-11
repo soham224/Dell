@@ -25,8 +25,9 @@ DELETE_SOURCE_IMAGE_URL = cfg.DELETE_SOURCE_IMAGE_URL
 PEOPLE_COUNTS_API_URL = cfg.PEOPLE_COUNTS_API_URL
 
 # ==================================================================================
-# Optional visualization toggle: set to True to save detection overlays
-VISUALIZE_OUTPUTS = False
+# Optional visualization toggle and output path come from config
+# - Enable by exporting VISUALIZE=1 (or true/yes/on)
+# - Output directory defaults to PWD/outputs but can be overridden via OUTPUTS_DIR
 # ==================================================================================
 
 
@@ -107,6 +108,14 @@ if __name__ == "__main__":
                 people_cfg = mu.get_people_config(camera_id=camera_id, usecase_id=usecase_id)
                 roi_box = people_cfg.get("roi_box")
                 line_cfg = people_cfg.get("line")
+                # Log raw ROI configurations fetched from DB
+                cfg.logger.info(
+                    "DB ROI config | camera_id=%s usecase_id=%s | roi_box=%s | line=%s",
+                    camera_id,
+                    usecase_id,
+                    roi_box,
+                    line_cfg,
+                )
                 if not line_cfg or "p1" not in line_cfg or "p2" not in line_cfg:
                     cfg.logger.warning(
                         "No line mapping in DB for camera_id=%s. Skipping this camera.", camera_id
@@ -114,13 +123,39 @@ if __name__ == "__main__":
                     continue
                 p1 = tuple(map(int, line_cfg["p1"]))
                 p2 = tuple(map(int, line_cfg["p2"]))
+                # Log resolved ROI values (parsed to integers)
+                try:
+                    if isinstance(roi_box, (list, tuple)) and len(roi_box) == 4:
+                        x1r, y1r, x2r, y2r = [int(v) for v in roi_box]
+                        cfg.logger.info(
+                            "Resolved ROI | roi_box=[x1=%d,y1=%d,x2=%d,y2=%d] | line p1=(%d,%d) p2=(%d,%d)",
+                            x1r,
+                            y1r,
+                            x2r,
+                            y2r,
+                            p1[0],
+                            p1[1],
+                            p2[0],
+                            p2[1],
+                        )
+                    else:
+                        cfg.logger.info(
+                            "Resolved ROI | roi_box=%s | line p1=(%d,%d) p2=(%d,%d)",
+                            roi_box,
+                            p1[0],
+                            p1[1],
+                            p2[0],
+                            p2[1],
+                        )
+                except Exception as e:
+                    cfg.logger.warning("Failed logging resolved ROI/line: %s", e)
 
                 # Use current UTC time minus 1 minute for frame fetching
                 dt_utc_minus_1 = datetime.now(timezone.utc) - timedelta(minutes=1)
-                # legacy minute bucket string for status
-                current_time = dt_utc_minus_1.strftime("%Y-%m-%d %H:%M:00")
-                # ISO timestamp for counts API
-                frame_time_iso = dt_utc_minus_1.replace(second=0, microsecond=0).isoformat().replace("+00:00", "Z")
+                # Include seconds in frame_time for precise retrieval
+                current_time = dt_utc_minus_1.strftime("%Y-%m-%d %H:%M:%S")
+                # ISO timestamp for counts API (preserve seconds)
+                frame_time_iso = dt_utc_minus_1.replace(microsecond=0).isoformat().replace("+00:00", "Z")
                 params = {
                     "frame_time": current_time,  # Replace with the desired datetime
                     "camera_id": int(camera_id),
@@ -163,6 +198,17 @@ if __name__ == "__main__":
 
                 if response.status_code == 200:
                     cfg.logger.info(f"Frame API Response :: {response.status_code}")
+                elif response.status_code == 404:
+                    # Frame not available for the requested frame_time
+                    cfg.logger.warning(
+                        "Frame data not found (404) for frame_time=%s camera_id=%s. Sleeping for %s seconds.",
+                        current_time,
+                        camera_id,
+                        cfg.SLEEP_TIME,
+                    )
+                    # Do not mark as failed; just wait and try in the next loop
+                    time.sleep(cfg.SLEEP_TIME)
+                    continue
                 else:
                     cfg.logger.error(
                         f"Error: {response.status_code}, {response.text}"
@@ -385,33 +431,77 @@ if __name__ == "__main__":
                             deepsort.increment_ages()
 
                     # ===================== Visualization =====================
-                    if VISUALIZE_OUTPUTS:
+                    if cfg.VISUALIZE:
                         try:
                             vis = img0.copy()
-                            # draw ROI
+                            # Draw ROI box if present (yellow)
                             if roi_box:
                                 x1r, y1r, x2r, y2r = roi_box
                                 cv2.rectangle(vis, (x1r, y1r), (x2r, y2r), (0, 255, 255), 2)
-                            # draw line
-                            cv2.line(vis, p1, p2, (0, 0, 255), 2)
-                            # draw boxes
+                                cv2.putText(vis, "ROI", (x1r + 5, max(y1r - 8, 15)), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2, cv2.LINE_AA)
+                            # Draw line (red)
+                            if 'p1' in locals() and 'p2' in locals():
+                                cv2.line(vis, p1, p2, (0, 0, 255), 2)
+                                cv2.putText(vis, "LINE", (min(p1[0], p2[0]) + 5, max(min(p1[1], p2[1]) - 8, 15)), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2, cv2.LINE_AA)
+                            # Draw detections (green) and ensure label shows 'head' when present/missing
                             for det in result.get("detection", []):
-                                x1, y1, x2, y2 = det.get("location", [0, 0, 0, 0])
-                                cv2.rectangle(vis, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
-                            # overlay counts
-                            cv2.putText(
-                                vis,
-                                f"IN: {in_count} OUT: {out_count}",
-                                (20, 30),
-                                cv2.FONT_HERSHEY_SIMPLEX,
-                                1.0,
-                                (255, 255, 255),
-                                2,
-                                cv2.LINE_AA,
-                            )
-                            os.makedirs("people_inout_outputs", exist_ok=True)
+                                x1, y1, x2, y2 = [int(v) for v in det.get("location", [0, 0, 0, 0])]
+                                cv2.rectangle(vis, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                                label_text = det.get("label") or "head"
+                                cv2.putText(
+                                    vis,
+                                    label_text,
+                                    (x1, max(y1 - 5, 12)),
+                                    cv2.FONT_HERSHEY_SIMPLEX,
+                                    0.5,
+                                    (0, 255, 0),
+                                    2,
+                                    cv2.LINE_AA,
+                                )
+                            # Draw tracking outputs (magenta) and trajectories (cyan)
+                            try:
+                                draw_outputs = outputs if 'outputs' in locals() else []
+                            except Exception:
+                                draw_outputs = []
+                            if draw_outputs:
+                                for x1o, y1o, x2o, y2o, tid in draw_outputs:
+                                    x1o, y1o, x2o, y2o, tid = int(x1o), int(y1o), int(x2o), int(y2o), int(tid)
+                                    cv2.rectangle(vis, (x1o, y1o), (x2o, y2o), (255, 0, 255), 2)
+                                    cv2.putText(vis, f"ID:{tid}", (x1o, max(y1o - 5, 12)), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 255), 2, cv2.LINE_AA)
+                                    # draw trajectory if available
+                                    to_map = _trackable_map.get(camera_id, {})
+                                    to = to_map.get(tid)
+                                    if to and getattr(to, 'centroids', None):
+                                        pts = [(int(cx), int(cy)) for (cx, cy) in to.centroids[-30:]]  # last 30
+                                        for i in range(1, len(pts)):
+                                            cv2.line(vis, pts[i-1], pts[i], (255, 255, 0), 2)
+                            # Overlay summary text aligned to top-right
+                            summary = [
+                                f"camera_id={camera_id}",
+                                f"in={in_count} out={out_count}",
+                                f"detections={len(result.get('detection', []))}",
+                            ]
+                            y0 = 30
+                            margin = 20
+                            h_vis, w_vis = vis.shape[:2]
+                            for idx, line in enumerate(summary):
+                                (tw, th), _ = cv2.getTextSize(line, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)
+                                x_right = w_vis - margin - tw
+                                y = y0 + idx * 22
+                                cv2.putText(
+                                    vis,
+                                    line,
+                                    (x_right, y),
+                                    cv2.FONT_HERSHEY_SIMPLEX,
+                                    0.7,
+                                    (255, 255, 255),
+                                    2,
+                                    cv2.LINE_AA,
+                                )
+                            # Ensure outputs directory
+                            os.makedirs(cfg.OUTPUTS_DIR, exist_ok=True)
                             out_name = image_path_url.split("/")[-1]
-                            out_path = os.path.join("people_inout_outputs", out_name)
+                            out_path = os.path.join(cfg.OUTPUTS_DIR, out_name)
                             cv2.imwrite(out_path, vis)
                             cfg.logger.info("Saved visualization image: %s", out_path)
                         except Exception as e:

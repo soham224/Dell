@@ -5,6 +5,7 @@ from logger_config import setup_logger, setup_performance_logger
 
 # model configs
 IMAGE_SIZE = int(os.getenv("IMAGE_SIZE"))
+DEVICE = os.getenv("DEVICE", "0")  # '0' for GPU:0 if available, or 'cpu'
 
 ROOT_URL = os.getenv("ROOT_URL")
 ROOT_PATH = os.getenv("ROOT_PATH")
@@ -86,6 +87,12 @@ if not log_base_directory:
     raise EnvironmentError(
         "LOG_BASE_DIRECTORY is not set. Please export it before running."
     )
+
+# ===================== Visualization configuration =====================
+# VISUALIZE: enable annotated image dumps when set to truthy values (1, true, yes)
+# OUTPUTS_DIR: where annotated images are stored; defaults to PWD/outputs
+VISUALIZE = str(os.getenv("VISUALIZE", "1")).strip().lower() in {"1", "true", "yes", "on"}
+OUTPUTS_DIR = os.getenv("OUTPUTS_DIR", os.path.join(os.getcwd(), "outputs"))
 
 # App logger and performance logger
 logger: logging.Logger = setup_logger("people_inout")

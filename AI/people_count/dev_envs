@@ -5,8 +5,9 @@ export MYSQL_PASS=Admin@123
 export MYSQL_DB_NAME=auto-serving-dell
 
 export IMAGE_SIZE=640
+export DEVICE=cpu                             # set to 0 for GPU:0 if available, or 'cpu' to force CPU
 
-export SLEEP_TIME=30                            # 900
+export SLEEP_TIME=120                            # 900
 
 export ROOT_URL=http://192.168.11.97/
 export ROOT_PATH=/home/dev1079
