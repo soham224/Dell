@@ -23,8 +23,8 @@ RESULT_TYPE_ID = int(os.getenv("RESULT_TYPE_ID"))
 
 # User context
 USER_ID = os.getenv("USER_ID")
-LOCATION_ID = os.getenv("LOCATION_ID", "0")
-USECASE_ID = os.getenv("USECASE_ID", "0")
+
+USECASE_ID = os.getenv("USECASE_ID", "3")
 
 # Database table names (configurable)
 CAMERA_TABLE_NAME: str = os.getenv("CAMERA_TABLE_NAME", "camera_rtsp")

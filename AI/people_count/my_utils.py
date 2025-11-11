@@ -64,7 +64,7 @@ def store_result(file_name, file_path, file_url, bounding_box, frame_time, camer
     # Compute counts from detections
     counts: dict = defaultdict(int)
     for det in (
-        bounding_box.get("detection", []) if isinstance(bounding_box, dict) else []
+            bounding_box.get("detection", []) if isinstance(bounding_box, dict) else []
     ):
         lbl = det.get("label")
         if lbl:
@@ -251,13 +251,13 @@ def predict(model, img, im0s, device, conf_thres, iou_thres, usecase, camera_id)
 
 
 def predict_raw(
-    model,
-    img,
-    im0s,
-    device,
-    conf_thres: float,
-    iou_thres: float,
-    target_label: Optional[str] = None,
+        model,
+        img,
+        im0s,
+        device,
+        conf_thres: float,
+        iou_thres: float,
+        target_label: Optional[str] = None,
 ):
     """
     Run inference and return both formatted detections and raw tensors for tracking.
@@ -604,9 +604,9 @@ def parse_roi_boxes(roi_raw: Any) -> List[List[int]]:
         if isinstance(cand, list):
             for item in cand:
                 if (
-                    isinstance(item, (list, tuple))
-                    and len(item) == 4
-                    and all(isinstance(v, (int, float)) for v in item)
+                        isinstance(item, (list, tuple))
+                        and len(item) == 4
+                        and all(isinstance(v, (int, float)) for v in item)
                 ):
                     x1, y1, x2, y2 = item
                     if x2 > x1 and y2 > y1:
@@ -640,18 +640,18 @@ def parse_line_points(line_raw: Any) -> Optional[Dict[str, List[int]]]:
             if "location" in data:
                 pts = data.get("location", [])
                 if (
-                    isinstance(pts, list)
-                    and len(pts) >= 2
-                    and all(isinstance(pt, (list, tuple)) and len(pt) == 2 for pt in pts[:2])
+                        isinstance(pts, list)
+                        and len(pts) >= 2
+                        and all(isinstance(pt, (list, tuple)) and len(pt) == 2 for pt in pts[:2])
                 ):
                     p1 = list(map(int, pts[0]))
                     p2 = list(map(int, pts[1]))
                     return {"p1": p1, "p2": p2}
         # list of two points
         if (
-            isinstance(data, list)
-            and len(data) >= 2
-            and all(isinstance(pt, (list, tuple)) and len(pt) == 2 for pt in data[:2])
+                isinstance(data, list)
+                and len(data) >= 2
+                and all(isinstance(pt, (list, tuple)) and len(pt) == 2 for pt in data[:2])
         ):
             p1 = list(map(int, data[0]))
             p2 = list(map(int, data[1]))
@@ -727,4 +727,3 @@ def save_overlay_image(base_img: np.ndarray, out_disk_path: str) -> Optional[str
     except Exception as e:
         cfg.logger.warning("Failed to save overlay image at %s: %s", out_disk_path, e)
         return None
-

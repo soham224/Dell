@@ -129,21 +129,50 @@ if __name__ == "__main__":
                     f"Fetching frame | url={get_frame_url} params={params}"
                 )
                 t_get_start = time.time()
-                response = requests.get(get_frame_url, params=params)
-                t_get_end = time.time()
-                cfg.perf_logger.info(
-                    "get_frame latency_ms=%.2f camera_id=%s",
-                    (t_get_end - t_get_start) * 1000,
-                    camera_id,
-                )
+                try:
+                    response = requests.get(get_frame_url, params=params, timeout=5)
+                    t_get_end = time.time()
+                    cfg.perf_logger.info(
+                        "get_frame latency_ms=%.2f camera_id=%s",
+                        (t_get_end - t_get_start) * 1000,
+                        camera_id,
+                    )
+                except requests.exceptions.ConnectionError as e:
+                    cfg.logger.error(
+                        "Connection refused while fetching frame | url=%s params=%s error=%s",
+                        get_frame_url,
+                        params,
+                        e,
+                    )
+                    set_response_schema(
+                        current_time=current_time,
+                        frame_status="failed",
+                        camera_id=int(camera_id),
+                    )
+                    cfg.logger.info(f"Sleeping for {cfg.SLEEP_TIME} Seconds due to connection error")
+                    time.sleep(cfg.SLEEP_TIME)
+                    continue
+                except Exception as e:
+                    cfg.logger.error("Unhandled exception during frame fetch: %s", e)
+                    set_response_schema(
+                        current_time=current_time,
+                        frame_status="failed",
+                        camera_id=int(camera_id),
+                    )
+                    continue
 
                 if response.status_code == 200:
                     cfg.logger.info(f"Frame API Response :: {response.status_code}")
-
                 else:
                     cfg.logger.error(
                         f"Error: {response.status_code}, {response.text}"
                     )
+                    set_response_schema(
+                        current_time=current_time,
+                        frame_status="failed",
+                        camera_id=int(camera_id),
+                    )
+                    continue
 
                 set_response_schema(
                     current_time=current_time,
@@ -463,11 +492,11 @@ if __name__ == "__main__":
                     (time.time() - cam_start_ts) * 1000,
                     camera_id,
                 )
-            cfg.logger.info(f"Sleeping for {cfg.SLEEP_TIME} Seconds")
+            # cfg.logger.info(f"Sleeping for {cfg.SLEEP_TIME} Seconds")
             cfg.perf_logger.info(
                 "iteration_total_ms=%.2f", (time.time() - start_cycle_ts) * 1000
             )
-            time.sleep(cfg.SLEEP_TIME)
+            # time.sleep(cfg.SLEEP_TIME)
 
         except Exception as e:
             cfg.logger.exception("Unhandled exception in main loop: %s", e)
