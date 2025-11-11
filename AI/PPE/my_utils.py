@@ -132,7 +132,22 @@ def store_result(file_name, file_path, file_url, bounding_box, frame_time, camer
 
 
 def get_device():
-    return select_device("0")
+    """Return compute device based on configuration.
+
+    Accepts only two options via cfg.DEVICE:
+    - "0": selects GPU 0 if available
+    - "cpu": forces CPU
+
+    Any other value falls back to CPU. Default is "0".
+    """
+    try:
+        configured = str(getattr(cfg, "DEVICE", "0")).strip().lower()
+        device_arg = "0" if configured == "0" else "cpu"
+        cfg.logger.debug("Selecting device via PPE.get_device(): %s", device_arg)
+        return select_device(device_arg)
+    except Exception as e:
+        cfg.logger.warning("Failed to select configured device, falling back to CPU: %s", e)
+        return select_device("cpu")
 
 
 def load_model(weight_path, map_location):

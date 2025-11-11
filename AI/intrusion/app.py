@@ -112,9 +112,10 @@ if __name__ == "__main__":
                     )
                     # Use current UTC time minus 1 minute for frame fetching
                     dt_utc_minus_1 = datetime.now(timezone.utc) - timedelta(minutes=1)
-                    current_time = dt_utc_minus_1.strftime("%Y-%m-%d %H:%M:00")
+                    # Preserve exact seconds (do not round to 00)
+                    current_time = dt_utc_minus_1.strftime("%Y-%m-%d %H:%M:%S")
                     params = {
-                        "frame_time": current_time,  # Replace with the desired datetime
+                        "frame_time": current_time,  # Exact UTC timestamp with seconds
                         "camera_id": int(camera_id),
                     }
                     cfg.logger.info(

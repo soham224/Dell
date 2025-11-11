@@ -29,3 +29,5 @@ export RESULT_MAPPING_TABLE_NAME=camera_usecase_mapping
 export ADD_RESULT_URL=http://192.168.11.97:8005/api/v1/add_result
 
 export USER_ID=2
+
+export DEVICE=0

@@ -76,7 +76,7 @@ if __name__ == "__main__":
                     cfg.logger.debug("Parsed ROI boxes count=%d", len(roi_boxes))
                     # Use current UTC time minus 1 minute for frame fetching
                     dt_utc_minus_1 = datetime.now(timezone.utc) - timedelta(minutes=1)
-                    current_time = dt_utc_minus_1.strftime("%Y-%m-%d %H:%M:00")
+                    current_time = dt_utc_minus_1.strftime("%Y-%m-%d %H:%M:%S")
                     params = {
                         "frame_time": current_time,  # Replace with the desired datetime
                         "camera_id": int(camera_id),
