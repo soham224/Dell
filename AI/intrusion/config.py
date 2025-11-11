@@ -37,6 +37,10 @@ RESULT_MAPPING_TABLE_NAME: str = os.getenv(
 MODEL_CONF = float(os.getenv("MODEL_CONF"))
 MODEL_IOU = float(os.getenv("MODEL_IOU"))
 
+# Compute device selection: "0" for GPU:0 or "cpu" for CPU
+# Default is "0" as requested.
+DEVICE: str = os.getenv("DEVICE", "0")
+
 # API endpoints from environment
 FRAME_STATUS_URL = os.getenv("FRAME_STATUS_URL")
 GET_FRAME_URL = os.getenv("GET_FRAME_URL")
@@ -67,3 +71,5 @@ logger.debug(
 )
 logger.debug("DB table config: CAMERA_TABLE_NAME=%s", CAMERA_TABLE_NAME)
 logger.debug("DB table config: RESULT_MAPPING_TABLE_NAME=%s", RESULT_MAPPING_TABLE_NAME)
+logger.debug("Device config: DEVICE=%s", DEVICE)
+
