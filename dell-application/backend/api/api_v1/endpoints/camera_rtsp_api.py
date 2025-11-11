@@ -178,16 +178,16 @@ def update_camera_roi(
 #     )
 
 
-# @router.get("/get_camera_rtsp_by_id", response_model=schemas.CameraRtspRead)
-# def get_camera_rtsp_by_id(
-#     camera_rtsp_id: int,
-#     db: Session = Depends(deps.get_db),
-#     current_user: models.User = Depends(deps.get_current_active_user),
-# ) -> Any:
-#     db_obj = crud.camera_rtsp_crud_obj.get_by_id(db, camera_rtsp_id)
-#     if not db_obj:
-#         raise HTTPException(status_code=404, detail="No Data Found")
-#     return db_obj
+@router.get("/get_camera_rtsp_by_id", response_model=schemas.CameraRtspRead)
+def get_camera_rtsp_by_id(
+    camera_rtsp_id: int,
+    db: Session = Depends(deps.get_db),
+    current_user: models.User = Depends(deps.get_current_active_user),
+) -> Any:
+    db_obj = crud.camera_rtsp_crud_obj.get_by_id(db, camera_rtsp_id)
+    if not db_obj:
+        raise HTTPException(status_code=404, detail="No Data Found")
+    return db_obj
 
 
 # @router.get("/get_all_camera_rtsp", response_model=List[schemas.CameraRtspRead])
@@ -242,31 +242,31 @@ def update_camera_roi(
 #     return db_objs
 
 
-# @router.post("/get_latest_frame_by_rtsp")
-# def get_latest_frame_by_rtsp(rtsp_link: str):
-#     file_name = f"{time.time()}.png"
-#     try:
-#         if rtsp_link:
-#             try:
-#                 cmd = [f"ffmpeg -i '{rtsp_link}' -vframes 1 {file_name}"]
-#                 subprocess.run(
-#                     cmd, capture_output=True, check=True, shell=True, timeout=10
-#                 )
-#             except subprocess.TimeoutExpired as e:
-#                 return ""
-#             except subprocess.CalledProcessError as e:
-#                 return ""
-#             except Exception as e:
-#                 return ""
-#
-#         if os.path.isfile(file_name):
-#             with open(file_name, "rb") as img_file:
-#                 my_string = base64.b64encode(img_file.read())
-#             os.remove(file_name)
-#             return my_string
-#         return ""
-#     except Exception as e:
-#         return ""
-#     finally:
-#         if os.path.exists(file_name):
-#             os.remove(file_name)
+@router.post("/get_latest_frame_by_rtsp")
+def get_latest_frame_by_rtsp(rtsp_link: str):
+    file_name = f"{time.time()}.png"
+    try:
+        if rtsp_link:
+            try:
+                cmd = [f"ffmpeg -i '{rtsp_link}' -vframes 1 {file_name}"]
+                subprocess.run(
+                    cmd, capture_output=True, check=True, shell=True, timeout=10
+                )
+            except subprocess.TimeoutExpired as e:
+                return ""
+            except subprocess.CalledProcessError as e:
+                return ""
+            except Exception as e:
+                return ""
+
+        if os.path.isfile(file_name):
+            with open(file_name, "rb") as img_file:
+                my_string = base64.b64encode(img_file.read())
+            os.remove(file_name)
+            return my_string
+        return ""
+    except Exception as e:
+        return ""
+    finally:
+        if os.path.exists(file_name):
+            os.remove(file_name)
