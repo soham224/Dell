@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  vfs-tusker-rtsp-handler:
+    build: .
+    image: vfs_tusker_rtsp_handler
+    container_name: vfs-tusker-rtsp-handler
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - /home/dev1079/Shruti_Workspace/VFS/AI/Final/Data:/home/dev1079/Shruti_Workspace/VFS/AI/Final/Data
+      - /home/dev1079/Shruti_Workspace/VFS/AI/Final:/home/dev1079/Shruti_Workspace/VFS/AI/Final
+

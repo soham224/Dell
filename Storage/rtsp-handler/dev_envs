@@ -1,0 +1,79 @@
+###############################################
+# Core Database (used by config.py, core.py)
+###############################################
+export DB_TYPE=mysql
+export DB_HOST=192.168.11.88
+export DB_USERNAME=admin
+export DB_PASS=Admin@123
+export DB_NAME=auto-serving-dell
+export DB_PORT=3306
+
+###############################################
+# Application Paths and Logging (config.py, utils.py)
+###############################################
+export FRAMES_ROOT_DIR=/home/dev1079/frames/dell
+export LOG_BASE_DIRECTORY=./
+export RAW_SUBDIR=raw_frames
+
+###############################################
+# User/Org Context (config.py, utils.py)
+###############################################
+export USER_ID=2
+
+###############################################
+# Storage/Queue (config.py, utils.py)
+###############################################
+export QUEUE_NAME=frames_storage
+# Optional: FRAME_STORAGE_TYPE defaults to dbq in config.py
+# export FRAME_STORAGE_TYPE=dbq
+
+###############################################
+# RTSP/Frame processing behavior (config.py, utils.py)
+###############################################
+export FRAME_SIZE_MODE=640x640  # valid: original | 640x640
+export USER_VIDEO_DURATION=1m    # used when RTSP_STORAGE_TYPE=video
+export FPS_REFRESH_INTERVAL_SECONDS=900  # legacy; not used for periodic poll anymore
+
+###############################################
+# Table Names (config.py, core.py)
+###############################################
+export CAMERA_RTSP_TABLE=camera_manager
+export CAMERA_USECASE_MAPPING_TABLE=camera_usecase_mapping
+export USER_TABLE=user
+export USER_LOCATION_TABLE=user_location
+export LOCATION_TABLE=location
+
+###############################################
+# Camera Table Columns (config.py, core.py)
+###############################################
+export CAMERA_ID_COLUMN=id
+export RTSP_URL_COLUMN=rtsp_url
+export FPS_COLUMN=process_fps
+export STATUS_COLUMN=status
+export CAMERA_NAME_COLUMN=camera_name
+export CAMERA_RESOLUTION_COLUMN=camera_resolution
+export LOCATION_ID_COLUMN=location_id
+export IS_ACTIVE_COLUMN=is_active
+export IS_PROCESSING_COLUMN=is_processing
+export UPDATED_DATE_COLUMN=updated_date
+
+###############################################
+# Join Columns for User/Location (config.py, core.py)
+###############################################
+export USER_ID_COLUMN=id
+export UL_USER_ID_COLUMN=user_id
+export UL_LOCATION_ID_COLUMN=location_id
+export LOCATION_ID_PK_COLUMN=id
+
+###############################################
+# Mapping Table Columns (config.py, core.py)
+###############################################
+export START_TIME_COLUMN=start_time_utc
+export END_TIME_COLUMN=end_time_utc
+export MAPPING_CAMERA_ID_COLUMN=camera_id
+
+###############################################
+# Notifier Settings (notifier.py, utils.py trigger)
+###############################################
+export NOTIFIER_POLL_INTERVAL_SECONDS=30
+export RELOAD_TRIGGER_FILE=.rtsp_handler_reload
